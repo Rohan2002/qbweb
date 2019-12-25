@@ -1,0 +1,83 @@
+#about1
+{
+    background-color: rgba(192, 192, 192, 0.09);
+}
+.about1main
+{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.aboutimagediv
+{
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width:80%;
+}
+.mission-div
+{
+    margin-top: 2em;
+}
+.ui.header.mission
+{
+    font-size:1.2em;
+    color:rgb(179, 177, 178);
+    font-family: HK Grotesk Medium, sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+}
+
+
+/*vision start*/
+.vision-header-div
+{
+    margin-bottom: 3em;
+}
+.ui.header.about-headers
+{
+    color: #EF6286;
+    font-size: 2.1em;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+
+ 
+}
+
+.vision
+{
+    padding-top: 5em;
+}
+.vision-goals-div
+{
+    display: inline-block;
+}
+.ui.header.vision-goals
+{
+    font-size:1em;
+    color:rgb(179, 177, 178);
+    font-family: HK Grotesk Medium, sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+}
+
+.vision-grid
+{   
+    vertical-align: middle;
+}
+.vision-goal-div
+{
+    margin-top: 1em;
+}
+/*vision end*/
+
+/*partner*/
+.acc-header-div
+{
+    margin-bottom: 3em;
+}
+.acc-partners
+{
+    padding-top: 5em;
+}

@@ -1,0 +1,38 @@
+#home2
+{
+    background-color:rgba(34, 34, 34, 0.09);
+    height:auto;
+}
+.home2main
+{
+    padding-top: 3em;
+    padding-bottom: 3em;
+
+}
+.grid-space
+{
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+
+.ui.header.grid-header
+{
+    font-size:1.5em;
+    text-transform: uppercase;
+    color:#EF6286;
+    font-weight: 800;
+    font-family: HK Grotesk Medium, sans-serif;
+    letter-spacing: 1px;
+    white-space: normal;
+    text-align: center;
+}
+.ui.header.grid-des
+{
+    font-size:15px;
+    color:rgb(179, 177, 178);
+    font-family: HK Grotesk Medium, sans-serif;
+    white-space: normal;
+    text-align: center;
+}

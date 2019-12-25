@@ -1,0 +1,59 @@
+#home3
+{
+    background-color: white;
+    height:auto
+}
+.home3main
+{
+    padding-top:3em;
+    padding-bottom: 3em;
+}
+.welcome-space
+{
+    margin-top: 1em;
+}
+.ui.header.welcome-header
+{
+    font-size:2em;
+    text-transform: uppercase;
+    color:#EF6286;
+    font-weight: 500;
+    font-family: HK Grotesk Medium, sans-serif;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+
+}
+.ui.header.welcome-desc
+{
+    font-size:1em;
+    color:rgb(179, 177, 177);
+    font-family: HK Grotesk Light, sans-serif;
+    letter-spacing: 1px;
+    white-space: normal;
+
+}
+
+.welcome-space-button
+{
+    margin-top: 2em;
+}
+.ui.button.read-button {
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #05a6b3;
+    width: auto;
+    padding: 15px 40px;
+    border: 2px solid #05a6b3;
+    border-radius: 15px;
+    font-family: HK Grotesk Medium, sans-serif;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    background-color: transparent;
+  }
+  .ui.button.read-button:hover {
+    transform: scale(1.1) perspective(1px);
+  }

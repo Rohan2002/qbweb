@@ -1,0 +1,65 @@
+#home4
+{
+    height: auto;
+    background-color: white;
+}
+.home4main
+{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.upcoming-header
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.ui.header.news-header
+{
+    font-size:2em;
+    text-transform: uppercase;
+    color:#EF6286;
+    font-weight: 800;
+    font-family: HK Grotesk Medium, sans-serif;
+    letter-spacing: 1px;
+    white-space: normal;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+.news-space
+{
+    margin-top: 1em;
+  
+}
+.news-break
+{
+    margin-top: 2em;
+    
+    border-top:1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.news-space-2
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.ui.header.headline
+{
+    font-size:1.5em;
+    text-transform: uppercase;
+    color:black;
+    font-weight: 800;
+    font-family: HK Grotesk Medium, sans-serif;
+    letter-spacing: 1px;
+    white-space: normal;
+    text-align: left;
+}
+.ui.header.news-des
+{
+    font-size:15px;
+    color:rgb(179, 177, 177);
+    font-family: HK Grotesk Medium, sans-serif;
+    white-space: normal;
+    text-align: left;
+}
