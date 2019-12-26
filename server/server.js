@@ -13,14 +13,14 @@ const router = express.Router();
 
 // this is our MongoDB database
 const dbRoute =
-  'mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/Clients?retryWrites=true&w=majority';
+  'mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test';
 
 // connects our back end code with the database
 mongoose.connect(dbRoute, { useNewUrlParser: true }, );
 
 let db = mongoose.connection;
 
-db.once('open', () => console.log('connected to the database'), {useUnifiedTopology: true });
+db.once('open', () => console.log('connected to the database'));
 
 // checks if connection with the database is successful
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
@@ -31,20 +31,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger('dev'));
 
-// this is our get method
-// this method fetches all available data in our database
-router.get('/getData', (req, res) => {
-  Data.find((err, data) => {
-    if (err) return res.json({ success: false, error: err });
-    return res.json({ success: true, data: data });
-  });
-});
-
 
 router.post('/putData', (req, res) => {
   let data = new Data();
 
-  const { id, message } = req.body;
+  const { id, name, last, sEmail, pEmail } = req.body;
 
   if ((!id && id !== 0) || !message) {
     return res.json({
@@ -52,7 +43,10 @@ router.post('/putData', (req, res) => {
       error: 'INVALID INPUTS',
     });
   }
-  data.message = message;
+  data.name = name;
+  data.last= last;
+  data.sEmail= sEmail;
+  data.pEmail = pEmail;
   data.id = id;
   data.save((err) => {
     if (err) return res.json({ success: false, error: err });

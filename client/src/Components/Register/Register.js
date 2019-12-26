@@ -7,37 +7,12 @@ export default class Register extends React.Component {
         data: [],
         id: 0,
         name: null,
-        lastname:null,
-        studentemail: null,
-        parentemail:null,
-        intervalIsSet: false,
-        objectToUpdate: null,
+        last:null,
+        sEmail: null,
+        pEmail:null
       };
 
-    //   //set interval for getting data from database
-    //   componentDidMount() {
-    //     this.getDataFromDb();
-    //     if (!this.state.intervalIsSet) {
-    //       let interval = setInterval(this.getDataFromDb, 1000);
-    //       this.setState({ intervalIsSet: interval });
-    //     }
-    //   }
-    
-    //   //kill process once we close the server
-    //   componentWillUnmount() {
-    //     if (this.state.intervalIsSet) {
-    //       clearInterval(this.state.intervalIsSet);
-    //       this.setState({ intervalIsSet: null });
-    //     }
-    //   }
-    //   getDataFromDb = () => {
-    //     fetch('http://localhost:3001/api/getData')
-    //       .then((data) => data.json())
-    //       .then((res) => this.setState({ data: res.data }));
-    //   };
-    
-
-      putDataToDB = (name, lastname, studentemail, parentemail) => {
+      putDataToDB = (name, last, sEmail, pEmail) => {
         let currentIds = this.state.data.map((data) => data.id);
         let idToBeAdded = 0;
         while (currentIds.includes(idToBeAdded)) {
@@ -47,14 +22,13 @@ export default class Register extends React.Component {
         axios.post('http://localhost:3001/api/putData', {
           id: idToBeAdded,
           name: name,
-          lastname:lastname,
-          studentemail:studentemail,
-          parentemail:parentemail
+          last:last,
+          sEmail:sEmail,
+          pEmail:pEmail
         });
       };
     
   render() {
-    // const { data } = this.state;
     return (
       <div className={"regmain container"}>
         <div className={"account-header-div"}>
@@ -62,18 +36,6 @@ export default class Register extends React.Component {
             Register for QuakerBridge Learning Center 2020 Course
           </Header>
         </div>
-{/* 
-        <ul>
-          {data.length <= 0
-            ? 'NO DB ENTRIES YET'
-            : data.map((dat) => (
-                <li style={{ padding: '10px' }} key={data.message}>
-                  <span style={{ color: 'gray' }}> id: </span> {dat.id} <br />
-                  <span style={{ color: 'gray' }}> data: </span>
-                  {dat.message}
-                </li>
-              ))}
-        </ul> */}
         <div className={"container"}>
           <Form>
             <Grid stackable={true}>
@@ -87,7 +49,7 @@ export default class Register extends React.Component {
                 <Grid.Column>
                   <Form.Field>
                     <label>Last Name</label>
-                    <input placeholder="Schimdt" onChange={(e) => this.setState({ lastname: e.target.value })}/>
+                    <input placeholder="Schimdt" onChange={(e) => this.setState({ last: e.target.value })}/>
                   </Form.Field>
                 </Grid.Column>
               </Grid.Row>
@@ -95,13 +57,13 @@ export default class Register extends React.Component {
                 <Grid.Column>
                   <Form.Field>
                     <label>Student Email</label>
-                    <input placeholder="example@domain.com" onChange={(e) => this.setState({ studentemail: e.target.value })}/>
+                    <input placeholder="example@domain.com" onChange={(e) => this.setState({ sEmail: e.target.value })}/>
                   </Form.Field>
                 </Grid.Column>
                 <Grid.Column>
                   <Form.Field>
                     <label>Parent Email</label>
-                    <input onChange={(e) => this.setState({ parentemail: e.target.value })} placeholder="example@domain.com" />
+                    <input onChange={(e) => this.setState({ pEmail: e.target.value })} placeholder="example@domain.com" />
                   </Form.Field>
                 </Grid.Column>
               </Grid.Row>
@@ -109,7 +71,7 @@ export default class Register extends React.Component {
             <div className={"register-button-div"}>
               <Button
                 type={"submit"}
-                onClick={() => this.putDataToDB(this.state.name, this.state.lastname, this.state.studentemail,this.state.parentemail)}
+                onClick={() => this.putDataToDB(this.state.name, this.state.last, this.state.sEmail,this.state.pEmail)}
                 content={"Register"}
                 className={"register"}
               />

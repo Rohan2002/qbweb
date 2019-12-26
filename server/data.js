@@ -7,12 +7,12 @@ const DataSchema = new Schema(
     id: Number,
     name: String,
     last: String,
-    studentemail:String,
-    parentemail:String,
+    sEmail:String,
+    pEmail:String,
     // age:{ type: Number, min: 18, max: 65}
   },
   { timestamps: true }
 );
 
 // export the new Schema so we could modify it using Node.js
-module.exports = mongoose.model("Client", DataSchema);
+module.exports = mongoose.model("Data", DataSchema);
