@@ -30,11 +30,11 @@ export default class Register extends React.Component {
     //       this.setState({ intervalIsSet: null });
     //     }
     //   }
-      getDataFromDb = () => {
-        fetch('http://localhost:3001/api/getData')
-          .then((data) => data.json())
-          .then((res) => this.setState({ data: res.data }));
-      };
+    //   getDataFromDb = () => {
+    //     fetch('http://localhost:3001/api/getData')
+    //       .then((data) => data.json())
+    //       .then((res) => this.setState({ data: res.data }));
+    //   };
     
 
       putDataToDB = (name, lastname, studentemail, parentemail) => {
@@ -54,6 +54,7 @@ export default class Register extends React.Component {
       };
     
   render() {
+    // const { data } = this.state;
     return (
       <div className={"regmain container"}>
         <div className={"account-header-div"}>
@@ -61,6 +62,18 @@ export default class Register extends React.Component {
             Register for QuakerBridge Learning Center 2020 Course
           </Header>
         </div>
+{/* 
+        <ul>
+          {data.length <= 0
+            ? 'NO DB ENTRIES YET'
+            : data.map((dat) => (
+                <li style={{ padding: '10px' }} key={data.message}>
+                  <span style={{ color: 'gray' }}> id: </span> {dat.id} <br />
+                  <span style={{ color: 'gray' }}> data: </span>
+                  {dat.message}
+                </li>
+              ))}
+        </ul> */}
         <div className={"container"}>
           <Form>
             <Grid stackable={true}>
