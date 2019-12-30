@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose');
 const express = require('express');
 var cors = require('cors');
@@ -35,18 +34,22 @@ app.use(logger('dev'));
 router.post('/putData', (req, res) => {
   let data = new Data();
 
-  const { id, name, last, sEmail, pEmail } = req.body;
+  const { id, name, last, student_age, student_gender, street_name, city_name, state_name, zip_code, sEmail, student_phone, parent_name,parent_last_name, parent_phone, pEmail } = req.body;
 
-  if ((!id && id !== 0) || !message) {
-    return res.json({
-      success: false,
-      error: 'INVALID INPUTS',
-    });
-  }
   data.name = name;
   data.last= last;
+  data.student_age = student_age;
+  data.street_name = street_name;
+  data.student_gender = student_gender;
+  data.city_name = city_name;
+  data.state_name = state_name;
+  data.student_phone = student_phone;
+  data.parent_name = parent_name;
+  data.parent_last_name = parent_last_name;
+  data.parent_phone = parent_phone;
   data.sEmail= sEmail;
   data.pEmail = pEmail;
+  data.zip_code = zip_code;
   data.id = id;
   data.save((err) => {
     if (err) return res.json({ success: false, error: err });

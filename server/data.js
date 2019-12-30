@@ -7,9 +7,17 @@ const DataSchema = new Schema(
     id: Number,
     name: String,
     last: String,
+    student_age: Number,
+    student_gender: String,
+    street_name: String,
+    city_name: String,
+    state_name: String,
+    zip_code: Number,
     sEmail:String,
     pEmail:String,
-    // age:{ type: Number, min: 18, max: 65}
+    parent_name: String,
+    parent_last_name: String,
+    parent_phone: String
   },
   { timestamps: true }
 );
