@@ -6,7 +6,7 @@ export default class HomePage3 extends React.Component {
     return (
       <section id={"home3"}>
         <div className={"home3main container"}>
-          <Grid>
+          <Grid stackable={true}>
             <Grid.Row columns={2}>
               <Grid.Column>
                 <div className={"welcome-space"}>

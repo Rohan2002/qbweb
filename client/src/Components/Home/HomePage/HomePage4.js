@@ -6,7 +6,7 @@ export default class HomePage4 extends React.Component {
     return (
       <section id={"home4"}>
         <div className={"home4main container"}>
-          <Grid columns={2}>
+          <Grid stackable={true} columns={2}>
             <Grid.Column>
               <Grid.Row>
                 <div>

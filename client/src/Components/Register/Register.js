@@ -1,7 +1,8 @@
 import React from "react";
 import "./Register.css";
 import axios from "axios";
-import { Header, Button, Grid, Form, Icon } from "semantic-ui-react";
+import { Header, Button, Grid, Form, Message} from "semantic-ui-react";
+import {Redirect} from 'react-router-dom';
 export default class Register extends React.Component {
   state = {
     data: [],
@@ -18,7 +19,8 @@ export default class Register extends React.Component {
     parent_name: null,
     parent_last_name: null,
     parent_phone: null,
-    pEmail: null
+    pEmail: null,
+    redirect:false
   };
 
   putDataToDB = (
@@ -62,7 +64,23 @@ export default class Register extends React.Component {
     });
   };
 
+ SuccessMessage = () =>
+ {
+  return(<Message
+    success
+    header='Form Completed'
+    content="You're all signed up for the newsletter"
+  />);
+ }
+ submit=()=>{
+  this.setState({redirect:true})
+  
+}
   render() {
+    if (this.state.redirect === true) {
+      return <Redirect to='/contact' />
+    }
+
     return (
       <div className={"regmain container"}>
         <div className={"account-header-div"}>
@@ -71,7 +89,7 @@ export default class Register extends React.Component {
           </Header>
         </div>
         <div className={"container"}>
-          <Form>
+          <Form onSubmit={this.submit} >
             <Grid stackable={true}>
               <Grid.Row columns={2}>
                 <Grid.Column>
@@ -330,6 +348,8 @@ export default class Register extends React.Component {
                     this.state.pEmail
                   )
                 }
+                onClick={this.SuccessMessage}
+                
                 content={"Register"}
                 className={"register"}
               />
