@@ -11,17 +11,17 @@ app.use(cors());
 const router = express.Router();
 
 // this is our MongoDB database
-// const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
+const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
 
-// // connects our back end code with the database
-// mongoose.connect(dbRoute, { useNewUrlParser: true });
+// connects our back end code with the database
+mongoose.connect(dbRoute, { useNewUrlParser: true });
 
-// let db = mongoose.connection;
+let db = mongoose.connection;
 
-// db.once("open", () => console.log("connected to the database"));
+db.once("open", () => console.log("connected to the database"));
 
-// // checks if connection with the database is successful
-// db.on("error", console.error.bind(console, "MongoDB connection error:"));
+// checks if connection with the database is successful
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
 // (optional) only made for logging and
 // bodyParser, parses the request body to be a readable json format
@@ -29,60 +29,60 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger("dev"));
 
-// router.post("/putData", (req, res) => {
-//   let data = new Data();
-//   console.log(req.connection.remoteAddress);
-//   const {
-//     id,
-//     name,
-//     last,
-//     student_age,
-//     student_gender,
-//     street_name,
-//     city_name,
-//     state_name,
-//     zip_code,
-//     sEmail,
-//     student_phone,
-//     parent_name,
-//     parent_last_name,
-//     parent_phone,
-//     pEmail
-//   } = req.body;
+router.post("/putData", (req, res) => {
+  let data = new Data();
+  console.log(req.connection.remoteAddress);
+  const {
+    id,
+    name,
+    last,
+    student_age,
+    student_gender,
+    street_name,
+    city_name,
+    state_name,
+    zip_code,
+    sEmail,
+    student_phone,
+    parent_name,
+    parent_last_name,
+    parent_phone,
+    pEmail
+  } = req.body;
 
-//   data.name = name;
-//   data.last = last;
-//   data.student_age = student_age;
-//   data.street_name = street_name;
-//   data.student_gender = student_gender;
-//   data.city_name = city_name;
-//   data.state_name = state_name;
-//   data.student_phone = student_phone;
-//   data.parent_name = parent_name;
-//   data.parent_last_name = parent_last_name;
-//   data.parent_phone = parent_phone;
-//   data.sEmail = sEmail;
-//   data.pEmail = pEmail;
-//   data.zip_code = zip_code;
-//   data.id = id;
-//   data.save(err => {
-//     if (err) return res.json({ success: false, error: err });
-//     return res.json({ success: true });
-//   });
-// });
+  data.name = name;
+  data.last = last;
+  data.student_age = student_age;
+  data.street_name = street_name;
+  data.student_gender = student_gender;
+  data.city_name = city_name;
+  data.state_name = state_name;
+  data.student_phone = student_phone;
+  data.parent_name = parent_name;
+  data.parent_last_name = parent_last_name;
+  data.parent_phone = parent_phone;
+  data.sEmail = sEmail;
+  data.pEmail = pEmail;
+  data.zip_code = zip_code;
+  data.id = id;
+  data.save(err => {
+    if (err) return res.json({ success: false, error: err });
+    return res.json({ success: true });
+  });
+});
 router.post("/sendEmail", (req, res) => {
 
   const{sender_name,sender_email, sender_tel, sender_message} = req.body;
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "rohandeshpande958@gmail.com",
-      pass: "Rohan2002"
+      user: "qblearninginfo@gmail.com",
+      pass: "qbcls2020"
     }
   });
   let mailOptions = {
-    from: "rohandeshpande958@gmail.com",
-    to: "rohandeshpande958@gmail.com",
+    from: "qblearninginfo@gmail.com",
+    to: "qblearninginfo@gmail.com",
     subject: `QuakerBridge Contact Form Response from ${sender_name}`,
     html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Message: ${sender_message}<br/>`
   };
