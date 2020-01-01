@@ -12,7 +12,7 @@ const DataSchema = new Schema(
     street_name: String,
     city_name: String,
     state_name: String,
-    zip_code: Number,
+    zip_code: String,
     sEmail:String,
     pEmail:String,
     parent_name: String,

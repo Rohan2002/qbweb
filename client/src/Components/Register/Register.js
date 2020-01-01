@@ -64,15 +64,23 @@ export default class Register extends React.Component {
     });
   };
 
- SuccessMessage = () =>
- {
-  return(<Message
-    success
-    header='Form Completed'
-    content="You're all signed up for the newsletter"
-  />);
- }
- submit=()=>{
+ onClick=()=>{
+  this.putDataToDB(
+    this.state.name,
+    this.state.last,
+    this.state.student_age,
+    this.state.student_gender,
+    this.state.street_name,
+    this.state.city_name,
+    this.state.state_name,
+    this.state.zip_code,
+    this.state.sEmail,
+    this.state.student_phone,
+    this.state.parent_name,
+    this.state.parent_last_name,
+    this.state.parent_phone,
+    this.state.pEmail
+  )
   this.setState({redirect:true})
   
 }
@@ -89,7 +97,7 @@ export default class Register extends React.Component {
           </Header>
         </div>
         <div className={"container"}>
-          <Form onSubmit={this.submit} >
+          <Form  >
             <Grid stackable={true}>
               <Grid.Row columns={2}>
                 <Grid.Column>
@@ -330,26 +338,7 @@ export default class Register extends React.Component {
             <div className={"register-button-div"}>
               <Button
                 type={"submit"}
-                onClick={() =>
-                  this.putDataToDB(
-                    this.state.name,
-                    this.state.last,
-                    this.state.student_age,
-                    this.state.student_gender,
-                    this.state.street_name,
-                    this.state.city_name,
-                    this.state.state_name,
-                    this.state.zip_code,
-                    this.state.sEmail,
-                    this.state.student_phone,
-                    this.state.parent_name,
-                    this.state.parent_last_name,
-                    this.state.parent_phone,
-                    this.state.pEmail
-                  )
-                }
-                onClick={this.SuccessMessage}
-                
+                onClick={this.onClick}  
                 content={"Register"}
                 className={"register"}
               />
