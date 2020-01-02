@@ -36,7 +36,7 @@ router.post("/putData", (req, res) => {
     id,
     name,
     last,
-    student_age,
+    grade,
     student_gender,
     street_name,
     city_name,
@@ -47,12 +47,19 @@ router.post("/putData", (req, res) => {
     parent_name,
     parent_last_name,
     parent_phone,
-    pEmail
+    pEmail,
+    course_one,
+    course_two,
+    time_one,
+    time_two,
+    option1,
+    option2,
+    option3
   } = req.body;
 
   data.name = name;
   data.last = last;
-  data.student_age = student_age;
+  data.grade = grade;
   data.street_name = street_name;
   data.student_gender = student_gender;
   data.city_name = city_name;
@@ -65,14 +72,20 @@ router.post("/putData", (req, res) => {
   data.pEmail = pEmail;
   data.zip_code = zip_code;
   data.id = id;
+  data.course_one = course_one;
+  data.course_two = course_two;
+  data.time_one = time_one;
+  data.time_two = time_two;
+  data.option1 = option1;
+  data.option2 = option2;
+  data.option3 = option3;
   data.save(err => {
     if (err) return res.json({ success: false, error: err });
     return res.json({ success: true });
   });
 });
 router.post("/sendEmail", (req, res) => {
-
-  const{sender_name,sender_email, sender_tel, sender_message} = req.body;
+  const { sender_name, sender_email, sender_tel, sender_message } = req.body;
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -87,8 +100,8 @@ router.post("/sendEmail", (req, res) => {
     html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Message: ${sender_message}<br/>`
   };
   transporter.sendMail(mailOptions, (err, data) => {
-    if (err) return console.log('Message NOT Sent!')
-    return console.log('Message Sent!')
+    if (err) return console.log("Message NOT Sent!");
+    return console.log("Message Sent!");
   });
 });
 

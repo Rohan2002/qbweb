@@ -17,7 +17,14 @@ const DataSchema = new Schema(
     pEmail:String,
     parent_name: String,
     parent_last_name: String,
-    parent_phone: String
+    parent_phone: String,
+    course_one:String,
+    time_one:String,
+    course_two:String,
+    time_two:String,
+    option1:String,
+    option2:String,
+    option3:String
   },
   { timestamps: true }
 );
