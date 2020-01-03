@@ -10,7 +10,7 @@ export default class Summer2 extends React.Component {
       <section id="sum2">
         <div className={"sum20 container"}>
           <div className={"sum2-head-div"}>
-            <Header className={"sum2-head"}>Enrichment (Maximum Per Class: 10 Students)</Header>
+            <Header className={"sum2-head"}>Enrichment (Maximum Per Class: 15 Students)</Header>
           </div>
           <div>
             <Accordion defaultActiveKey="">

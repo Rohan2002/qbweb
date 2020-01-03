@@ -63,3 +63,24 @@
     white-space: normal;
     text-align: left;
 }
+.ui.button.news-button {
+    margin-top: 2em;
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    background: teal;
+    border-radius: 15px;
+    transition: 0.5s;
+    font-family: HK Grotesk Medium, sans-serif;
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+  .ui.button.news-button:hover {
+    transform: scale(1.1) perspective(1px);
+  }

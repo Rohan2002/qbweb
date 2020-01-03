@@ -33,6 +33,11 @@ export default class HomePage4 extends React.Component {
                     learning environment.
                   </Header>
                 </div>
+                <div>
+                  <Button href={"/#/register"} className={"news-button"}>
+                    Register
+                  </Button>
+                </div>
               </Grid.Row>
               <Grid.Row>
                 <div className={"news-break"}>
@@ -49,9 +54,12 @@ export default class HomePage4 extends React.Component {
                     </Header>
                     <Header className={"news-des"}>
                       Learn HTML/CSS, Javascript framework(React.js, Vue.js,
-                      Vanilla), MangoDB, and Node.js by credible experienced
+                      Vanilla), MongoDB, and Node.js by credible experienced
                       software developers{" "}
                     </Header>
+                    <Button href={"/#/register"} className={"news-button"}>
+                      Register
+                    </Button>
                   </div>
                 </div>
               </Grid.Row>
@@ -70,6 +78,9 @@ export default class HomePage4 extends React.Component {
                       Tests. There will also be Full Comprehensive Explanations
                       along with each test.
                     </Header>
+                    <Button href={"/#/register"} className={"news-button"}>
+                      Register
+                    </Button>
                   </div>
                 </div>
               </Grid.Row>

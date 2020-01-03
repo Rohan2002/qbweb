@@ -1,12 +1,29 @@
 import React from "react";
 import { Grid, Header, Button, Image, Icon } from "semantic-ui-react";
 import "./Summer-CSS/summer1.css";
-import Food from "../SummerImage/food.PNG";
-import Class from "../SummerImage/class.jpg";
-import Car from "../SummerImage/car.jpg";
 export default class Summer1 extends React.Component {
   render() {
     return (
+      <div>
+      <section id="sum0">
+        <div className={"container"}>
+          <div className={"summermain-header-div"}>
+          <Header className={"summermain-header"}>
+            Ready to Join QuakerBridge Learning Center <br/>Summer Course 2020?
+          </Header>
+          </div>
+          <div className={"summermain-button-div"}>
+          <Button href={"/#/register"}className={"summermain-button"}>
+           Register
+          </Button>
+          </div>
+          <div className={"summermain-button-div"}>
+          <Button href={"/brochure.pdf"} className={"summermain-button"}>
+           Brochure
+          </Button>
+          </div>
+        </div>
+      </section>
       <section id="sum1">
         <div className={"sum1 container"}>
           <div>
@@ -17,7 +34,7 @@ export default class Summer1 extends React.Component {
               <Grid.Row columns={3}>
                 <Grid.Column>
                   <div className={"image-summer-holder"}>
-                    <Image className={"image-summer"} src={Food}></Image>
+                    <Icon name='food' color='teal' size='massive'></Icon>
                   </div>
                   <Header className={"image-content"} as="h4">
                     <span className={"image-num"}>01</span>
@@ -26,16 +43,16 @@ export default class Summer1 extends React.Component {
                 </Grid.Column>
                 <Grid.Column>
                   <div className={"image-summer-holder"}>
-                    <Image className={"image-summer"} src={Class}></Image>
+                   <Icon name='book' color='teal' size='massive'></Icon>
                   </div>
                   <Header className={"image-content"} as="h4">
                     <span className={"image-num"}>02</span>
-                    Fun & Enlightning Classes
+                    Fun & Enlightening Classes
                   </Header>
                 </Grid.Column>
                 <Grid.Column>
                   <div className={"image-summer-holder"}>
-                    <Image className={"image-summer"} src={Car}></Image>
+                  <Icon name='car' color='teal' size='massive'></Icon>
                   </div>
                   <Header className={"image-content"} as="h4">
                     <span className={"image-num"}>03</span>
@@ -47,6 +64,7 @@ export default class Summer1 extends React.Component {
           </div>
         </div>
       </section>
+      </div>
     );
   }
 }

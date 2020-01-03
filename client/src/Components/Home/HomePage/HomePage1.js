@@ -13,8 +13,7 @@ export default class HomePage1 extends React.Component {
           <Header className={"name"}>QuakerBridge Learning Center</Header>
           <div className={"reg-button-contain"}>
             <Button
-              target={"blank"}
-              href={"https://rohandeshpande725226.typeform.com/to/M4XEyz"}
+              href={"/#/register"}
               className={"reg-button"}
             >
               Register

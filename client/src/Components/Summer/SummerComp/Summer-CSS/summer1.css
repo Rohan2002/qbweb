@@ -1,49 +1,88 @@
-.sum1
-{
-    padding-top: 3em;
-    padding-bottom: 3em;
+#sum0 {
+  height: 100vh;
+  background-image: url("../summer.png");
+  background-size: cover;
 }
-.ui.header.offer-header
-{
-    color: #EF6286;
-    font-size: 2.1em;
-    font-weight: 500;
-    margin: 0;
-    text-transform: uppercase;
-    text-align: center;
- 
+@media only screen and (max-width: 700px) {
+  #sum0 {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1200px) {
+  #sum0 {
+    height: auto;
+  }
+}
+#sum1 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.summermain-header-div {
+  padding-top: 30vh;
+}
+.ui.header.summermain-header {
+  color: white;
+  font-size: 2.5em;
+  font-family: HK Grotesk Medium, sans-serif;
+  margin: 0;
+  text-align: left;
+}
+.summermain-button-div {
+  margin-top: 3em;
+  display: inline-block;
+  margin-right: 2em;
+}
+.ui.button.summermain-button {
+  white-space: nowrap;
+  z-index: 1;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  width: auto;
+  padding: 15px 40px;
+  border: none;
+  background: teal;
+  border-radius: 15px;
+  transition: 0.5s;
+  font-family: HK Grotesk Medium, sans-serif;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+.ui.button.summermain-button:hover {
+  transform: scale(1.1) perspective(1px);
 }
 
-.image-grid
-{
-    text-align: center;
-    padding-top: 2em;
+.ui.header.offer-header {
+  color: #ef6286;
+  font-size: 2.1em;
+  font-family: HK Grotesk Medium, sans-serif;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
 }
-.ui.image.image-summer
-{
-    width:  30em;
-    height: 20em;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-    image-rendering: pixelated;
+
+.image-grid {
+  text-align: center;
+  padding-top: 3em;
 }
-.image-num
-{
-    background: #05A6B3;
-    color: #fff;
-    padding: 9px 15px;
-    margin-right:5%;
+.image-summer-holder {
+  margin-bottom: 3em;
 }
-.ui.header.image-content
-{
-    color: #05a6b3;
-    padding: 10px 0px;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: HK Grotesk Medium, sans-serif;
-    background: rgba(34, 34, 34, 0.08);
-    text-align: left;
-    margin: 0;
-    
+.image-num {
+  background: #05a6b3;
+  color: #fff;
+  padding: 9px 15px;
+  margin-right: 5%;
+}
+.ui.header.image-content {
+  color: #05a6b3;
+  padding: 10px 0px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: HK Grotesk Medium, sans-serif;
+  background: rgba(34, 34, 34, 0.08);
+  text-align: left;
+  margin: 0;
 }

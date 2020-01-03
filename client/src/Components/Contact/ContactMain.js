@@ -1,4 +1,5 @@
 import React from "react";
+import Map from "./ContactComp/ContactMap";
 import Contact from "./ContactComp/Contact";
 
 import Footer from "../Footer/Footer";
@@ -11,6 +12,7 @@ export default class ContactMain extends React.Component {
     return (
       <div className="contain_all">
         <NavBar />
+        <Map/>
         <Contact />
         <Footer/>
       </div>

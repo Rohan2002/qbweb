@@ -10,28 +10,20 @@ const app = express();
 app.use(cors());
 const router = express.Router();
 
-// this is our MongoDB database
 const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
-
-// connects our back end code with the database
-mongoose.connect(dbRoute, { useNewUrlParser: true });
+mongoose.connect(dbRoute, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let db = mongoose.connection;
 
 db.once("open", () => console.log("connected to the database"));
-
-// checks if connection with the database is successful
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-// (optional) only made for logging and
-// bodyParser, parses the request body to be a readable json format
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger("dev"));
 
 router.post("/putData", (req, res) => {
   let data = new Data();
-  console.log(req.connection.remoteAddress);
   const {
     id,
     name,
@@ -56,6 +48,13 @@ router.post("/putData", (req, res) => {
     option2,
     option3
   } = req.body;
+
+  if ((!id && id !== 0) || !name|| !last|| !grade|| !student_gender|| !street_name|| !city_name|| !state_name|| !zip_code|| !sEmail|| !student_phone|| !parent_name|| !parent_last_name|| !parent_phone|| !pEmail|| !course_one|| !course_two|| !time_one|| !time_two|| !option1|| !option2|| !option3) {
+    return res.json({
+      success: false,
+      error: 'INVALID INPUTS',
+    });
+  }
 
   data.name = name;
   data.last = last;
