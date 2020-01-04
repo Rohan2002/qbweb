@@ -1,0 +1,36 @@
+#faq
+{
+    background-color: rgba(34, 34, 34, 0.09);
+    height:auto;
+}
+.faqmain
+{
+    padding-top: 3em;
+    padding-bottom:3em;
+}
+
+.ui.header.faq-header
+{
+    font-size:2.1em;
+    color: #EF6286;
+    font-family: HK Grotesk Medium, sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.ui.header.answer-header
+{
+    font-size:15px;
+    color:rgb(179, 177, 177);
+    font-family: HK Grotesk Medium, sans-serif;
+    white-space: normal;
+    text-align: left;
+}
+.question
+{
+    margin-top: 3em;
+}
+.question-content
+{
+    margin-top: 2em;
+}

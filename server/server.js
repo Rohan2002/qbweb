@@ -78,7 +78,26 @@ router.post("/putData", (req, res) => {
   data.option1 = option1;
   data.option2 = option2;
   data.option3 = option3;
+  console.log(sEmail)
   data.save(err => {
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "qblearninginfo@gmail.com",
+        pass: "qbcls2020"
+      }
+    });
+    let mailOptions = {
+      from: "qblearninginfo@gmail.com",
+      to: `${sEmail}`,
+      subject: `QuakerBridge Registration confirmation for ${name} ${last}`,
+      html: `Thank You for Registering to QuakerBrige Learning center <br/> Name: ${name} ${last}<br/> Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+    };
+    transporter.sendMail(mailOptions, (err, data) => {
+      if (err) return console.log("Message NOT Sent!:Registration");
+      return console.log("Message Sent: Registration!");
+    });
+
     if (err) return res.json({ success: false, error: err });
     return res.json({ success: true });
   });

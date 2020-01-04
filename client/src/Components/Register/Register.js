@@ -86,7 +86,7 @@ export default class Register extends React.Component {
     });
   };
 
-  onClick = () => {
+  onSubmit= () =>{
     this.putDataToDB(
       this.state.name,
       this.state.last,
@@ -133,7 +133,7 @@ export default class Register extends React.Component {
           </Header>
         </div>
         <div className={"container"}>
-          <Form>
+          <Form onSubmit={this.onSubmit}>
             <Grid stackable={true}>
               <Grid.Row columns={2}>
                 <Grid.Column>
@@ -624,7 +624,6 @@ export default class Register extends React.Component {
             <div className={"register-button-div"}>
               <Button
                 type={"submit"}
-                onSubmit={this.onClick}
                 content={"Register"}
                 className={"register"}
               />

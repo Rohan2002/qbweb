@@ -34,20 +34,21 @@ export default class Summer1 extends React.Component {
               <Grid.Row columns={3}>
                 <Grid.Column>
                   <div className={"image-summer-holder"}>
-                    <Icon name='food' color='teal' size='massive'></Icon>
+                    <Icon name='book' color='teal' size='massive'></Icon>
                   </div>
                   <Header className={"image-content"} as="h4">
                     <span className={"image-num"}>01</span>
-                    Delicious Food
+                    Excellent Programs
+                    
                   </Header>
                 </Grid.Column>
                 <Grid.Column>
                   <div className={"image-summer-holder"}>
-                   <Icon name='book' color='teal' size='massive'></Icon>
+                   <Icon name='food' color='teal' size='massive'></Icon>
                   </div>
                   <Header className={"image-content"} as="h4">
                     <span className={"image-num"}>02</span>
-                    Fun & Enlightening Classes
+                    Delicious Food
                   </Header>
                 </Grid.Column>
                 <Grid.Column>

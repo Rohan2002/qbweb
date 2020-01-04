@@ -7,7 +7,7 @@ export default class HomePage1 extends React.Component {
       <section id="home1">
         <div className={"homepage container"}>
           <Header className={"hook"}>
-            Education, Enlightment, and Excellence
+            We are Commited to Education, Enlightment, and Excellence
           </Header>
 
           <Header className={"name"}>QuakerBridge Learning Center</Header>

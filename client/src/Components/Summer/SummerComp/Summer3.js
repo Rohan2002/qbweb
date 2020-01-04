@@ -11,7 +11,7 @@ export default class Summer2 extends React.Component {
         <div className={"sum30 container"}>
           <div className={"sum3-head-div"}>
             <Header className={"sum3-head"}>
-              Option II (Maximum Per Class: 15 Students)
+              Option II (Maximum Per Class: 14 Students)
             </Header>
           </div>
           <div>

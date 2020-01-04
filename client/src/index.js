@@ -6,6 +6,7 @@ import Summer from "./Components/Summer/Summer";
 import About from "./Components/About/About";
 import Register from "./Components/Register/MainReg";
 import College from "./Components/College/CollegeMain";
+import FAQ from "./Components/FAQ/FAQMain";
 import Contact from "./Components/Contact/ContactMain";
 const Routers = (
   <Router>
@@ -15,6 +16,7 @@ const Routers = (
       <Route exact path="/about" component={About} />{" "}
       <Route exact path="/college-program" component={College} />{" "}
       <Route exact path="/contact" component={Contact} />{" "}
+      <Route exact path="/faq" component={FAQ} />{" "}
       <Route exact path="/register" component={Register} />{" "}
     </Switch>
   </Router>

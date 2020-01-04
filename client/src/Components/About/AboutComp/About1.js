@@ -3,8 +3,9 @@ import { Grid, Header, Image, Icon } from "semantic-ui-react";
 import AboutImage from "../AboutImage/students.jpg";
 import Class from "../AboutImage/class.jpg";
 
-import Toefel from '../AboutImage/toefel.png';
-import Middle from '../AboutImage/middle.png';
+import Toefel from '../AboutImage/tof-new.png';
+import Middle from '../AboutImage/middle-new.png';
+import Praxis from '../AboutImage/praxis.jpg';
 import QB from '../AboutImage/qbhacks.png';
 import "./About1.css";
 export default class About1 extends React.Component {
@@ -98,14 +99,30 @@ export default class About1 extends React.Component {
               </Grid>
             </div>
           </div>
-          <div className={"acc-partners"}>
+          
+          <section id={"acc-partners"}>
           <div className={"acc-header-div"}>
               <Header className={"about-headers"}>Accredited partners</Header>
             </div>
             <Grid>
-              <Grid.Row stackable={true} columns={3}>
+              <Grid.Row stackable={true} columns={4}>
                 <Grid.Column>
                 <a href={"https://www.ets.org/toefl/ibt/about"} target="_blank" rel="noopener">
+                  <Image src={Praxis}>
+
+                  </Image>
+                </a>
+                </Grid.Column>
+                
+                <Grid.Column>
+                <a href={"https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"}target="_blank" rel="noopener">
+                  <Image src={Middle}>
+
+                  </Image>
+                </a>
+                </Grid.Column>
+                <Grid.Column>
+                <a href={"https://qbhacks.org/"} target="_blank" rel="noopener">
                   <Image src={Toefel}>
 
                   </Image>
@@ -118,18 +135,11 @@ export default class About1 extends React.Component {
                   </Image>
                 </a>
                 </Grid.Column>
-                <Grid.Column>
-                <a href={"https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"}target="_blank" rel="noopener">
-                  <Image src={Middle}>
-
-                  </Image>
-                </a>
-                </Grid.Column>
                 
               </Grid.Row>
             </Grid>
+          </section>
           </div>
-        </div>
       </section>
     );
   }

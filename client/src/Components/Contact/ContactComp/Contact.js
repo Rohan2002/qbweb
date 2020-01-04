@@ -20,7 +20,7 @@ export default class ContactMain extends React.Component {
     });
   };
 
-  onClick = () => {
+  onSubmit = () => {
     this.sendEmail()
     this.setState({ message_sent: true })
   };
@@ -39,7 +39,7 @@ export default class ContactMain extends React.Component {
             <Header className={"contact-header"}>Contact Us</Header>
           </div>
           <div className={"contactform-div"}>
-            <Form>
+            <Form onSubmit={this.onSubmit}>
               <Grid columns={2} stackable={true}>
                 <Grid.Column>
                   <Form.Field>
@@ -88,7 +88,7 @@ export default class ContactMain extends React.Component {
                       }
                       required
                     ></textarea>
-                    <Button onClick={this.onClick} className={"send-button"}>
+                    <Button className={"send-button"}>
                       Send
                     </Button>
                   </Form.Field>
