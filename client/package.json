@@ -17,7 +17,7 @@
     "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
-    "start": "PORT=8000 react-scripts start",
+    "start": "PORT=80 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -31,7 +31,7 @@
       "not dead",
       "not op_mini all"
     ],
-    "proxy":"http://localhost:8080",
+    "proxy":"http://8.9.37.234:8080",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
