@@ -83,7 +83,7 @@ router.post("/putData", (req, res) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "qlc4044@gmail.com",
+        user: "qblearninginfo@gmail.com",
         pass: "qbcls2020"
       }
     });
