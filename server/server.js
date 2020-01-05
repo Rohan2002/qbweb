@@ -83,7 +83,7 @@ router.post("/putData", (req, res) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "qblearninginfo@gmail.com",
+        user: "qlc4044@gmail.com",
         pass: "qbcls2020"
       }
     });
@@ -91,7 +91,7 @@ router.post("/putData", (req, res) => {
       from: "qblearninginfo@gmail.com",
       to: `${sEmail}`,
       subject: `QuakerBridge Registration confirmation for ${name} ${last}`,
-      html: `Thank You for Registering to QuakerBrige Learning center <br/> Name: ${name} ${last}<br/> Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+      html: `Thank You for Registering to QuakerBrige Learning center: Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
     };
     transporter.sendMail(mailOptions, (err, data) => {
       if (err) return console.log("Message NOT Sent!:Registration");

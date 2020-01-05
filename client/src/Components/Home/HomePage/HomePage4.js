@@ -18,11 +18,12 @@ export default class HomePage4 extends React.Component {
               <Grid.Row>
                 <div className={"news-space"}>
                   <Header className={"headline"}>
-                    After School Chinese Program (Tuesday and Thursday)
+                    After School Chinese Program
                   </Header>
                   <Header className={"news-des"}>
                     Start: January 18, 2020 <br />
                     Length: 15 weeks
+                    Time: Every Tuesday and Thursday Afternoon
                   </Header>
                 </div>
                 <div className={"news-space"}>
@@ -43,14 +44,14 @@ export default class HomePage4 extends React.Component {
                 <div className={"news-break"}>
                   <div className={"news-space"}>
                     <Header className={"headline"}>
-                      Introduction to Fullstack Web Development(Every Saturday
-                      2-4pm)
+                      Introduction to Fullstack Web Development
                     </Header>
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
                       Start: January 18, 2020 <br />
                       Length: 15 weeks
+                      Time: Every Saturday Afternoon
                     </Header>
                     <Header className={"news-des"}>
                       Learn HTML/CSS, Javascript framework(React.js, Vue.js,
@@ -71,7 +72,8 @@ export default class HomePage4 extends React.Component {
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
                       Start: January 18, 2020 <br />
-                      Length: 10 weeks
+                      Length: 15 Weeks
+                      Time: Every Wednesday and Friday, Morning and Afternoon
                     </Header>
                     <Header className={"news-des"}>
                       There will be a Diagnostic Test, and Full Length Practice
