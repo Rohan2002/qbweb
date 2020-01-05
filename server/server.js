@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 const router = express.Router();
 
-const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
+const dbRoute = "mongodb://127.0.0.1:27017/QB";
 mongoose.connect(dbRoute, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let db = mongoose.connection;
