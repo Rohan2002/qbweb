@@ -14,7 +14,7 @@ const router = express.Router();
 
 const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
 
-mongoose.connect(dbRoute, { useNewUrlParser: true});
+mongoose.connect(dbRoute, { useNewUrlParser: true });
 
 let db = mongoose.connection;
 
@@ -52,10 +52,33 @@ router.post("/putData", (req, res) => {
     option3
   } = req.body;
 
-  if ((!id && id !== 0) || !name|| !last|| !grade|| !student_gender|| !street_name|| !city_name|| !state_name|| !zip_code|| !sEmail|| !student_phone|| !parent_name|| !parent_last_name|| !parent_phone|| !pEmail|| !course_one|| !course_two|| !time_one|| !time_two|| !option1|| !option2|| !option3) {
+  if (
+    (!id && id !== 0) ||
+    !name ||
+    !last ||
+    !grade ||
+    !student_gender ||
+    !street_name ||
+    !city_name ||
+    !state_name ||
+    !zip_code ||
+    !sEmail ||
+    !student_phone ||
+    !parent_name ||
+    !parent_last_name ||
+    !parent_phone ||
+    !pEmail ||
+    !course_one ||
+    !course_two ||
+    !time_one ||
+    !time_two ||
+    !option1 ||
+    !option2 ||
+    !option3
+  ) {
     return res.json({
       success: false,
-      error: 'INVALID INPUTS',
+      error: "INVALID INPUTS"
     });
   }
 
@@ -81,7 +104,7 @@ router.post("/putData", (req, res) => {
   data.option1 = option1;
   data.option2 = option2;
   data.option3 = option3;
-  console.log(sEmail)
+  console.log(sEmail);
   data.save(err => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
@@ -94,19 +117,40 @@ router.post("/putData", (req, res) => {
       from: "qblearninginfo@gmail.com",
       to: `${sEmail}`,
       subject: `QuakerBridge Registration confirmation for ${name} ${last}`,
-      html: `Thank You for Registering to QuakerBrige Learning center <br/> Course one : ${course_one} Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+      html: `Thank You for Registering to QuakerBrige Learning center courses. 
+              <br/> The first course you have registered for is ${course_one} for the ${time_one} slot.
+              <br/> The second course you have registered for is  ${course_two} for the ${time_two} slot.
+              <br/> Please contact QuakerBridge Learning Center for an appointment <a href="http://quaker-bridge.org/#/contact">here</a>
+              <br/> Thank You
+              <br/> Best Wishes,
+              <br/> QuakerBridge Learning Center Team
+              <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
     };
     let mailOptions2 = {
       from: "qblearninginfo@gmail.com",
       to: `${pEmail}`,
       subject: `QuakerBridge Registration confirmation for your child ${name} ${last}`,
-      html: `Thank You for Registering your child to QuakerBrige Learning center <br/> Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+      html: `Thank You for Registering to QuakerBrige Learning center courses. 
+      <br/> The first course you have registered for is ${course_one} for the ${time_one} slot.
+      <br/> The second course you have registered for is  ${course_two} for the ${time_two} slot.
+      <br/> Please contact QuakerBridge Learning Center for an appointment <a href="http://quaker-bridge.org/#/contact">here</a>
+      <br/> Thank You
+      <br/> Best Wishes,
+      <br/> QuakerBridge Learning Center Team
+      <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
     };
     let mailOptions3 = {
       from: "qblearninginfo@gmail.com",
       to: `qblearninginfo@gmail.com`,
-      subject: `QuakerBridge Registration confirmation for  ${name} ${last}`,
-      html: `Thank You for Registering your child to QuakerBrige Learning center <br/> Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+      subject: `QuakerBridge Registration confirmation for ${name} ${last}`,
+      html: `Thank You for Registering to QuakerBrige Learning center courses. 
+      <br/> The first course you have registered for is ${course_one} for the ${time_one} slot.
+      <br/> The second course you have registered for is  ${course_two} for the ${time_two} slot.
+      <br/> Please contact QuakerBridge Learning Center for an appointment <a href="http://quaker-bridge.org/#/contact">here</a>
+      <br/> Thank You
+      <br/> Best Wishes,
+      <br/> QuakerBridge Learning Center Team
+      <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
     };
     transporter.sendMail(mailOptions, (err, data) => {
       if (err) return console.log("Message NOT Sent to student !:Registration");
@@ -117,7 +161,8 @@ router.post("/putData", (req, res) => {
       return console.log("Message Sent to parent: Registration!");
     });
     transporter.sendMail(mailOptions3, (err, data) => {
-      if (err) return console.log("Message NOT Sent to QuakerBridge!:Registration");
+      if (err)
+        return console.log("Message NOT Sent to QuakerBridge!:Registration");
       return console.log("Message Sent to QuakerBridge: Registration!");
     });
 
@@ -127,6 +172,8 @@ router.post("/putData", (req, res) => {
 });
 router.post("/sendEmail", (req, res) => {
   const { sender_name, sender_email, sender_tel, sender_message } = req.body;
+  const sendID = 1000;
+
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -140,9 +187,31 @@ router.post("/sendEmail", (req, res) => {
     subject: `QuakerBridge Contact Form Response from ${sender_name}`,
     html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Message: ${sender_message}<br/>`
   };
+  let mailOptions2 = {
+    from: "qblearninginfo@gmail.com",
+    to: `${sender_email}`,
+    subject: `QuakerBridge Contact Form Response from ${sender_name}, [id: ${sendID}]`,
+    html: `Thank you for contacting QuakerBridge Learning Center, we will reply to your email or contact you by phone as soon as possible.
+          <br/>Name: ${sender_name}
+          <br/> Email: ${sender_email}
+          <br/> Phone: ${sender_tel}
+          <br/> Message: ${sender_message}
+          <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
+  };
   transporter.sendMail(mailOptions, (err, data) => {
-    if (err) return console.log("Message NOT Sent!");
-    return console.log("Message Sent!");
+    if (err) {
+      return console.log("Message NOT Sent!");
+    } else {
+      return console.log("Message Sent!");
+    }
+  });
+  transporter.sendMail(mailOptions2, (err, data) => {
+    if (err) {
+      return console.log("Message NOT Sent!");
+    } else {
+      sendID++;
+      return console.log("Message Sent!");
+    }
   });
 });
 

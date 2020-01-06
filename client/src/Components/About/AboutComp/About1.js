@@ -104,8 +104,8 @@ export default class About1 extends React.Component {
           <div className={"acc-header-div"}>
               <Header className={"about-headers"}>Accredited partners</Header>
             </div>
-            <Grid>
-              <Grid.Row stackable={true} columns={4}>
+            <Grid stackable={true}>
+              <Grid.Row columns={4}>
                 <Grid.Column>
                 <a href={"https://www.ets.org/toefl/ibt/about"} target="_blank" rel="noopener">
                   <Image src={Praxis}>
