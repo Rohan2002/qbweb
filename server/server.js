@@ -10,8 +10,11 @@ const app = express();
 app.use(cors());
 const router = express.Router();
 
-const dbRoute = "mongodb://127.0.0.1:27017/QB";
-mongoose.connect(dbRoute, { useNewUrlParser: true, useUnifiedTopology: true });
+//const dbRoute = "mongodb://127.0.0.1:27017/QB";
+
+const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
+
+mongoose.connect(dbRoute, { useNewUrlParser: true});
 
 let db = mongoose.connection;
 
@@ -91,11 +94,31 @@ router.post("/putData", (req, res) => {
       from: "qblearninginfo@gmail.com",
       to: `${sEmail}`,
       subject: `QuakerBridge Registration confirmation for ${name} ${last}`,
-      html: `Thank You for Registering to QuakerBrige Learning center: Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+      html: `Thank You for Registering to QuakerBrige Learning center <br/> Course one : ${course_one} Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+    };
+    let mailOptions2 = {
+      from: "qblearninginfo@gmail.com",
+      to: `${pEmail}`,
+      subject: `QuakerBridge Registration confirmation for your child ${name} ${last}`,
+      html: `Thank You for Registering your child to QuakerBrige Learning center <br/> Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
+    };
+    let mailOptions3 = {
+      from: "qblearninginfo@gmail.com",
+      to: `qblearninginfo@gmail.com`,
+      subject: `QuakerBridge Registration confirmation for  ${name} ${last}`,
+      html: `Thank You for Registering your child to QuakerBrige Learning center <br/> Course one : ${course_one}<br/> Time for Course one ${time_one}<br/> Course two : ${course_two}<br/> Time for Course two ${time_two}`
     };
     transporter.sendMail(mailOptions, (err, data) => {
-      if (err) return console.log("Message NOT Sent!:Registration");
-      return console.log("Message Sent: Registration!");
+      if (err) return console.log("Message NOT Sent to student !:Registration");
+      return console.log("Message Sent to student: Registration!");
+    });
+    transporter.sendMail(mailOptions2, (err, data) => {
+      if (err) return console.log("Message NOT Sent to parent!:Registration");
+      return console.log("Message Sent to parent: Registration!");
+    });
+    transporter.sendMail(mailOptions3, (err, data) => {
+      if (err) return console.log("Message NOT Sent to QuakerBridge!:Registration");
+      return console.log("Message Sent to QuakerBridge: Registration!");
     });
 
     if (err) return res.json({ success: false, error: err });

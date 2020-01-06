@@ -119,7 +119,7 @@ export default class Register extends React.Component {
           <Message
             success
             header="Registration Form Submitted"
-            content="Thank you for registering QuakerBridge Learning Center! Please Contact Us for an appointment"
+            content="Thank you for registering to QuakerBridge Learning Center and Please Contact Us for an appointment to meet. Expect a registration confirmation mail in 2-3 minutes. If you did not recieve the email, please check the spam inbox."
           />
           <Contact />
         </div>
