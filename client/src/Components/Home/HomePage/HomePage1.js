@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Header, Button, Image } from "semantic-ui-react";
+import {  Header, Button } from "semantic-ui-react";
 import "./Home-CSS/Home1.css";
 export default class HomePage1 extends React.Component {
   render() {

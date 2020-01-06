@@ -1,10 +1,9 @@
 import React from "react";
-import { Image, Button, Header } from "semantic-ui-react";
+import { Image} from "semantic-ui-react";
 import "./NavBar.css";
 import Logo from "./nav-image/qb.png";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 export default class NavBar extends React.Component {
   state = { activeItem: " " };
 

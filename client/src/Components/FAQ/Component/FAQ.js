@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Header, Image, Icon } from "semantic-ui-react";
+import {  Header, Icon } from "semantic-ui-react";
 import "./FAQ.css";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";

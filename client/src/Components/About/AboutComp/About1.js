@@ -107,7 +107,7 @@ export default class About1 extends React.Component {
             <Grid>
               <Grid.Row stackable={true} columns={4}>
                 <Grid.Column>
-                <a href={"https://www.ets.org/toefl/ibt/about"} target="_blank" rel="noopener">
+                <a  rel="noopener noreferrer" target="_blank"  href={"https://www.ets.org/praxis/"} rel="noopener noreferrer" target="_blank" >
                   <Image src={Praxis}>
 
                   </Image>
@@ -115,21 +115,21 @@ export default class About1 extends React.Component {
                 </Grid.Column>
                 
                 <Grid.Column>
-                <a href={"https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"}target="_blank" rel="noopener">
+                <a  rel="noopener noreferrer" target="_blank"  href={"https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"}>
                   <Image src={Middle}>
 
                   </Image>
                 </a>
                 </Grid.Column>
                 <Grid.Column>
-                <a href={"https://qbhacks.org/"} target="_blank" rel="noopener">
+                <a  rel="noopener noreferrer" target="_blank"  href={"https://www.ets.org/toefl"} >
                   <Image src={Toefel}>
 
                   </Image>
                 </a>
                 </Grid.Column>
                 <Grid.Column>
-                <a href={"https://qbhacks.org/"} target="_blank" rel="noopener">
+                <a  rel="noopener noreferrer" target="_blank"  href={"https://qbhacks.org/"} >
                   <Image src={QB}>
 
                   </Image>
