@@ -54,8 +54,8 @@ export default class HomePage4 extends React.Component {
                       Time: Every Saturday Afternoon
                     </Header>
                     <Header className={"news-des"}>
-                      Learn HTML/CSS, Javascript framework(React.js, Vue.js,
-                      Vanilla), MongoDB, and Node.js by credible experienced
+                      Learn HTML/CSS, Javascript frameworks(React.js, Vue.js,
+                      Vanilla), MongoDB, and Node.js by credible and experienced
                       software developers{" "}
                     </Header>
                     <Button href={"/#/register"} className={"news-button"}>

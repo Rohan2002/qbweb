@@ -60,7 +60,7 @@ export default class Register extends React.Component {
       ++idToBeAdded;
     }
 
-    axios.post("http://8.9.37.234:8080/api/putData", {
+    axios.post("/api/putData", {
       id: idToBeAdded,
       name: name,
       last: last,

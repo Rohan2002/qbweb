@@ -12,12 +12,13 @@ export default class ContactMain extends React.Component {
   };
 
   sendEmail = () => {
-    axios.post("http://8.9.37.234:8080/api/sendEmail", {
+    axios.post("/api/sendEmail", {
       sender_name: this.state.sender_name,
       sender_email: this.state.sender_email,
       sender_tel: this.state.sender_tel,
       sender_message: this.state.sender_message
     });
+		console.log('sent!');
   };
 
   onSubmit = () => {

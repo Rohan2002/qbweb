@@ -50,7 +50,14 @@ export default class Footer extends React.Component {
                       rel="noopener"
                       href="https://www.linkedin.com/in/rohan-deshpande-994b23160/"
                     >
-                      Rohan Deshpande
+                      Rohan Deshpande,
+                    </a>
+		<a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://www.linkedin.com/in/nabeel-ahmed-773b78188/"
+                    >
+                      Nabeel Ahmed
                     </a>
                   </Header>
                   <div className={"social-hold"}>
