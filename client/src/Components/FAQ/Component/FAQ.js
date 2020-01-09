@@ -16,7 +16,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="0">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       When did the Quakerbridge Learning Center begin their
                       summer program?{" "}
                       <span className={"icon-holder"}>
@@ -40,7 +40,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="10">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       What is Option II?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -72,7 +72,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="1">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       How do we register?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -96,7 +96,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="2">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       Is there a discount for early registration?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -120,7 +120,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="3">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       What are the dates for the 2020 six weeks program{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -143,7 +143,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="4">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       What are the qualifications of the teachers?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -164,7 +164,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="5">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       What is the student teacher ratio?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -184,7 +184,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="5">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       Are there report cards?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -209,7 +209,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="7">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       Is there provision for lunch and transportation?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -229,7 +229,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="8">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       Do students purchase textbooks or other materials?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
@@ -249,7 +249,7 @@ export default class FAQ extends React.Component {
               <div className={"question-content"}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="9">
-                    <Header className={"question-header"}>
+                    <Header className={"faq-question-header"}>
                       Are there any new courses this year?{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />

@@ -12,16 +12,18 @@ export default class Summer1 extends React.Component {
             Ready to Join QuakerBridge Learning Center <br/>Summer Course 2020?
           </Header>
           </div>
-          <div className={"summermain-button-div"}>
+          <Grid className={"button-grid"} stackable={true} columns={5}>
+            <Grid.Column>
           <Button href={"/#/register"}className={"summermain-button"}>
            Register
           </Button>
-          </div>
-          <div className={"summermain-button-div"}>
+          </Grid.Column>
+          <Grid.Column>
           <Button href={"/brochure.pdf"} className={"summermain-button"}>
            Brochure
           </Button>
-          </div>
+          </Grid.Column>
+          </Grid>
         </div>
       </section>
       <section id="sum1">

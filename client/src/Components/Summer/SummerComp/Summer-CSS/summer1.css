@@ -13,6 +13,10 @@
     height: auto;
   }
 }
+#sum0 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
 #sum1 {
   padding-top: 3em;
   padding-bottom: 3em;
@@ -27,10 +31,24 @@
   margin: 0;
   text-align: left;
 }
-.summermain-button-div {
-  margin-top: 3em;
-  display: inline-block;
-  margin-right: 2em;
+@media only screen and (max-width: 700px) {
+  .summermain-header-div {
+    padding-top: 0vh;
+  }
+  .ui.header.summermain-header {
+    font-size: 2em;
+    text-align: center;
+  }
+}
+.ui.grid.button-grid
+{
+  margin-top: 2em;
+}
+@media only screen and (max-width: 700px) {
+.ui.grid.button-grid
+{
+  text-align: center;
+}
 }
 .ui.button.summermain-button {
   white-space: nowrap;

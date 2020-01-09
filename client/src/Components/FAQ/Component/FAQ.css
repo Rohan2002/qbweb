@@ -18,6 +18,14 @@
     letter-spacing: 1px;
     text-align: center;
 }
+.ui.header.faq-question-header
+{
+    font-size:1.5em;
+    color: #EF6286;
+    font-family: HK Grotesk Medium, sans-serif;
+    white-space: normal;
+    letter-spacing: 1px;
+}
 .ui.header.answer-header
 {
     font-size:15px;
