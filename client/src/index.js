@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Summer from "./Components/Summer/Summer";
 import About from "./Components/About/About";
