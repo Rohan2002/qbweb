@@ -1,5 +1,6 @@
 import React from "react";
-import { Grid, Header, Button, Image } from "semantic-ui-react";
+import { Header, Button } from "semantic-ui-react";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Home-CSS/Home1.css";
 import Carousel from "semantic-ui-carousel-react";
 const HomePage1 = () => {
@@ -33,13 +34,46 @@ const HomePage1 = () => {
               </Header>
               <Header className={"name"}>January 18th, 2020</Header>
               <div className={"reg-button-contain"}>
-                <Button href={"/#home4"} className={"reg-button"}>
-                  Learn More
-                </Button>
+                <Link className={"link-home4"} to="/#home4">
+                  <Button className={"reg-button"}>Learn More</Button>
+                </Link>
               </div>
             </div>
           </section>
-
+        );
+      }
+    },
+    {
+      render: () => {
+        return (
+          <section id="home1-a0">
+            <div className={"homepage container"}>
+              <Header className={"hook"}>Join Our SAT/ACT Classes.</Header>
+              <Header className={"name"}>January 18th, 2020</Header>
+              <div className={"reg-button-contain"}>
+              <Link className={"link-home4"} to="/#home4">
+                  <Button className={"reg-button"}>Learn More</Button>
+                </Link>
+              </div>
+            </div>
+          </section>
+        );
+      }
+    },
+    {
+      render: () => {
+        return (
+          <section id="home1-a1">
+            <div className={"homepage container"}>
+              <Header className={"hook"}>Join Our Chinese Program.</Header>
+              <Header className={"name"}>January 18th, 2020</Header>
+              <div className={"reg-button-contain"}>
+              <Link className={"link-home4"} to="/#home4">
+                  <Button className={"reg-button"}>Learn More</Button>
+                </Link>
+              </div>
+            </div>
+          </section>
         );
       }
     }
@@ -47,7 +81,7 @@ const HomePage1 = () => {
   return (
     <Carousel
       elements={elements}
-      duration={3000}
+      duration={4000}
       animation="fly right"
       showNextPrev={false}
       showIndicators={true}
