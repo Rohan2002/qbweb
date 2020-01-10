@@ -183,7 +183,7 @@ export default class FAQ extends React.Component {
               </div>
               <div className={"question-content"}>
                 <Card>
-                  <Accordion.Toggle as={Card.Header} eventKey="5">
+                  <Accordion.Toggle as={Card.Header} eventKey="6">
                     <Header className={"faq-question-header"}>
                       Are there report cards?{" "}
                       <span className={"icon-holder"}>
@@ -260,7 +260,7 @@ export default class FAQ extends React.Component {
                     <Card.Body>
                       <Header className={"answer-header"}>
                         Yes, two new Option II classes: Introduction to Computer
-                        Science (Java) and American Studies I, Honors.
+                        Science (Java) and American Studies I Honors.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>

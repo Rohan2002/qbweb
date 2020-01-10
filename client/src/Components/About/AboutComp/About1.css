@@ -21,7 +21,7 @@
 .ui.header.mission
 {
     font-size:1.2em;
-    color:rgb(179, 177, 178);
+    color:black;
     font-family: HK Grotesk Medium, sans-serif;
     white-space: normal;
     letter-spacing: 1px;
@@ -57,7 +57,7 @@
 .ui.header.vision-goals
 {
     font-size:1em;
-    color:rgb(179, 177, 178);
+    color:black;
     font-family: HK Grotesk Medium, sans-serif;
     white-space: normal;
     letter-spacing: 1px;
@@ -80,6 +80,5 @@
 }
 #acc-partners
 {
-    background-color: white;
     padding-top: 5em;
 }

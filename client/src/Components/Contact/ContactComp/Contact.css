@@ -24,6 +24,10 @@
     width: 100%;
 }
 
+.contact-left
+{
+    margin-top: -3em;
+}
 /*Form*/
 .contactform-div
 {

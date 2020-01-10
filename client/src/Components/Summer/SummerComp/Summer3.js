@@ -35,12 +35,15 @@ export default class Summer2 extends React.Component {
                               des={
                                 "Students study the real number system, practice solving equations and inequalities, and learn polynomials and exponents."
                               }
-                              grade={"High School"}
+                              grade={"8 and above"}
                             ></Summer>
 
                             <div>
-                              <Button className={"syllabus-button"} href={"/alg1.pdf"}>
-                                    Syllabus
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/alg1.pdf"}
+                              >
+                                Syllabus
                               </Button>
                             </div>
                           </Card.Body>
@@ -68,8 +71,11 @@ export default class Summer2 extends React.Component {
                               grade={"High School"}
                             ></Summer>
                             <div>
-                              <Button className={"syllabus-button"} href={"/alg2.pdf"}>
-                                    Syllabus
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/alg2.pdf"}
+                              >
+                                Syllabus
                               </Button>
                             </div>
                           </Card.Body>
@@ -98,8 +104,11 @@ export default class Summer2 extends React.Component {
                               grade={"High School"}
                             ></Summer>
                             <div>
-                              <Button className={"syllabus-button"} href={"/geo.pdf"}>
-                                    Syllabus
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/geo.pdf"}
+                              >
+                                Syllabus
                               </Button>
                             </div>
                           </Card.Body>
@@ -124,13 +133,16 @@ export default class Summer2 extends React.Component {
                           <Card.Body>
                             <Summer
                               des={
-                                "Students study advanced algebraic concepts and functions, both exponential and logarithmic. They also learn non-linear equations, conics, matrices and determinants."
+                                "Students study trigonometry, inverse functions, selected analytic geometry, probability, and basic concepts of differential and integral functions."
                               }
                               grade={"High School"}
                             ></Summer>
                             <div>
-                              <Button className={"syllabus-button"} href={"/prcalc.pdf"}>
-                                    Syllabus
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/prcalc.pdf"}
+                              >
+                                Syllabus
                               </Button>
                             </div>
                           </Card.Body>
@@ -158,8 +170,11 @@ export default class Summer2 extends React.Component {
                               grade={"High School"}
                             ></Summer>
                             <div>
-                              <Button className={"syllabus-button"} href={"/bio.pdf"}>
-                                    Syllabus
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/bio.pdf"}
+                              >
+                                Syllabus
                               </Button>
                             </div>
                           </Card.Body>
@@ -188,8 +203,11 @@ export default class Summer2 extends React.Component {
                               grade={"High School"}
                             ></Summer>
                             <div>
-                              <Button className={"syllabus-button"} href={"/chem.pdf"}>
-                                    Syllabus
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/chem.pdf"}
+                              >
+                                Syllabus
                               </Button>
                             </div>
                           </Card.Body>
@@ -220,8 +238,11 @@ export default class Summer2 extends React.Component {
                               grade={"High School"}
                             ></Summer>
                             <div>
-                              <Button className={"syllabus-button"} href={"/phy.pdf"}>
-                                    Syllabus
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/phy.pdf"}
+                              >
+                                Syllabus
                               </Button>
                             </div>
                           </Card.Body>
@@ -248,7 +269,16 @@ export default class Summer2 extends React.Component {
                               }
                               grade={"High School"}
                             ></Summer>
+                             <div>
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/java.pdf"}
+                              >
+                                Syllabus
+                              </Button>
+                            </div>
                           </Card.Body>
+                         
                         </Accordion.Collapse>
                       </Card>
                     </div>
@@ -259,7 +289,7 @@ export default class Summer2 extends React.Component {
                       <Card>
                         <Accordion.Toggle as={Card.Header} eventKey="14">
                           <Header className={"question-header"}>
-                            AP Computer Science A{" "}
+                            Honors American Studies 1{" "}
                             <span className={"icon-holder"}>
                               <Icon name={"arrow down"} />
                             </span>
@@ -269,7 +299,7 @@ export default class Summer2 extends React.Component {
                           <Card.Body>
                             <Summer
                               des={
-                                "This course aligns with the College Board AP Computer Science A curriculum covering topics usually included in a college-level first semester computer science course. Students will study problem solving, program design, algorithms and data structures. They learn basic Java language programming, including program control constructs, use of arrays and strings, class methods, object-oriented design and the use of standard Java class libraries. Since the AP Computer Science A curriculum requires 120 hours and our summer program offers 60 hours, we will continue the program on Wednesday evenings in the fall."
+                                "This course covers colonial times to the end of the 19th century, and will focus on events, trends and leaders. It will offer insight into the social, cultural, economic, political, military problems of this period, and how these challenges were faced. Currents events will be woven into the course to show continuity or change in how issues are faced by a country."
                               }
                               grade={"High School"}
                             ></Summer>

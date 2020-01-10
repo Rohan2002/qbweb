@@ -140,7 +140,7 @@ router.post("/putData", (req, res) => {
       from: "qblearninginfo@gmail.com",
       to: `${sEmail}`,
       subject: `QuakerBridge Registration confirmation for ${name} ${last}`,
-      html: `Thank You for Registering to QuakerBrige Learning center courses.
+      html: `Thank You for Registering to QuakerBrige Learning center courses.<br/> <br/> 
               <br/> The first course you have registered for is ${course_one} for the ${time_one} slot.
               <br/> The second course you have registered for is  ${course_two} for the ${time_two} slot.
               <br/> Please contact QuakerBridge Learning Center for an appointment <a href="https://quaker-bridge.org/#/contact">here</a>
@@ -153,7 +153,7 @@ router.post("/putData", (req, res) => {
       from: "qblearninginfo@gmail.com",
       to: `${pEmail}`,
       subject: `QuakerBridge Registration confirmation for your child ${name} ${last}`,
-      html: `Thank You for Registering to QuakerBrige Learning center courses.
+      html: `Thank You for Registering to QuakerBrige Learning center courses.<br/> <br/> 
       <br/> The first course you have registered for is ${course_one} for the ${time_one} slot.
       <br/> The second course you have registered for is  ${course_two} for the ${time_two} slot.
       <br/> Please contact QuakerBridge Learning Center for an appointment <a href="https://quaker-bridge.org/#/contact">here</a>
@@ -166,9 +166,11 @@ router.post("/putData", (req, res) => {
       from: "qblearninginfo@gmail.com",
       to: `qblearninginfo@gmail.com`,
       subject: `QuakerBridge Registration confirmation for ${name} ${last}`,
-      html: `Thank You for Registering to QuakerBrige Learning center courses.
+      html: `Thank You for Registering to QuakerBrige Learning center courses.<br/> <br/> 
       <br/> The first course you have registered for is ${course_one} for the ${time_one} slot.
       <br/> The second course you have registered for is  ${course_two} for the ${time_two} slot.
+      <br/> Student Phone Number is ${student_phone} and Student Email is ${sEmail}
+      <Br/> Parent Phone Number is ${parent_phone} and Parent Email is  ${pEmail}
       <br/> Please contact QuakerBridge Learning Center for an appointment <a href="https://quaker-bridge.org/#/contact">here</a>
       <br/> Thank You
       <br/> Best Wishes,
@@ -194,7 +196,7 @@ router.post("/putData", (req, res) => {
   });
 });
 router.post("/sendEmail", (req, res) => {
-  const { sender_name, sender_email, sender_tel, sender_message } = req.body;
+  const { sender_name, sender_email, sender_tel,sender_date, sender_message } = req.body;
   const sendID = 1000;
 
   let transporter = nodemailer.createTransport({
@@ -218,6 +220,7 @@ router.post("/sendEmail", (req, res) => {
           <br/>Name: ${sender_name}
           <br/> Email: ${sender_email}
           <br/> Phone: ${sender_tel}
+          <br/> Appointment Date: ${sender_date ===null? "No Date Assigned" : sender_date}
           <br/> Message: ${sender_message}
           <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
   };

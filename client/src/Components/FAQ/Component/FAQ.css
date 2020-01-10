@@ -28,8 +28,8 @@
 }
 .ui.header.answer-header
 {
-    font-size:15px;
-    color:rgb(179, 177, 177);
+    font: 18px;
+    color:black;
     font-family: HK Grotesk Medium, sans-serif;
     white-space: normal;
     text-align: left;

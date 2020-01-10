@@ -43,22 +43,27 @@ export default class Footer extends React.Component {
               <Grid.Column>
                 <div className={"footer-holder"}>
                   <Header className={"header-content"}>
-                    © 2020 QuakerBridge Learning Center. All Rights Reserved |
-                    Developed by{" "}
-                    <a
-                      target="_blank"
-                      rel="noopener"
-                      href="https://www.linkedin.com/in/rohan-deshpande-994b23160/"
-                    >
-                      Rohan Deshpande,
-                    </a>
-		<a
-                      target="_blank"
-                      rel="noopener"
-                      href="https://www.linkedin.com/in/nabeel-ahmed-773b78188/"
-                    >
-                      Nabeel Ahmed
-                    </a>
+                    <details>
+                      <summary>
+                        © 2020 QuakerBridge Learning Center. All Rights Reserved
+                      </summary>
+                      Developed by{" "}
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        href="https://www.linkedin.com/in/rohan-deshpande-994b23160/"
+                      >
+                        Rohan Deshpande
+                      </a>
+                      &nbsp;and&nbsp; 
+                      <a
+                        target="_blank"
+                        rel="noopener"
+                        href="https://www.linkedin.com/in/nabeel-ahmed-773b78188/"
+                      >
+                         Nabeel Ahmed
+                      </a>
+                    </details>
                   </Header>
                   <div className={"social-hold"}>
                     <a

@@ -32,7 +32,7 @@ const HomePage1 = () => {
               <Header className={"hook"}>
                 Join Our Full Stack Web Development Course.
               </Header>
-              <Header className={"name"}>January 18th, 2020</Header>
+              <Header className={"name"}>January 2020</Header>
               <div className={"reg-button-contain"}>
                 <Link className={"link-home4"} to="/#home4">
                   <Button className={"reg-button"}>Learn More</Button>
@@ -49,7 +49,7 @@ const HomePage1 = () => {
           <section id="home1-a0">
             <div className={"homepage container"}>
               <Header className={"hook"}>Join Our SAT/ACT Classes.</Header>
-              <Header className={"name"}>January 18th, 2020</Header>
+              <Header className={"name"}>January 2020</Header>
               <div className={"reg-button-contain"}>
               <Link className={"link-home4"} to="/#home4">
                   <Button className={"reg-button"}>Learn More</Button>
@@ -66,7 +66,7 @@ const HomePage1 = () => {
           <section id="home1-a1">
             <div className={"homepage container"}>
               <Header className={"hook"}>Join Our Chinese Program.</Header>
-              <Header className={"name"}>January 18th, 2020</Header>
+              <Header className={"name"}>January 2020</Header>
               <div className={"reg-button-contain"}>
               <Link className={"link-home4"} to="/#home4">
                   <Button className={"reg-button"}>Learn More</Button>

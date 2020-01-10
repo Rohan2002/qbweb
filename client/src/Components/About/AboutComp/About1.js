@@ -102,7 +102,7 @@ export default class About1 extends React.Component {
           
           <section id={"acc-partners"}>
           <div className={"acc-header-div"}>
-              <Header className={"about-headers"}>Accredited partners</Header>
+              <Header className={"about-headers"}>Accredition and Partners</Header>
             </div>
             <Grid stackable={true}>
               <Grid.Row columns={4}>
@@ -113,7 +113,14 @@ export default class About1 extends React.Component {
                   </Image>
                 </a>
                 </Grid.Column>
-                
+                <Grid.Column>
+                <a href={"https://www.ets.org/toefl/ibt/about"} target="_blank" rel="noopener">
+                  <Image src={Toefel}>
+
+                  </Image>
+                </a>
+                </Grid.Column>
+
                 <Grid.Column>
                 <a href={"https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"}target="_blank" rel="noopener">
                   <Image src={Middle}>
@@ -121,13 +128,7 @@ export default class About1 extends React.Component {
                   </Image>
                 </a>
                 </Grid.Column>
-                <Grid.Column>
-                <a href={"https://qbhacks.org/"} target="_blank" rel="noopener">
-                  <Image src={Toefel}>
-
-                  </Image>
-                </a>
-                </Grid.Column>
+                
                 <Grid.Column>
                 <a href={"https://qbhacks.org/"} target="_blank" rel="noopener">
                   <Image src={QB}>

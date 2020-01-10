@@ -24,10 +24,7 @@ export default class HomePage3 extends React.Component {
                   </Header>
                 </div>
                 <div className={"welcome-space"}>
-                  <Button
-                    href={"/#/about"}
-                    className={"read-button"}
-                  >
+                  <Button href={"/#/about"} className={"read-button"}>
                     Read More
                   </Button>
                 </div>
@@ -38,19 +35,16 @@ export default class HomePage3 extends React.Component {
                 </div>
                 <div className={"welcome-space"}>
                   <Header className={"welcome-desc"}>
-                    Quakerbridge Learning Center is an accredited member of the
-                    Middle States Association Commissions on Elementary and and
-                    Secondary Schools. (MSA-CESS). Our teachers and instructors
-                    are now nominated through this institution for
-                    accreditation. We are also a certified TOEFL/GRE/Praxis
-                    testing center by ETS since 2006.
-                  </Header>
+                    Quakerbridge Learning Center (QBLC) is an accredited member
+                    of the Middle States Association Commissions on Elementary
+                    and and Secondary Schools. (MSA-CESS). QBLC is part of the
+                    Quakerbridge Computer and Learning Service that
+                    administers the Praxis, TOEFL, and GRE as a testing center
+                    for the Educational Testing Service. 
+                                      </Header>
                 </div>
-                <div className={"welcome-space-button"}>
-                  <Button
-                    href={"/#/about"}
-                    className={"read-button"}
-                  >
+                <div className={"welcome-space"}>
+                  <Button href={"/#/about"} className={"read-button"}>
                     Read More
                   </Button>
                 </div>

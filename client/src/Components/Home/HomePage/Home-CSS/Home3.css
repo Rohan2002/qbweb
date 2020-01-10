@@ -17,7 +17,6 @@
     font-size:2em;
     text-transform: uppercase;
     color:#EF6286;
-    font-weight: 500;
     font-family: HK Grotesk Medium, sans-serif;
     letter-spacing: 1px;
     white-space: nowrap;
@@ -26,15 +25,14 @@
 }
 .ui.header.welcome-desc
 {
-    font-size:1em;
-    color:rgb(179, 177, 177);
+    font-size:1.3em;
+    color:black;
     font-family: HK Grotesk Light, sans-serif;
-    letter-spacing: 1px;
     white-space: normal;
 
 }
 
-.welcome-space-button
+.welcome-space
 {
     margin-top: 2em;
 }

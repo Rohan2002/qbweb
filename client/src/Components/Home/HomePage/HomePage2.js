@@ -50,7 +50,7 @@ export default class HomePage2 extends React.Component {
                 </div>
                 <div className={"grid-space"}>
                   <Header className={"grid-des"}>
-                    Our courses are offered every day and we can provide
+                    Our courses are offered every day and we can help arrange
                     transportation.
                   </Header>
                 </div>
@@ -64,7 +64,7 @@ export default class HomePage2 extends React.Component {
                 </div>
                 <div className={"grid-space"}>
                   <Header className={"grid-des"}>
-                    No preset group sessions. Get tutored according to your
+                    Our tutoring is according to your
                     schedule.
                   </Header>
                 </div>

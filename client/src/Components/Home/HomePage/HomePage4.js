@@ -21,15 +21,15 @@ export default class HomePage4 extends React.Component {
                     After School Chinese Program
                   </Header>
                   <Header className={"news-des"}>
-                    Start: January 18, 2020 <br />
-                    Length: 15 weeks
+                    Start: January 2020 <br />
+                    Length: 15 weeks<br/>
                     Time: Every Tuesday and Thursday Afternoon
                   </Header>
                 </div>
                 <div className={"news-space"}>
                   <Header className={"news-des"}>
                     Master the skills of Reading, Writing, and Speaking Chinese
-                    by Joining our Chinese Program at QBLC. We help students do
+                    by joining our Chinese Program at QBLC. We help students do
                     their homework, while establishing a fun and enjoyable
                     learning environment.
                   </Header>
@@ -49,8 +49,8 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: January 18, 2020 <br />
-                      Length: 15 weeks
+                      Start: January 2020 <br />
+                      Length: 15 weeks<br/>
                       Time: Every Saturday Afternoon
                     </Header>
                     <Header className={"news-des"}>
@@ -71,14 +71,13 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: January 18, 2020 <br />
-                      Length: 15 Weeks
-                      Time: Every Wednesday and Friday, Morning and Afternoon
+                      Start: January 2020 <br />
+                      Length: 15 Weeks<br/>
+                      Time: Every Wednesday and Friday Afternoon
                     </Header>
                     <Header className={"news-des"}>
-                      There will be a Diagnostic Test, and Full Length Practice
-                      Tests. There will also be Full Comprehensive Explanations
-                      along with each test.
+                      There will be a Diagnostic Test, Full Length Practice
+                      Tests, and Comprehensive Explanations with each test.
                     </Header>
                     <Button href={"/#/register"} className={"news-button"}>
                       Register

@@ -1,13 +1,14 @@
 import React from "react";
 import "./Contact.css";
 import axios from "axios";
-import { Grid, Header, Button, Form,Message } from "semantic-ui-react";
+import { Grid, Header, Button, Form, Message } from "semantic-ui-react";
 export default class ContactMain extends React.Component {
   state = {
     sender_name: null,
     sender_email: null,
     sender_tel: null,
     sender_message: null,
+    sender_date: null,
     message_sent: false
   };
 
@@ -16,22 +17,25 @@ export default class ContactMain extends React.Component {
       sender_name: this.state.sender_name,
       sender_email: this.state.sender_email,
       sender_tel: this.state.sender_tel,
+      sender_date: this.state.sender_date,
       sender_message: this.state.sender_message
     });
-		console.log('sent!');
+    console.log("sent!");
   };
 
   onSubmit = () => {
-    this.sendEmail()
-    this.setState({ message_sent: true })
+    this.sendEmail();
+    this.setState({ message_sent: true });
   };
   render() {
     if (this.state.message_sent === true) {
-      return (<Message
-      success
-      header='Contact Form Submitted'
-      content="Thank you for contacting QuakerBridge Learning Center! We will get back to you shortly"
-    />);
+      return (
+        <Message
+          success
+          header="Contact Form Submitted"
+          content="Thank you for contacting QuakerBridge Learning Center! We will get back to you shortly"
+        />
+      );
     }
     return (
       <section id="contact1">
@@ -42,7 +46,7 @@ export default class ContactMain extends React.Component {
           <div className={"contactform-div"}>
             <Form onSubmit={this.onSubmit}>
               <Grid columns={2} stackable={true}>
-                <Grid.Column>
+                <Grid.Column className={"contact-left"}>
                   <Form.Field>
                     <input
                       type="text"
@@ -64,6 +68,18 @@ export default class ContactMain extends React.Component {
                         this.setState({ sender_email: e.target.value })
                       }
                       required
+                    ></input>
+                  </Form.Field>
+                  <Form.Field>
+                    <label>
+                      Appointment Date (if registered, then it's required)
+                    </label>
+                    <input
+                      type="date"
+                      placeholder={"date"}
+                      onChange={e =>
+                        this.setState({ sender_date: e.target.value })
+                      }
                     ></input>
                   </Form.Field>
                   <Form.Field>
@@ -89,9 +105,7 @@ export default class ContactMain extends React.Component {
                       }
                       required
                     ></textarea>
-                    <Button className={"send-button"}>
-                      Send
-                    </Button>
+                    <Button className={"send-button"}>Send</Button>
                   </Form.Field>
                 </Grid.Column>
               </Grid>
