@@ -72,7 +72,7 @@ export default class ContactMain extends React.Component {
                   </Form.Field>
                   <Form.Field>
                     <label>
-                      Appointment Date (if registered, then it's required)
+                      Appointment Date (if you registered, then it's required)
                     </label>
                     <input
                       type="date"

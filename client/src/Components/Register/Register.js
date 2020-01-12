@@ -1,7 +1,7 @@
 import React from "react";
 import "./Register.css";
 import axios from "axios";
-
+import ReCAPTCHA from "react-google-recaptcha";
 import Contact from "../Contact/ContactComp/Contact";
 import { Header, Button, Grid, Form, Message } from "semantic-ui-react";
 export default class Register extends React.Component {
@@ -110,9 +110,13 @@ export default class Register extends React.Component {
       this.state.option2,
       this.state.option3
     );
+    const recaptchaRef = React.createRef();
     this.setState({ redirect: true });
+    const recaptchaValue = recaptchaRef.current.getValue();
+    this.props.onSubmit(recaptchaValue);
   };
   render() {
+    const recaptchaRef = React.createRef();
     if (this.state.redirect === true) {
       return (
         <div>
@@ -620,7 +624,11 @@ export default class Register extends React.Component {
                 </Grid.Column>
               </Grid.Row>
             </Grid>
-
+            <ReCAPTCHA
+        ref={recaptchaRef}
+        sitekey="6LeNKs4UAAAAAKl9ZZmjxPMS48GsK6C4CvqYzcIH"
+        
+      />
             <div className={"register-button-div"}>
               <Button
                 type={"submit"}
