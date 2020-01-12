@@ -19,7 +19,7 @@ export default class Summer1 extends React.Component {
           </Button>
           </Grid.Column>
           <Grid.Column>
-          <Button href={"/brochure.pdf"} className={"summermain-button"}>
+          <Button href={"/2020-quaker-bridge-learning-center-brochure.pdf"} className={"summermain-button"}>
            Brochure
           </Button>
           </Grid.Column>

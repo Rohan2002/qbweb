@@ -111,6 +111,15 @@ export default class HomePage4 extends React.Component {
                     target="_blank"
                   />
                 </div>
+                <div className={"news-space-2"}>
+                  <Image
+                    src="https://react.semantic-ui.com/images/wireframe/image-text.png"
+                    as="a"
+                    size="medium"
+                    href="http://google.com"
+                    target="_blank"
+                  />
+                </div>
               </Grid.Row>
             </Grid.Column>
           </Grid>

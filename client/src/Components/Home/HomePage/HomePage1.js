@@ -13,7 +13,7 @@ const HomePage1 = () => {
               <Header className={"hook"}>
                 We are Commited to Education, Enlightment, and Excellence
               </Header>
-              <Header className={"name"}>QuakerBridge Learning Center</Header>
+              <Header className={"name"}>Quakerbridge Learning Center</Header>
               <div className={"reg-button-contain"}>
                 <Button href={"/#/register"} className={"reg-button"}>
                   Register

@@ -82,3 +82,16 @@
 {
     padding-top: 5em;
 }
+.ui.image.main-logo-acc
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+}
+
+.ui.grid.acc-grid
+{
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}

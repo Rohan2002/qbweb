@@ -28,6 +28,7 @@ export default class NavBar extends React.Component {
               <Nav.Link href="/#/summer">Summer School</Nav.Link>
               <Nav.Link href="/#/college-program">College Program</Nav.Link>
               <Nav.Link href="/#/faq">FAQ</Nav.Link>
+              <Nav.Link href='/#/gallery'>Gallery</Nav.Link>
               <Nav.Link href="/#/contact">Contact Us</Nav.Link>
               <Nav.Link href="/#/register">Register</Nav.Link>
             </Nav>

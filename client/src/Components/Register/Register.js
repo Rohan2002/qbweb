@@ -86,7 +86,7 @@ export default class Register extends React.Component {
     });
   };
 
-  onSubmit= () =>{
+  onSubmit = () => {
     this.putDataToDB(
       this.state.name,
       this.state.last,
@@ -110,8 +110,9 @@ export default class Register extends React.Component {
       this.state.option2,
       this.state.option3
     );
-    const recaptchaRef = React.createRef();
+    
     this.setState({ redirect: true });
+    const recaptchaRef = React.createRef();
     const recaptchaValue = recaptchaRef.current.getValue();
     this.props.onSubmit(recaptchaValue);
   };
@@ -623,12 +624,17 @@ export default class Register extends React.Component {
                   </select>
                 </Grid.Column>
               </Grid.Row>
+              <Grid.Row columns={2}>
+                <Grid.Column>
+                  <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="6LeNKs4UAAAAAKl9ZZmjxPMS48GsK6C4CvqYzcIH"
+                  />
+                </Grid.Column>
+                <Grid.Column></Grid.Column>
+              </Grid.Row>
             </Grid>
-            <ReCAPTCHA
-        ref={recaptchaRef}
-        sitekey="6LeNKs4UAAAAAKl9ZZmjxPMS48GsK6C4CvqYzcIH"
-        
-      />
+
             <div className={"register-button-div"}>
               <Button
                 type={"submit"}

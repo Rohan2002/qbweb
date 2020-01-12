@@ -8,6 +8,7 @@ import Register from "./Components/Register/MainReg";
 import College from "./Components/College/CollegeMain";
 import FAQ from "./Components/FAQ/FAQMain";
 import Contact from "./Components/Contact/ContactMain";
+import Video from "./Components/Video/Video";
 const Routers = (
   <Router>
     <Switch>
@@ -18,6 +19,8 @@ const Routers = (
       <Route exact path="/contact" component={Contact} />{" "}
       <Route exact path="/faq" component={FAQ} />{" "}
       <Route exact path="/register" component={Register} />{" "}
+      <Route exact path="/gallery" component={Video} />{" "}
+
     </Switch>
   </Router>
 );

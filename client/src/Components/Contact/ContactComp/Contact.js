@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 import { Grid, Header, Button, Form, Message } from "semantic-ui-react";
 export default class ContactMain extends React.Component {
   state = {
@@ -8,7 +9,7 @@ export default class ContactMain extends React.Component {
     sender_email: null,
     sender_tel: null,
     sender_message: null,
-    sender_date: null,
+    sender_date: 'You didnt select a date for appointment',
     message_sent: false
   };
 
@@ -26,8 +27,12 @@ export default class ContactMain extends React.Component {
   onSubmit = () => {
     this.sendEmail();
     this.setState({ message_sent: true });
+    const recaptchaRef = React.createRef();
+    const recaptchaValue = recaptchaRef.current.getValue();
+    this.props.onSubmit(recaptchaValue);
   };
   render() {
+    const recaptchaRef = React.createRef();
     if (this.state.message_sent === true) {
       return (
         <Message
@@ -71,9 +76,11 @@ export default class ContactMain extends React.Component {
                     ></input>
                   </Form.Field>
                   <Form.Field>
-                    <label>
+                    
+                      <strong>
                       Appointment Date (if you registered, then it's required)
-                    </label>
+                      </strong>
+                    
                     <input
                       type="date"
                       placeholder={"date"}
@@ -105,6 +112,10 @@ export default class ContactMain extends React.Component {
                       }
                       required
                     ></textarea>
+                     <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="6LeNKs4UAAAAAKl9ZZmjxPMS48GsK6C4CvqYzcIH"
+                  />
                     <Button className={"send-button"}>Send</Button>
                   </Form.Field>
                 </Grid.Column>
