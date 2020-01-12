@@ -114,7 +114,7 @@ export default class ContactMain extends React.Component {
                     ></textarea>
                      <ReCAPTCHA
                     ref={recaptchaRef}
-                    sitekey="6LeNKs4UAAAAAKl9ZZmjxPMS48GsK6C4CvqYzcIH"
+                    sitekey="6Lcbr84UAAAAAInkqGwnmpSXnlFp2DB49DtXNUYi"
                   />
                     <Button className={"send-button"}>Send</Button>
                   </Form.Field>

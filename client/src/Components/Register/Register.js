@@ -628,7 +628,7 @@ export default class Register extends React.Component {
                 <Grid.Column>
                   <ReCAPTCHA
                     ref={recaptchaRef}
-                    sitekey="6LeNKs4UAAAAAKl9ZZmjxPMS48GsK6C4CvqYzcIH"
+                    sitekey="6Lcbr84UAAAAAInkqGwnmpSXnlFp2DB49DtXNUYi"
                   />
                 </Grid.Column>
                 <Grid.Column></Grid.Column>
