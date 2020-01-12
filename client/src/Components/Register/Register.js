@@ -634,15 +634,7 @@ export default class Register extends React.Component {
                 <Grid.Column></Grid.Column>
               </Grid.Row>
             </Grid>
-<<<<<<< HEAD
-            <ReCAPTCHA
-        ref={recaptchaRef}
-        sitekey="6Lcbr84UAAAAAInkqGwnmpSXnlFp2DB49DtXNUYi"
-        
-      />
-=======
 
->>>>>>> 46af8e1ab213a4b11d297d3f07fdef6618781e13
             <div className={"register-button-div"}>
               <Button
                 type={"submit"}
