@@ -70,9 +70,19 @@ export default class Footer extends React.Component {
                       rel="noopener noreferrer"
                       target="_blank"
                       rel="noopener"
-                      href={"https://www.facebook.com/qbcls.quakerbridge.1"}
+                      href={"https://www.facebook.com/qbcls"}
                     >
                       <Icon color={"grey"} size="big" name={"facebook"}></Icon>
+                    </a>
+                  </div>
+                  <div className={"social-hold"}>
+                    <a
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      rel="noopener"
+                      href={"https://www.youtube.com/channel/UC3zizXuLfg-j2YMhPn9z-Cg"}
+                    >
+                      <Icon color={"grey"} size="big" name={"youtube"}></Icon>
                     </a>
                   </div>
                   <div className={"social-hold"}>

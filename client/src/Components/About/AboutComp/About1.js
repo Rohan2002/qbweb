@@ -3,10 +3,10 @@ import { Grid, Header, Image, Icon } from "semantic-ui-react";
 import AboutImage from "../AboutImage/students.jpg";
 import Class from "../AboutImage/class.jpg";
 
-import Toefel from '../AboutImage/tof-new.png';
-import Middle from '../AboutImage/middle-new.png';
-import Praxis from '../AboutImage/praxis.jpg';
-import QB from '../AboutImage/qbhacks.png';
+import Toefel from "../AboutImage/tof-new.png";
+import Middle from "../AboutImage/middle-new.png";
+import Praxis from "../AboutImage/praxis.jpg";
+import QB from "../AboutImage/qbhacks.png";
 import "./About1.css";
 export default class About1 extends React.Component {
   render() {
@@ -54,7 +54,8 @@ export default class About1 extends React.Component {
                         <Icon color={"teal"} name={"pin"}></Icon>
                       </span>
                       State-of-the-Art Computer Labs: We house the latest
-                      computers and software required for SAT and TOEFL testing.
+                      computers and software required for Praxis and TOEFL
+                      testing.
                     </Header>
                   </div>
                   <div className={"vision-goal-div"}>
@@ -74,7 +75,7 @@ export default class About1 extends React.Component {
                       </span>
                       Exceptional Faculty and Staff: Our experienced and
                       accomplished instructors graduated from some of the finest
-                      universities and high schools.
+                      universities.
                     </Header>
                   </div>
                   <div className={"vision-goal-div"}>
@@ -83,7 +84,7 @@ export default class About1 extends React.Component {
                         <Icon color={"teal"} name={"pin"}></Icon>
                       </span>
                       Convenience: Our courses are offered every day and we can
-                      provide transportation.
+                      arrange transportation
                     </Header>
                   </div>
                   <div className={"vision-goal-div"}>
@@ -99,48 +100,55 @@ export default class About1 extends React.Component {
               </Grid>
             </div>
           </div>
-          
+
           <section id={"acc-partners"}>
-          <div className={"acc-header-div"}>
-              <Header className={"about-headers"}>Accredition and Partners</Header>
+            <div className={"acc-header-div"}>
+              <Header className={"about-headers"}>Accreditions</Header>
             </div>
-            <Grid stackable={true}>
-              <Grid.Row columns={4}>
-                <Grid.Column>
-                <a href={"https://www.ets.org/toefl/ibt/about"} target="_blank" rel="noopener">
-                  <Image src={Praxis}>
 
-                  </Image>
-                </a>
+            <a
+              href={
+                "https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"
+              }
+              target="_blank"
+              rel="noopener"
+            >
+              <Image className={"main-logo-acc"} src={Middle}></Image>
+            </a>
+
+            <Grid className={"acc-grid"} stackable={true}>
+              <Grid.Row columns={3}>
+                <Grid.Column>
+                  <a
+                    href={"https://www.ets.org/toefl/ibt/about"}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <Image src={Praxis}></Image>
+                  </a>
                 </Grid.Column>
                 <Grid.Column>
-                <a href={"https://www.ets.org/toefl/ibt/about"} target="_blank" rel="noopener">
-                  <Image src={Toefel}>
-
-                  </Image>
-                </a>
+                  <a
+                    href={"https://www.ets.org/toefl/ibt/about"}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <Image className={"main-logo-acc2"} src={Toefel}></Image>
+                  </a>
                 </Grid.Column>
-
                 <Grid.Column>
-                <a href={"https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"}target="_blank" rel="noopener">
-                  <Image src={Middle}>
-
-                  </Image>
-                </a>
+                  <a
+                    href={"https://qbhacks.org/"}
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <Image className={"main-logo-acc3"} src={QB}></Image>
+                  </a>
                 </Grid.Column>
-                
-                <Grid.Column>
-                <a href={"https://qbhacks.org/"} target="_blank" rel="noopener">
-                  <Image src={QB}>
-
-                  </Image>
-                </a>
-                </Grid.Column>
-                
               </Grid.Row>
             </Grid>
           </section>
-          </div>
+        </div>
       </section>
     );
   }

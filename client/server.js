@@ -210,7 +210,7 @@ router.post("/sendEmail", (req, res) => {
     from: "qblearninginfo@gmail.com",
     to: "qblearninginfo@gmail.com",
     subject: `QuakerBridge Contact Form Response from ${sender_name}`,
-    html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Message: ${sender_message}<br/>`
+    html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Appointment Date: ${sender_date}<br/> Message: ${sender_message}<br/>`
   };
   let mailOptions2 = {
     from: "qblearninginfo@gmail.com",
@@ -220,7 +220,7 @@ router.post("/sendEmail", (req, res) => {
           <br/>Name: ${sender_name}
           <br/> Email: ${sender_email}
           <br/> Phone: ${sender_tel}
-          <br/> Appointment Date: ${sender_date ===null? "No Date Assigned" : sender_date}
+          <br/> Appointment Date: ${sender_date}
           <br/> Message: ${sender_message}
           <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
   };
