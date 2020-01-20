@@ -102,9 +102,7 @@ export default class About1 extends React.Component {
           </div>
 
           <section id={"acc-partners"}>
-            <div className={"acc-header-div"}>
-              <Header className={"about-headers"}>Accreditions</Header>
-            </div>
+
 
             <a
               href={

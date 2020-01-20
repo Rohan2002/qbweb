@@ -35,7 +35,7 @@ export default class Footer extends React.Component {
                       className={"link-email"}
                       href={"mailto:qlc4044@quaker-bridge.com"}
                     >
-                      qlc4044@quaker-bridge.com
+                      qlc4044@quaker-bridge.org
                     </a>
                   </Header>
                 </div>
