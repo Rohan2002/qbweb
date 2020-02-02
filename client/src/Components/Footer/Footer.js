@@ -35,7 +35,7 @@ export default class Footer extends React.Component {
                       className={"link-email"}
                       href={"mailto:qlc4044@quaker-bridge.com"}
                     >
-                      qlc4044@quaker-bridge.org
+                      qlc4044@quaker-bridge.com
                     </a>
                   </Header>
                 </div>
@@ -45,7 +45,7 @@ export default class Footer extends React.Component {
                   <Header className={"header-content"}>
                     <details>
                       <summary>
-                        © 2020 QuakerBridge Learning Center. All Rights Reserved
+                        © 2020 QuakerBridge Learning Center. All Rights Reserved. <a target={"_blank"}href={"/privacy-policy.txt"}>Privacy Policy</a>
                       </summary>
                       Developed by{" "}
                       <a
