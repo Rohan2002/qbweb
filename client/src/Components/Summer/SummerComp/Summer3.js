@@ -265,7 +265,7 @@ export default class Summer2 extends React.Component {
                           <Card.Body>
                             <Summer
                               des={
-                                "Students learn the logical thought process required for developing geometric proofs and drawing appropriate conclusions. They examine concepts of congruence, similarity, and transformation as well as angle and line relationships."
+                                "Students will learn the basics of computer science. This course is designed to introduce students with fundamental concepts of the fields of computing and technology, and how these skills will impact the world."
                               }
                               grade={"High School"}
                             ></Summer>

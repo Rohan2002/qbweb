@@ -65,7 +65,7 @@
   transition: 0.5s;
   transition: all 0.3s ease;
   transform: scale(1);
-  font-family: HK Grotesk Medium, sans-serif;
+  font-family: 'Titillium Web';
 }
 .ui.button.register:hover {
   transform: scale(1.1) perspective(1px);

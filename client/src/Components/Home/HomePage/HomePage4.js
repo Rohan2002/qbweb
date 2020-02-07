@@ -6,12 +6,12 @@ export default class HomePage4 extends React.Component {
     return (
       <section id={"home4"}>
         <div className={"home4main container"}>
-          <Grid stackable={true} columns={2}>
+          <Grid stackable={true} columns={1}>
             <Grid.Column>
               <Grid.Row>
                 <div>
                   <Header className={"news-header"}>
-                    News & Announcements
+                    Upcoming News & Announcements
                   </Header>
                 </div>
               </Grid.Row>
@@ -21,7 +21,7 @@ export default class HomePage4 extends React.Component {
                     After School Chinese Program
                   </Header>
                   <Header className={"news-des"}>
-                    Start: January 2020 <br />
+                    Start: March 2020 <br />
                     Length: 15 weeks<br/>
                     Time: Every Tuesday and Thursday Afternoon
                   </Header>
@@ -49,7 +49,7 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: January 2020 <br />
+                      Start: March 2020 <br />
                       Length: 15 weeks<br/>
                       Time: Every Saturday Afternoon
                     </Header>
@@ -71,7 +71,7 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: January 2020 <br />
+                      Start: March 2020 <br />
                       Length: 15 Weeks<br/>
                       Time: Every Wednesday and Friday Afternoon
                     </Header>
@@ -86,42 +86,7 @@ export default class HomePage4 extends React.Component {
                 </div>
               </Grid.Row>
             </Grid.Column>
-            <Grid.Column>
-              <Grid.Row>
-                <div className={"upcoming-header"}>
-                  <Header className={"news-header"}>Upcoming Events</Header>
-                </div>
-              </Grid.Row>
-              <Grid.Row>
-                <div className={"news-space-2"}>
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/image-text.png"
-                    as="a"
-                    size="medium"
-                    href="http://google.com"
-                    target="_blank"
-                  />
-                </div>
-                <div className={"news-space-2"}>
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/image-text.png"
-                    as="a"
-                    size="medium"
-                    href="http://google.com"
-                    target="_blank"
-                  />
-                </div>
-                <div className={"news-space-2"}>
-                  <Image
-                    src="https://react.semantic-ui.com/images/wireframe/image-text.png"
-                    as="a"
-                    size="medium"
-                    href="http://google.com"
-                    target="_blank"
-                  />
-                </div>
-              </Grid.Row>
-            </Grid.Column>
+            
           </Grid>
         </div>
       </section>

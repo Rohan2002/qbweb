@@ -17,7 +17,7 @@
     font-size:2em;
     text-transform: uppercase;
     color:#EF6286;
-    font-family: HK Grotesk Medium, sans-serif;
+    font-family: 'Titillium Web';
     letter-spacing: 1px;
     white-space: nowrap;
 
@@ -26,7 +26,7 @@
 .ui.header.welcome-desc
 {
     font-size:1.3em;
-    color:black;
+    color:#5a5a5a;;
     font-family: HK Grotesk Light, sans-serif;
     white-space: normal;
 
@@ -47,7 +47,7 @@
     padding: 15px 40px;
     border: 2px solid #05a6b3;
     border-radius: 15px;
-    font-family: HK Grotesk Medium, sans-serif;
+    font-family: 'Titillium Web';
     transition: all 0.3s ease;
     transform: scale(1);
     background-color: transparent;

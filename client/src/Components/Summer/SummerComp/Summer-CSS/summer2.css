@@ -16,7 +16,7 @@
 {
     color: #EF6286;
     font-size: 2.1em;
-    font-family: HK Grotesk Medium, sans-serif;
+    font-family: 'Titillium Web';
     margin: 0;
     text-transform: uppercase;
     text-align: center;
@@ -26,7 +26,7 @@
 .ui.header.question-header
 {
     color: #EF6286;
-    font-family: HK Grotesk Medium, sans-serif;
+    font-family: 'Titillium Web';
     font-size: 1.3em;
     margin: 0;
     text-transform: uppercase;

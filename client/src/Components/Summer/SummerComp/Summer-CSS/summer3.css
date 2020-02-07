@@ -16,7 +16,7 @@
 {
     color: #EF6286;
     font-size: 2.1em;
-    font-family: HK Grotesk Medium, sans-serif;
+    font-family: 'Titillium Web';
     margin: 0;
     text-transform: uppercase;
     text-align: center;
@@ -33,7 +33,7 @@
     padding: 10px 20px;
     border: 2px solid #05a6b3;
     border-radius: 15px;
-    font-family: HK Grotesk Medium, sans-serif;
+    font-family: 'Titillium Web';
     transition: all 0.3s ease;
     transform: scale(1);
     background-color: transparent;
