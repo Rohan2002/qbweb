@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import { Header} from "semantic-ui-react";
+import { Header } from "semantic-ui-react";
 
 export default class ContactMap extends React.Component {
   render() {
@@ -11,7 +11,7 @@ export default class ContactMap extends React.Component {
         </div>
         <div className={"map-div"}>
           <iframe
-            src="https://maps.google.com/maps?f=d&amp;source=s_d&amp;saddr=&amp;daddr=4044+Quakerbridge+Road,+mercerville,+nj+08619&amp;hl=en&amp;geocode=FcaOZgIdUqKM-ynlUL267OHDiTF3QyCAMPrGcg&amp;mra=ls&amp;sll=40.276301,-74.668772&amp;sspn=0.013309,0.021865&amp;ie=UTF8&amp;ll=40.276415,-74.672742&amp;spn=0.01146,0.018239&amp;z=15&amp;output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3044.00214888994!2d-74.67216968474682!3d40.27570247938182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3e19256dea167%3A0xa8d5cba8639f06e5!2sQuakerbridge%20Computer%20%26%20Learning%20Service!5e0!3m2!1sen!2sus!4v1582412133502!5m2!1sen!2sus"
             frameborder="0"
             className={"map-iframe"}
             allowfullscreen=""

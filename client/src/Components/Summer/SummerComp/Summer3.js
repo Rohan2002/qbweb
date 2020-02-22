@@ -269,16 +269,15 @@ export default class Summer2 extends React.Component {
                               }
                               grade={"High School"}
                             ></Summer>
-                             <div>
+                            <div>
                               <Button
                                 className={"syllabus-button"}
-                                href={"/java.pdf"}
+                                href={"/2020java.pdf"}
                               >
                                 Syllabus
                               </Button>
                             </div>
                           </Card.Body>
-                         
                         </Accordion.Collapse>
                       </Card>
                     </div>
@@ -303,6 +302,14 @@ export default class Summer2 extends React.Component {
                               }
                               grade={"High School"}
                             ></Summer>
+                                                        <div>
+                              <Button
+                                className={"syllabus-button"}
+                                href={"/as1_honors.pdf"}
+                              >
+                                Syllabus
+                              </Button>
+                            </div>
                           </Card.Body>
                         </Accordion.Collapse>
                       </Card>
