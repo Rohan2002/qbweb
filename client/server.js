@@ -301,9 +301,9 @@ module.exports = withAuth;
 
 app.use("/api", router);
 
-app.listen(8080, () => {
-  console.log("Server on Port 8080");
-});
+// app.listen(8080, () => {
+//   console.log("Server on Port 8080");
+// });
 
 const httpsServer = https.createServer(credentials, app);
 
