@@ -16,7 +16,7 @@ const nodemailer = require("nodemailer");
 //Api router
 const router = express.Router();
 
-// Certificate
+// // Certificate
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/privkey.pem', 'utf8');
 const certificate = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/cert.pem', 'utf8');
 const ca = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/chain.pem', 'utf8');
@@ -301,9 +301,9 @@ module.exports = withAuth;
 
 app.use("/api", router);
 
-// app.listen(8080, () => {
-//   console.log("Server on Port 8080");
-// });
+app.listen(8080, () => {
+  console.log("Server on Port 8080");
+});
 
 const httpsServer = https.createServer(credentials, app);
 
