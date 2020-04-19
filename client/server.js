@@ -31,9 +31,9 @@ app.use(express.static(path.join(__dirname, "build")));
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-// app.get("/", function (req, res) {
-//   res.send("Test Route").status(200);
-// });
+app.get("/", function (req, res) {
+  res.send("Test Route").status(200);
+});
 
 //Mongo Handler
 const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
