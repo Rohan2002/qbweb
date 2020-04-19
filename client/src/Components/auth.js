@@ -10,7 +10,7 @@ export default function auth(ComponentToProtect) {
       };
     }
     componentDidMount() {
-      fetch('http://localhost:8080/api/checkToken')
+      fetch('https://quaker-bridge.org/api/checkToken')
         .then(res => {
           if (res.status === 200) {
             this.setState({ loading: false });
