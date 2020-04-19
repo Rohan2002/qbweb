@@ -251,7 +251,7 @@ router.post("/sendEmail", (req, res) => {
 
 var token = "";
 
-router.get("/authenticate", function (req, res) {
+router.post("/authenticate", function (req, res) {
   username = req.body.username;
   password = req.body.password;
   if (username == ("qlc4044@quaker-bridge.com") && password == ("qbcls2020")) {
@@ -297,6 +297,8 @@ router.get("/checkToken", withAuth, function(req, res) {
   res.sendStatus(200);
 });
 
+module.exports = withAuth;
+
 app.use("/api", router);
 
 // app.listen(8080, () => {
@@ -306,4 +308,3 @@ app.use("/api", router);
 const httpsServer = https.createServer(credentials, app);
 
 httpsServer.listen(443);
-module.exports = withAuth;
