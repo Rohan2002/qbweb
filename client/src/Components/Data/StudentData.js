@@ -14,7 +14,7 @@ export default class StudentData extends React.Component {
   getData() {
     const pointer = this;
     axios
-      .get("http://localhost:443/api/showData")
+      .get("http://localhost:8080/api/showData")
       .then(function (response) {
         return response;
       })
