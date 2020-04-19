@@ -384,12 +384,13 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>Course 1</label>
                     <select
+                      required
                       onChange={e =>
                         this.setState({ course_one: e.target.value })
                       }
-                      required
+                      
                     >
-                      <option value="None selected">Choose First Course</option>
+                      <option value=""  disabled selected>Choose First Course</option>
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
@@ -470,7 +471,7 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>Time for Course 1</label>
                     <select
-                    required
+                      required
                       onChange={e =>
                         this.setState({ time_one: e.target.value })
                       }
@@ -488,13 +489,16 @@ export default class Register extends React.Component {
               <Grid.Row columns={2}>
                 <Grid.Column>
                   <Form.Field>
-                    <label>Course 2</label>
+                    <label>Course 2 (if none, select none)</label>
                     <select
                       onChange={e =>
                         this.setState({ course_two: e.target.value })
                       }
                     >
-                      <option value="None selected">Choose First Course</option>
+                      <option value=""  disabled selected>Choose Second Course</option>
+                      <option value="NONE">
+                        NO COURSE SELECT OPTION
+                      </option>
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
@@ -573,13 +577,17 @@ export default class Register extends React.Component {
                 </Grid.Column>
                 <Grid.Column>
                   <Form.Field>
-                    <label>Time for Course 2</label>
+                    <label>Time for Course 2 (if none, select none)</label>
                     <select
+                      required
                       onChange={e =>
                         this.setState({ time_two: e.target.value })
                       }
                     >
-                      <option value="None selected">Choose Time</option>
+                      <option value=""  disabled selected>Choose Time</option>
+                      <option value="NONE">
+                        NO TIME SELECT OPTION
+                      </option>
                       <option value="Morning">Morning Slot (8am - 12pm)</option>
                       <option value="Afternoon">
                         Afternoon Slot (1pm - 4pm)
