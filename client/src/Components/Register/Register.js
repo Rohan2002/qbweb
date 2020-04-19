@@ -112,9 +112,9 @@ export default class Register extends React.Component {
     );
     
     this.setState({ redirect: true });
-    const recaptchaRef = React.createRef();
-    const recaptchaValue = recaptchaRef.current.getValue();
-    this.props.onSubmit(recaptchaValue);
+    // const recaptchaRef = React.createRef();
+    // const recaptchaValue = recaptchaRef.current.getValue();
+    // this.props.onSubmit(recaptchaValue);
   };
   render() {
     const recaptchaRef = React.createRef();
@@ -181,17 +181,14 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>Student Gender</label>
                     <select
-                    
                       onChange={e =>
                         this.setState({ student_gender: e.target.value })
                       }
-                      required
                     >
                       <option value="None selected">Choose Gender</option>
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                       <option value="Other">Other</option>
-                      
                     </select>
                   </Form.Field>
                 </Grid.Column>
@@ -392,7 +389,7 @@ export default class Register extends React.Component {
                       }
                       required
                     >
-                      <option value="None selected">None</option>
+                      <option value="None selected">Choose First Course</option>
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
@@ -478,9 +475,10 @@ export default class Register extends React.Component {
                       }
                       required
                     >
+                      <option value="None selected">Choose Time</option>
                       <option value="Morning">Morning Slot (8am - 12pm)</option>
                       <option value="Afternoon">
-                        Afternoon Slot (1pm - 4pm) 
+                        Afternoon Slot (1pm - 4pm)
                       </option>
                     </select>
                   </Form.Field>
@@ -495,7 +493,7 @@ export default class Register extends React.Component {
                         this.setState({ course_two: e.target.value })
                       }
                     >
-                      <option value="None selected">None</option>
+                      <option value="None selected">Choose First Course</option>
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
@@ -580,6 +578,7 @@ export default class Register extends React.Component {
                         this.setState({ time_two: e.target.value })
                       }
                     >
+                      <option value="None selected">Choose Time</option>
                       <option value="Morning">Morning Slot (8am - 12pm)</option>
                       <option value="Afternoon">
                         Afternoon Slot (1pm - 4pm)
@@ -593,7 +592,9 @@ export default class Register extends React.Component {
                   <label>I want to be listed on the car pool network</label>
                   <select
                     onChange={e => this.setState({ option1: e.target.value })}
+                    required
                   >
+                    <option value="None selected">Choose Yes or No</option>
                     <option value="carpool_yes">Yes</option>
                     <option value="carpool_no">No</option>
                   </select>
@@ -604,7 +605,9 @@ export default class Register extends React.Component {
                   </label>
                   <select
                     onChange={e => this.setState({ option2: e.target.value })}
+                    required
                   >
+                    <option value="None selected">Choose Yes or No</option>
                     <option value="Lunch_yes">Yes</option>
                     <option value="Lunch_no">No</option>
                   </select>
@@ -613,13 +616,15 @@ export default class Register extends React.Component {
                   <label>I give consent to take pictures of my child</label>
                   <select
                     onChange={e => this.setState({ option3: e.target.value })}
+                    required
                   >
+                    <option value="None selected">Choose Yes or No</option>
                     <option value="Photo_yes">Yes</option>
                     <option value="Photo_no">No</option>
                   </select>
                 </Grid.Column>
               </Grid.Row>
-              <Grid.Row columns={2}>
+              {/* <Grid.Row columns={2}>
                 <Grid.Column>
                   <ReCAPTCHA
                     ref={recaptchaRef}
@@ -627,7 +632,7 @@ export default class Register extends React.Component {
                   />
                 </Grid.Column>
                 <Grid.Column></Grid.Column>
-              </Grid.Row>
+              </Grid.Row> */}
             </Grid>
 
             <div className={"register-button-div"}>

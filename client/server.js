@@ -251,7 +251,7 @@ router.post("/sendEmail", (req, res) => {
 
 var token = "";
 
-router.post("/authenticate", function (req, res) {
+router.get("/authenticate", function (req, res) {
   username = req.body.username;
   password = req.body.password;
   if (username == ("qlc4044@quaker-bridge.com") && password == ("qbcls2020")) {
