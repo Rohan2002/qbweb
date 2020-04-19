@@ -1,11 +1,12 @@
-const express = require('express');
-const https = require('https');
-const path = require('path');
-const fs = require('fs');
+const express = require("express");
+const https = require("https");
+const path = require("path");
+const fs = require("fs");
 const app = express();
-const cors = require('cors');
-app.use(cors());
-
+const cors = require("cors");
+const jwt = require("jsonwebtoken");
+let jsonData = require("../client/secret/secret.json");
+const secret = jsonData["secret-key"]
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
@@ -25,17 +26,18 @@ const credentials = {
 	cert: certificate,
 	ca: ca
 };
-
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(cors());
+app.use(express.static(path.join(__dirname, "build")));
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-
+// app.get("/", function (req, res) {
+//   res.send("Test Route").status(200);
+// });
 
 //Mongo Handler
 const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
 //const dbRoute = "mongodb://127.0.0.1:27017/QB";
-
 
 mongoose.connect(dbRoute, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -72,7 +74,7 @@ router.post("/putData", (req, res) => {
     time_two,
     option1,
     option2,
-    option3
+    option3,
   } = req.body;
 
   if (
@@ -101,7 +103,7 @@ router.post("/putData", (req, res) => {
   ) {
     return res.json({
       success: false,
-      error: "INVALID INPUTS"
+      error: "INVALID INPUTS",
     });
   }
 
@@ -128,13 +130,13 @@ router.post("/putData", (req, res) => {
   data.option2 = option2;
   data.option3 = option3;
   console.log(sEmail);
-  data.save(err => {
+  data.save((err) => {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: "qblearninginfo@gmail.com",
-        pass: "qbcls2020"
-      }
+        pass: "qbcls2020",
+      },
     });
     let mailOptions = {
       from: "qblearninginfo@gmail.com",
@@ -147,7 +149,7 @@ router.post("/putData", (req, res) => {
               <br/> Thank You
               <br/> Best Wishes,
               <br/> QuakerBridge Learning Center Team
-              <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
+              <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`,
     };
     let mailOptions2 = {
       from: "qblearninginfo@gmail.com",
@@ -160,7 +162,7 @@ router.post("/putData", (req, res) => {
       <br/> Thank You
       <br/> Best Wishes,
       <br/> QuakerBridge Learning Center Team
-      <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
+      <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`,
     };
     let mailOptions3 = {
       from: "qblearninginfo@gmail.com",
@@ -175,7 +177,7 @@ router.post("/putData", (req, res) => {
       <br/> Thank You
       <br/> Best Wishes,
       <br/> QuakerBridge Learning Center Team
-      <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
+      <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`,
     };
     transporter.sendMail(mailOptions, (err, data) => {
       if (err) return console.log("Message NOT Sent to student !:Registration");
@@ -196,21 +198,27 @@ router.post("/putData", (req, res) => {
   });
 });
 router.post("/sendEmail", (req, res) => {
-  const { sender_name, sender_email, sender_tel,sender_date, sender_message } = req.body;
+  const {
+    sender_name,
+    sender_email,
+    sender_tel,
+    sender_date,
+    sender_message,
+  } = req.body;
   const sendID = 1000;
 
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: "qblearninginfo@gmail.com",
-      pass: "qbcls2020"
-    }
+      pass: "qbcls2020",
+    },
   });
   let mailOptions = {
     from: "qblearninginfo@gmail.com",
     to: "qblearninginfo@gmail.com",
     subject: `QuakerBridge Contact Form Response from ${sender_name}`,
-    html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Appointment Date: ${sender_date}<br/> Message: ${sender_message}<br/>`
+    html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Appointment Date: ${sender_date}<br/> Message: ${sender_message}<br/>`,
   };
   let mailOptions2 = {
     from: "qblearninginfo@gmail.com",
@@ -222,7 +230,7 @@ router.post("/sendEmail", (req, res) => {
           <br/> Phone: ${sender_tel}
           <br/> Appointment Date: ${sender_date}
           <br/> Message: ${sender_message}
-          <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`
+          <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`,
   };
   transporter.sendMail(mailOptions, (err, data) => {
     if (err) {
@@ -241,10 +249,61 @@ router.post("/sendEmail", (req, res) => {
   });
 });
 
-// append /api for our http requests
+var token = "";
+
+router.post("/authenticate", function (req, res) {
+  username = req.body.username;
+  password = req.body.password;
+  if (username == ("qlc4044@quaker-bridge.com") && password == ("qbcls2020")) {
+    const payload = { username };
+    token = jwt.sign(payload, secret, {
+      expiresIn: "1h",
+    });
+    res.sendStatus(200);
+  }
+  else{
+    token = ""
+    res.sendStatus(500);
+  }
+});
+
+const withAuth = function(req, res, next) {
+  console.log(token);
+  if (!token) {
+    res.status(401).send("Unauthorized: No token provided");
+  } else {
+    jwt.verify(token, secret, { algorithm: "RS256" }, function(err, decoded) {
+      if (err) {
+        res.status(401).send("Unauthorized: Invalid token");
+      } else {
+        req.username = decoded.username;
+        next();
+      }
+    });
+  }
+};
+
+
+router.get("/showData", withAuth, (req, res) => {
+  Data.find({}, (err, Student) => {
+    var StudentObject = [];
+    for (var i = 0; i < Student.length; i++) {
+      StudentObject.push(Student[i]);
+    }
+    res.json(StudentObject);
+  });
+});
+router.get("/checkToken", withAuth, function(req, res) {
+  res.sendStatus(200);
+});
+
 app.use("/api", router);
 
+// app.listen(8080, () => {
+//   console.log("Server on Port 8080");
+// });
 
 const httpsServer = https.createServer(credentials, app);
 
 httpsServer.listen(443);
+module.exports = withAuth;

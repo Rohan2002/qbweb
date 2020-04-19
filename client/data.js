@@ -21,7 +21,7 @@ const DataSchema = new Schema(
     parent_phone: String,
     course_one:String,
     time_one:String,
-    course_two:String,
+    course_two: String,
     time_two:String,
     option1:String,
     option2:String,
