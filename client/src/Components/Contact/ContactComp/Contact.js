@@ -9,12 +9,12 @@ export default class ContactMain extends React.Component {
     sender_email: null,
     sender_tel: null,
     sender_message: null,
-    sender_date: 'You didnt select a date for appointment',
+    sender_date: 'You did not select a date for appointment',
     message_sent: false
   };
 
   sendEmail = () => {
-    axios.post("/api/sendEmail", {
+    axios.post("http://localhost:8080/api/sendEmail", {
       sender_name: this.state.sender_name,
       sender_email: this.state.sender_email,
       sender_tel: this.state.sender_tel,
@@ -27,9 +27,9 @@ export default class ContactMain extends React.Component {
   onSubmit = () => {
     this.sendEmail();
     this.setState({ message_sent: true });
-    const recaptchaRef = React.createRef();
-    const recaptchaValue = recaptchaRef.current.getValue();
-    this.props.onSubmit(recaptchaValue);
+    // const recaptchaRef = React.createRef();
+    // const recaptchaValue = recaptchaRef.current.getValue();
+    // this.props.onSubmit(recaptchaValue);
   };
   render() {
     const recaptchaRef = React.createRef();
@@ -112,10 +112,10 @@ export default class ContactMain extends React.Component {
                       }
                       required
                     ></textarea>
-                     <ReCAPTCHA
+                     {/* <ReCAPTCHA
                     ref={recaptchaRef}
                     sitekey="6Lcbr84UAAAAAInkqGwnmpSXnlFp2DB49DtXNUYi"
-                  />
+                  /> */}
                     <Button className={"send-button"}>Send</Button>
                   </Form.Field>
                 </Grid.Column>
