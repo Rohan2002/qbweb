@@ -18,7 +18,7 @@ export default class Login extends React.Component {
   }
   sendLogin = () => {
     axios
-      .post("https://quaker-bridge.org/api/authenticate", {
+      .post("http://localhost:8080/api/authenticate", {
         username: this.state.username,
         password: this.state.password
       })
