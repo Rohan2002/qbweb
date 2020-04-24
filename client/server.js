@@ -12,15 +12,15 @@ const data = require("./models/data");
 const router = require("./routers/routes")
 
 // // Certificate
-// const privateKey = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/privkey.pem', 'utf8');
-// const certificate = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/cert.pem', 'utf8');
-// const ca = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/chain.pem', 'utf8');
+const privateKey = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/cert.pem', 'utf8');
+const ca = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/chain.pem', 'utf8');
 
-// const credentials = {
-// 	key: privateKey,
-// 	cert: certificate,
-// 	ca: ca
-// };
+const credentials = {
+	key: privateKey,
+	cert: certificate,
+	ca: ca
+};
 app.use(cors());
 app.use(express.static(path.join(__dirname, "build")));
 app.get('/', function(req, res) {
@@ -47,10 +47,10 @@ app.use(logger("dev"));
 
 app.use("/api", router);
 
-app.listen(8080, () => {
-  console.log("Server on Port 8080");
-});
+// app.listen(8080, () => {
+//   console.log("Server on Port 8080");
+// });
 
-// const httpsServer = https.createServer(credentials, app);
+const httpsServer = https.createServer(credentials, app);
 
-// httpsServer.listen(443);
+httpsServer.listen(443);
