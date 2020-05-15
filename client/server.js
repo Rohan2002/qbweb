@@ -2,15 +2,18 @@ const express = require("express");
 const https = require("https");
 const path = require("path");
 const fs = require("fs");
+const jwt = require("jsonwebtoken");
+const secretJSON = require("./secret/secret.json");
+const secret = secretJSON["secret-key"];
 const app = express();
 const cors = require("cors");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
-const data = require("./models/data");
 //Api router
-const router = require("./routers/routes")
+const router = require("./routers/routes");
 
+require('dotenv').config();
 // // Certificate
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/privkey.pem', 'utf8');
 const certificate = fs.readFileSync('/etc/letsencrypt/live/quaker-bridge.org/cert.pem', 'utf8');
@@ -32,8 +35,6 @@ app.get("/", function (req, res) {
 
 //Mongo Handler
 const dbRoute = "mongodb+srv://admin:admin@cluster0-uakcu.mongodb.net/test";
-//const dbRoute = "mongodb://127.0.0.1:27017/QB";
-
 mongoose.connect(dbRoute, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let db = mongoose.connection;
@@ -47,10 +48,44 @@ app.use(logger("dev"));
 
 app.use("/api", router);
 
+var token = "";
+
+router.post("/authenticate", function (req, res) {
+  username = req.body.username;
+  password = req.body.password;
+  if (username == process.env.USERNAME && password == process.env.PASSWORD) {
+    const payload = { username };
+    token = jwt.sign(payload, secret, {
+      expiresIn: "1h",
+    });
+    res.cookie(token);
+    res.sendStatus(200);
+  } else {
+    res.sendStatus(500);
+  }
+});
+
+const withAuth =  function (req, res, next) {
+  console.log(token);
+  if (!token) {
+    res.status(401).send("Unauthorized: No token provided");
+  } else {
+    jwt.verify(token, secret, { algorithm: "RS256" }, function (err, decoded) {
+      if (err) {
+        res.status(401).send("Unauthorized: Invalid token");
+      } else {
+        req.username = decoded.username;
+        next();
+      }
+    });
+  }
+};
+router.get("/checkToken", withAuth, function (req, res) {
+  res.sendStatus(200);
+});
 // app.listen(8080, () => {
 //   console.log("Server on Port 8080");
 // });
-
 const httpsServer = https.createServer(credentials, app);
 
 httpsServer.listen(443);

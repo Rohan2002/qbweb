@@ -4,6 +4,7 @@ import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import Contact from "../Contact/ContactComp/Contact";
 import { Header, Button, Grid, Form, Message } from "semantic-ui-react";
+import Config from '../../config';
 export default class Register extends React.Component {
   state = {
     data: [],
@@ -60,7 +61,7 @@ export default class Register extends React.Component {
       ++idToBeAdded;
     }
 
-    axios.post("https://quaker-bridge.org/api/putData", {
+    axios.post(`${Config.BaseUrl}/api/putData`, {
       id: idToBeAdded,
       name: name,
       last: last,

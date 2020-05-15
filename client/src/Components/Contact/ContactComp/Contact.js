@@ -3,6 +3,7 @@ import "./Contact.css";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Grid, Header, Button, Form, Message } from "semantic-ui-react";
+import Config from '../../../config';
 export default class ContactMain extends React.Component {
   state = {
     sender_name: null,
@@ -14,7 +15,7 @@ export default class ContactMain extends React.Component {
   };
 
   sendEmail = () => {
-    axios.post("https://quaker-bridge.org/api/sendEmail", {
+    axios.post(`${Config.BaseUrl}/api/sendEmail`, {
       sender_name: this.state.sender_name,
       sender_email: this.state.sender_email,
       sender_tel: this.state.sender_tel,

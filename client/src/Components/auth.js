@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
+import Config from '../config';
 export default function auth(ComponentToProtect) {
   return class extends Component {
     constructor() {
@@ -10,7 +11,7 @@ export default function auth(ComponentToProtect) {
       };
     }
     componentDidMount() {
-      fetch('https://quaker-bridge.org/api/checkToken')
+      fetch(`${Config.BaseUrl}/api/checkToken`)
         .then(res => {
           if (res.status === 200) {
             this.setState({ loading: false });

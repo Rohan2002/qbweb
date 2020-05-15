@@ -5,6 +5,7 @@ import Navbar from "../Navbar/NavBar";
 import {Redirect } from "react-router-dom";
 import "./Login.css";
 import Footer from "../Footer/Footer";
+import Config from "../../config";
 export default class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -18,7 +19,7 @@ export default class Login extends React.Component {
   }
   sendLogin = () => {
     axios
-      .post("https://quaker-bridge.org/api/authenticate", {
+      .post(`${Config.BaseUrl}/api/authenticate`, {
         username: this.state.username,
         password: this.state.password
       })
