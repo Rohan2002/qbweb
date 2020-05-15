@@ -12,6 +12,7 @@ import Video from "./Components/Video/Video";
 import Data from "./Components/Data/StudentData";
 import Auth from './Components/auth';
 import Login from './Components/Login/login';
+import SendSMS from './Components/SendSMS/sendSMS';
 const Routers = (
   <Router>
     <Switch>
@@ -24,7 +25,8 @@ const Routers = (
       <Route exact path="/register" component={Register} />{" "}
       <Route exact path="/gallery" component={Video} />{" "}
       <Route exact path="/login" component={Login} />{" "}
-      <Route exact path="/student" component={Auth(Data)}></Route>
+      <Route exact path="/student" component={Data}></Route>
+      <Route exact path="/student/sendMessage" component={SendSMS}></Route>
     </Switch>
   </Router>
 );

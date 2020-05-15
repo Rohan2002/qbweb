@@ -18,16 +18,23 @@ export default class HomePage1 extends React.Component {
               Register
             </Button>
           </div>
-          <div style={{marginTop: 3 + 'em'}}>
-            <Message negative>
-              <Message.Header style={{fontSize: 1.5 + 'em'}}>COVID-19 Alert 2020</Message.Header>
-              <p style={{fontSize: 1.5 + 'em'}}>
-                Quakerbridge learning center is watching and following the NJ
-                BOE and CDC guidelines for the COVID-19 pandemic. Meanwhile, we are
-                in hopes of the summer and enrichment programs that can be
-                held as scheduled. This Center is still accepting the registeration
-                for summer and enrichment courses. We will update our newest circumstances by
-                May 15
+          <div style={{ marginTop: 3 + "em" }}>
+            <Message positive>
+              <Message.Header style={{ fontSize: 1.7 + "em" }}>
+                COVID-19 Future Classes Information
+              </Message.Header>
+              <p style={{ fontSize: 1.7 + "em" }}>
+                As we face the challenges of this pandemic together,
+                Quakerbridge Learning Center's 2020 summer program might change
+                the traditional one-way of classroom environment. We are
+                planning to deliver our class learning in a combo of virtual as
+                well as in person classroom teaching during July and August
+                period. All above setting and schedule procedures will be
+                announced as long as we get the clear social distancing guidance
+                and regulation through State and local authority in summer. We
+                are committed to providing a rigorous and qualified course
+                learning environment for our dedicated students,and again
+                appreciate our parents' continuous trust and support to us.
               </p>
             </Message>
           </div>
