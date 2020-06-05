@@ -50,7 +50,7 @@ export default class HomePage1 extends React.Component {
                     Algebra II (preview and option II) Honors Pre-Calculus (
                     preview and option II) Honors Chemistry (option II) Java
                     Computer Science( preview and option II) SAT/ACT testing
-                    preparation Writing, Grammar, Reading Course
+                    preparation Grade 4 to Grade 10 Writing, Grammar, Reading Course
                   </p>
                 </li>
                 <li>
