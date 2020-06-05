@@ -68,6 +68,8 @@ export default class StudentData extends React.Component {
                 <Table.HeaderCell>Lunch</Table.HeaderCell>
                 <Table.HeaderCell>Photo</Table.HeaderCell>
                 <Table.HeaderCell>Registered Date</Table.HeaderCell>
+                <Table.HeaderCell>Signature Name</Table.HeaderCell>
+                <Table.HeaderCell>Signature Date</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
 
@@ -100,6 +102,8 @@ export default class StudentData extends React.Component {
                   <Table.Cell>{row.option2}</Table.Cell>
                   <Table.Cell>{row.option3}</Table.Cell>
                   <Table.Cell>{row.createdAt}</Table.Cell>
+                  <Table.Cell>{row.sig_name}</Table.Cell>
+                  <Table.Cell>{row.sig_date}</Table.Cell>
                 </Table.Row>
               ))}
             </Table.Body>
