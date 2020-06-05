@@ -27,6 +27,8 @@ var reg_services = {
       option1,
       option2,
       option3,
+      sig_name,
+      sig_date,
     } = req.body;
 
     if (
@@ -51,7 +53,9 @@ var reg_services = {
       !time_two ||
       !option1 ||
       !option2 ||
-      !option3
+      !option3 ||
+      !sig_name ||
+      !sig_date
     ) {
       return res.json({
         success: false,
@@ -81,6 +85,8 @@ var reg_services = {
     data.option1 = option1;
     data.option2 = option2;
     data.option3 = option3;
+    data.sig_name = sig_name;
+    data.sig_date = sig_date;
     console.log(sEmail);
     data.save((err) => {
       let transporter = nodemailer.createTransport({
@@ -150,55 +156,55 @@ var reg_services = {
       return res.json({ success: true });
     });
   },
-  contactMail: function(req,res){
+  contactMail: function (req, res) {
     const {
-        sender_name,
-        sender_email,
-        sender_tel,
-        sender_date,
-        sender_message,
-      } = req.body;
-      const sendID = uuidv4();
-    
-      let transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-          user: "qblearninginfo@gmail.com",
-          pass: "qbcls2020",
-        },
-      });
-      let mailOptions = {
-        from: "qblearninginfo@gmail.com",
-        to: "qblearninginfo@gmail.com",
-        subject: `QuakerBridge Contact Form Response from ${sender_name}`,
-        html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Appointment Date: ${sender_date}<br/> Message: ${sender_message}<br/>`,
-      };
-      let mailOptions2 = {
-        from: "qblearninginfo@gmail.com",
-        to: `${sender_email}`,
-        subject: `QuakerBridge Contact Form Response from ${sender_name}, [id: ${sendID}]`,
-        html: `Thank you for contacting QuakerBridge Learning Center, we will reply to your email or contact you by phone as soon as possible.
+      sender_name,
+      sender_email,
+      sender_tel,
+      sender_date,
+      sender_message,
+    } = req.body;
+    const sendID = uuidv4();
+
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: "qblearninginfo@gmail.com",
+        pass: "qbcls2020",
+      },
+    });
+    let mailOptions = {
+      from: "qblearninginfo@gmail.com",
+      to: "qblearninginfo@gmail.com",
+      subject: `QuakerBridge Contact Form Response from ${sender_name}`,
+      html: `Name: ${sender_name}<br/> Email: ${sender_email}<br/> Phone: ${sender_tel}<br/> Appointment Date: ${sender_date}<br/> Message: ${sender_message}<br/>`,
+    };
+    let mailOptions2 = {
+      from: "qblearninginfo@gmail.com",
+      to: `${sender_email}`,
+      subject: `QuakerBridge Contact Form Response from ${sender_name}, [id: ${sendID}]`,
+      html: `Thank you for contacting QuakerBridge Learning Center, we will reply to your email or contact you by phone as soon as possible.
               <br/>Name: ${sender_name}
               <br/> Email: ${sender_email}
               <br/> Phone: ${sender_tel}
               <br/> Appointment Date: ${sender_date}
               <br/> Message: ${sender_message}
               <br/> <strong>* This is an automated mail, please don't reply to this email.</Strong>`,
-      };
-      transporter.sendMail(mailOptions, (err, data) => {
-        if (err) {
-          return console.log("Message NOT Sent!");
-        } else {
-          return console.log("Message Sent!");
-        }
-      });
-      transporter.sendMail(mailOptions2, (err, data) => {
-        if (err) {
-          return console.log("Message NOT Sent!");
-        } else {
-          return console.log("Message Sent!");
-        }
-      });
-  }
+    };
+    transporter.sendMail(mailOptions, (err, data) => {
+      if (err) {
+        return console.log("Message NOT Sent!");
+      } else {
+        return console.log("Message Sent!");
+      }
+    });
+    transporter.sendMail(mailOptions2, (err, data) => {
+      if (err) {
+        return console.log("Message NOT Sent!");
+      } else {
+        return console.log("Message Sent!");
+      }
+    });
+  },
 };
 module.exports = reg_services;

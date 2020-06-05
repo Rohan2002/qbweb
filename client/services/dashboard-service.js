@@ -17,25 +17,12 @@ async function processLineByLine() {
 }
 function parsePhoneNumber(PhoneNumber) {
   PhoneNumber = PhoneNumber.replace(/\D/g, "");
+  // eslint-disable-next-line no-unused-expressions
   PhoneNumber.substring(0, 1) == "1"
     ? (PhoneNumber = PhoneNumber.substring(1))
     : PhoneNumber;
 
   return "+1" + PhoneNumber;
-}
-// console.log(parsePhoneNumber("(917) 781-8162"))
-function retrivePhoneNumbers() {
-  var MongoDB_Parent_Phone = [];
-  return Data.find({}, { parent_phone: 1, _id: 0 })
-    .then(function (Data) {
-      for (var i = 0; i < Data.length; i++) {
-        MongoDB_Parent_Phone.push(parsePhoneNumber(Data[i].parent_phone));
-      }
-      return MongoDB_Parent_Phone;
-    })
-    .catch(function (error) {
-      return error;
-    });
 }
 // retrivePhoneNumbers().then(function (result) {
 //   console.log(result); // result would be retValue or 'Error'

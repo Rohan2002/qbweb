@@ -51,8 +51,8 @@ app.use("/api", router);
 var token = "";
 
 router.post("/authenticate", function (req, res) {
-  username = req.body.username;
-  password = req.body.password;
+  const username = req.body.username;
+  const password = req.body.password;
   if (username == process.env.USERNAME && password == process.env.PASSWORD) {
     const payload = { username };
     token = jwt.sign(payload, secret, {

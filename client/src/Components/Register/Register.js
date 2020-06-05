@@ -1,10 +1,10 @@
 import React from "react";
 import "./Register.css";
 import axios from "axios";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import Contact from "../Contact/ContactComp/Contact";
 import { Header, Button, Grid, Form, Message } from "semantic-ui-react";
-import Config from '../../config';
+import Config from "../../config";
 export default class Register extends React.Component {
   state = {
     data: [],
@@ -29,7 +29,9 @@ export default class Register extends React.Component {
     option1: null,
     option2: null,
     option3: null,
-    redirect: false
+    sig_name: null,
+    sig_date: null,
+    redirect: false,
   };
 
   putDataToDB = (
@@ -53,9 +55,11 @@ export default class Register extends React.Component {
     time_two,
     option1,
     option2,
-    option3
+    option3,
+    sig_name,
+    sig_date
   ) => {
-    let currentIds = this.state.data.map(data => data.id);
+    let currentIds = this.state.data.map((data) => data.id);
     let idToBeAdded = 0;
     while (currentIds.includes(idToBeAdded)) {
       ++idToBeAdded;
@@ -83,7 +87,9 @@ export default class Register extends React.Component {
       time_two: time_two,
       option1: option1,
       option2: option2,
-      option3: option3
+      option3: option3,
+      sig_name: sig_name,
+      sig_date: sig_date,
     });
   };
 
@@ -109,9 +115,11 @@ export default class Register extends React.Component {
       this.state.time_two,
       this.state.option1,
       this.state.option2,
-      this.state.option3
+      this.state.option3,
+      this.state.sig_name,
+      this.state.sig_date
     );
-    
+
     this.setState({ redirect: true });
     // const recaptchaRef = React.createRef();
     // const recaptchaValue = recaptchaRef.current.getValue();
@@ -147,7 +155,7 @@ export default class Register extends React.Component {
                     <label>First Name</label>
                     <input
                       placeholder="John"
-                      onChange={e => this.setState({ name: e.target.value })}
+                      onChange={(e) => this.setState({ name: e.target.value })}
                       required
                     />
                   </Form.Field>
@@ -157,7 +165,7 @@ export default class Register extends React.Component {
                     <label>Last Name</label>
                     <input
                       placeholder="Schimdt"
-                      onChange={e => this.setState({ last: e.target.value })}
+                      onChange={(e) => this.setState({ last: e.target.value })}
                       required
                     />
                   </Form.Field>
@@ -173,7 +181,7 @@ export default class Register extends React.Component {
                       type="number"
                       min="1"
                       max="12"
-                      onChange={e => this.setState({ grade: e.target.value })}
+                      onChange={(e) => this.setState({ grade: e.target.value })}
                       required
                     />
                   </Form.Field>
@@ -182,7 +190,7 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>Student Gender</label>
                     <select
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ student_gender: e.target.value })
                       }
                     >
@@ -201,7 +209,7 @@ export default class Register extends React.Component {
                     <input
                       placeholder="4044 QuakerBridge Road"
                       type="text"
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ street_name: e.target.value })
                       }
                       required
@@ -214,7 +222,7 @@ export default class Register extends React.Component {
                     <input
                       placeholder="Mercerville"
                       type="text"
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ city_name: e.target.value })
                       }
                       required
@@ -227,7 +235,7 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>State</label>
                     <select
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ state_name: e.target.value })
                       }
                       required
@@ -292,7 +300,7 @@ export default class Register extends React.Component {
                     <input
                       placeholder="08550"
                       type="text"
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ zip_code: e.target.value })
                       }
                       required
@@ -308,7 +316,9 @@ export default class Register extends React.Component {
                     <input
                       placeholder="example@domain.com"
                       type="email"
-                      onChange={e => this.setState({ sEmail: e.target.value })}
+                      onChange={(e) =>
+                        this.setState({ sEmail: e.target.value })
+                      }
                       required
                     />
                   </Form.Field>
@@ -319,7 +329,7 @@ export default class Register extends React.Component {
                     <input
                       placeholder="1234567890"
                       type="tel"
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ student_phone: e.target.value })
                       }
                       required
@@ -334,7 +344,7 @@ export default class Register extends React.Component {
                     <label>Parent's First Name</label>
                     <input
                       placeholder="Sarah"
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ parent_name: e.target.value })
                       }
                       required
@@ -345,7 +355,7 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>Parent's Last Name</label>
                     <input
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ parent_last_name: e.target.value })
                       }
                       placeholder="Schimdt"
@@ -361,7 +371,7 @@ export default class Register extends React.Component {
                     <input
                       placeholder="1234567890"
                       type="tel"
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ parent_phone: e.target.value })
                       }
                       required
@@ -372,7 +382,9 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>Parent Email</label>
                     <input
-                      onChange={e => this.setState({ pEmail: e.target.value })}
+                      onChange={(e) =>
+                        this.setState({ pEmail: e.target.value })
+                      }
                       type="email"
                       required
                       placeholder="example@domain.com"
@@ -386,12 +398,13 @@ export default class Register extends React.Component {
                     <label>Course 1</label>
                     <select
                       required
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ course_one: e.target.value })
                       }
-                      
                     >
-                      <option value=""  disabled selected>Choose First Course</option>
+                      <option value="" disabled selected>
+                        Choose First Course
+                      </option>
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
@@ -473,12 +486,13 @@ export default class Register extends React.Component {
                     <label>Time for Course 1</label>
                     <select
                       required
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ time_one: e.target.value })
                       }
-                      
                     >
-                      <option value="" disabled selected>Choose Time</option>
+                      <option value="" disabled selected>
+                        Choose Time
+                      </option>
                       <option value="Morning">Morning Slot (8am - 12pm)</option>
                       <option value="Afternoon">
                         Afternoon Slot (1pm - 4pm)
@@ -492,14 +506,14 @@ export default class Register extends React.Component {
                   <Form.Field>
                     <label>Course 2 (if none, select none)</label>
                     <select
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ course_two: e.target.value })
                       }
                     >
-                      <option value=""  disabled selected>Choose Second Course</option>
-                      <option value="NONE">
-                        NO COURSE SELECT OPTION
+                      <option value="" disabled selected>
+                        Choose Second Course
                       </option>
+                      <option value="NONE">NO COURSE SELECT OPTION</option>
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
@@ -581,14 +595,14 @@ export default class Register extends React.Component {
                     <label>Time for Course 2 (if none, select none)</label>
                     <select
                       required
-                      onChange={e =>
+                      onChange={(e) =>
                         this.setState({ time_two: e.target.value })
                       }
                     >
-                      <option value=""  disabled selected>Choose Time</option>
-                      <option value="NONE">
-                        NO TIME SELECT OPTION
+                      <option value="" disabled selected>
+                        Choose Time
                       </option>
+                      <option value="NONE">NO TIME SELECT OPTION</option>
                       <option value="Morning">Morning Slot (8am - 12pm)</option>
                       <option value="Afternoon">
                         Afternoon Slot (1pm - 4pm)
@@ -602,10 +616,11 @@ export default class Register extends React.Component {
                   <label>I want to be listed on the car pool network</label>
                   <select
                     required
-                    onChange={e => this.setState({ option1: e.target.value })}
-                    
+                    onChange={(e) => this.setState({ option1: e.target.value })}
                   >
-                    <option value="" disabled selected>Choose Yes or No</option>
+                    <option value="" disabled selected>
+                      Choose Yes or No
+                    </option>
                     <option value="carpool_yes">Yes</option>
                     <option value="carpool_no">No</option>
                   </select>
@@ -616,10 +631,11 @@ export default class Register extends React.Component {
                   </label>
                   <select
                     required
-                    onChange={e => this.setState({ option2: e.target.value })}
-                    
+                    onChange={(e) => this.setState({ option2: e.target.value })}
                   >
-                    <option value="" disabled selected>Choose Yes or No</option>
+                    <option value="" disabled selected>
+                      Choose Yes or No
+                    </option>
                     <option value="Lunch_yes">Yes</option>
                     <option value="Lunch_no">No</option>
                   </select>
@@ -628,9 +644,11 @@ export default class Register extends React.Component {
                   <label>I give consent to take pictures of my child</label>
                   <select
                     required
-                    onChange={e => this.setState({ option3: e.target.value })}
+                    onChange={(e) => this.setState({ option3: e.target.value })}
                   >
-                    <option value="" disabled selected>Choose Yes or No</option>
+                    <option value="" disabled selected>
+                      Choose Yes or No
+                    </option>
                     <option value="Photo_yes">Yes</option>
                     <option value="Photo_no">No</option>
                   </select>
@@ -646,7 +664,54 @@ export default class Register extends React.Component {
                 <Grid.Column></Grid.Column>
               </Grid.Row> */}
             </Grid>
-
+            <Header>QuakerBridge Learning Center Policy</Header>
+            <div>
+              <ol>
+                <li>
+                  All new enrollments must pay a one-time registration fee of
+                  $50 per child (waived for returning students)
+                </li>
+                <li>
+                  A coupon is only valid for a full course sign up, not for a
+                  parital week application.
+                </li>
+                <li>
+                  You may only withdraw from a class before June 8 with a
+                  penalty processing charge of $200.00
+                </li>
+                <li>There are no refunds or credit for absences</li>
+                <li>
+                  QBCLS reserves the right to change, cancel or modify any class
+                  schedule
+                </li>
+                <li>
+                  Quakerbridge Learning center only accepts checks or cashier's
+                  check.
+                </li>
+              </ol>
+            </div>
+            <div>
+              <Form.Field>
+                <label>Parent/Guardian name</label>
+                <input
+                  type="text"
+                  placeholder={"Parent/Guardian name"}
+                  onChange={(e) => this.setState({ sig_name: e.target.value })}
+                  required
+                ></input>
+              </Form.Field>
+            </div>
+            <div>
+              <Form.Field>
+                <label>Signature Date</label>
+                <input
+                  type="date"
+                  placeholder={"Date"}
+                  onChange={(e) => this.setState({ sig_date: e.target.value })}
+                  required
+                ></input>
+              </Form.Field>
+            </div>
             <div className={"register-button-div"}>
               <Button
                 type={"submit"}
