@@ -1,0 +1,10 @@
+
+Run npm install for the first time.
+
+1) to start front-end
+
+npm start
+
+2) to start back-end 
+
+nodemon server.js
