@@ -408,6 +408,7 @@ export default class Register extends React.Component {
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
+                      {/*
                       <option value="Chinese Program">
                         Ongoing Course: Chinese Program
                       </option>
@@ -418,6 +419,7 @@ export default class Register extends React.Component {
                       <option value="SAT/ACT Classes">
                         Ongoing Course: SAT/ACT Classes
                       </option>
+                      */}
                       <option value="English, Vocabulary & Literature">
                         Summer English Enrichment: English, Vocabulary &
                         Literature
@@ -517,6 +519,7 @@ export default class Register extends React.Component {
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
+                      {/*
                       <option value="Chinese Program">
                         Ongoing Course: Chinese Program
                       </option>
@@ -527,6 +530,7 @@ export default class Register extends React.Component {
                       <option value="SAT/ACT Classes">
                         Ongoing Course: SAT/ACT Classes
                       </option>
+                      */}
                       <option value="English, Vocabulary & Literature">
                         Summer English Enrichment: English, Vocabulary &
                         Literature

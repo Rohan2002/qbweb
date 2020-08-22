@@ -35,8 +35,8 @@ export default class HomePage4 extends React.Component {
                   </Header>
                 </div>
                 <div>
-                  <Button href={"/#/register"} className={"news-button"}>
-                    Register
+                  <Button href={""} className={"news-button"}>
+                    Full
                   </Button>
                 </div>
               </Grid.Row>
@@ -58,8 +58,8 @@ export default class HomePage4 extends React.Component {
                       Vanilla), MongoDB, and Node.js by credible and experienced
                       software developers{" "}
                     </Header>
-                    <Button href={"/#/register"} className={"news-button"}>
-                      Register
+                    <Button href={""} className={"news-button"}>
+                      Full
                     </Button>
                   </div>
                 </div>
@@ -79,8 +79,8 @@ export default class HomePage4 extends React.Component {
                       There will be a Diagnostic Test, Full Length Practice
                       Tests, and Comprehensive Explanations with each test.
                     </Header>
-                    <Button href={"/#/register"} className={"news-button"}>
-                      Register
+                    <Button href={""} className={"news-button"}>
+                      Full
                     </Button>
                   </div>
                 </div>
