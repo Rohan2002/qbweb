@@ -21,7 +21,7 @@ export default class HomePage4 extends React.Component {
                     After School Chinese Program
                   </Header>
                   <Header className={"news-des"}>
-                    Start: March 2020 <br />
+                    Start: Fall 2020 <br />
                     Length: 15 weeks<br/>
                     Time: Every Tuesday and Thursday Afternoon
                   </Header>
@@ -35,9 +35,6 @@ export default class HomePage4 extends React.Component {
                   </Header>
                 </div>
                 <div>
-                  <Button href={""} className={"news-button"}>
-                    Full
-                  </Button>
                 </div>
               </Grid.Row>
               <Grid.Row>
@@ -49,7 +46,7 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: March 2020 <br />
+                      Start: Fall 2020 <br />
                       Length: 15 weeks<br/>
                       Time: Every Saturday Afternoon
                     </Header>
@@ -58,9 +55,6 @@ export default class HomePage4 extends React.Component {
                       Vanilla), MongoDB, and Node.js by credible and experienced
                       software developers{" "}
                     </Header>
-                    <Button href={""} className={"news-button"}>
-                      Full
-                    </Button>
                   </div>
                 </div>
               </Grid.Row>
@@ -71,7 +65,7 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: March 2020 <br />
+                      Start: Fall 2020 <br />
                       Length: 15 Weeks<br/>
                       Time: Every Wednesday and Friday Afternoon
                     </Header>
@@ -79,9 +73,6 @@ export default class HomePage4 extends React.Component {
                       There will be a Diagnostic Test, Full Length Practice
                       Tests, and Comprehensive Explanations with each test.
                     </Header>
-                    <Button href={""} className={"news-button"}>
-                      Full
-                    </Button>
                   </div>
                 </div>
               </Grid.Row>
