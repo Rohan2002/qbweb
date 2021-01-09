@@ -3,6 +3,12 @@
     padding-top: 3em;
     padding-bottom: 3em;
 }
+
+.contactPlaceholder
+{
+    margin-bottom: 10px;
+    text-align: center;
+}
 .ui.header.contact-header
 {
     color: #EF6286;
