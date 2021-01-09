@@ -12,6 +12,11 @@ export default class HomePage1 extends React.Component {
           </Header>
           <Header className={"name"}>Quakerbridge Learning Center</Header>
           <div className={"message-body"} style={{ marginTop: 3 + "em" }}>
+            <Message positive>
+              <p style={{ fontSize: 1.7 + "em" }}>
+                2021 QBCLS Summer Honor Credit Course Option II and enrichment program starts rolling from 01/15.
+              </p>
+            </Message>
           </div>
         </div>
       </section>

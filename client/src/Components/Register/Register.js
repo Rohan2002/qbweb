@@ -139,6 +139,10 @@ export default class Register extends React.Component {
         </div>
       );
     }
+    return(
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWYSKHO8GIrHji2RJZp1Us2WM7h4oBEwaB_kPKbextlHj-FA/viewform?embedded=true" width="640" height="3052" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    );
+/*
     return (
       <div className={"regmain container"}>
         <div className={"account-header-div"}>
@@ -408,7 +412,7 @@ export default class Register extends React.Component {
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
-                      {/*
+                      {
                       <option value="Chinese Program">
                         Ongoing Course: Chinese Program
                       </option>
@@ -419,7 +423,7 @@ export default class Register extends React.Component {
                       <option value="SAT/ACT Classes">
                         Ongoing Course: SAT/ACT Classes
                       </option>
-                      */}
+                      }
                       <option value="English, Vocabulary & Literature">
                         Summer English Enrichment: English, Vocabulary &
                         Literature
@@ -519,7 +523,7 @@ export default class Register extends React.Component {
                       <option value="College Planning Course">
                         Appointment Course: College Planning Course
                       </option>
-                      {/*
+                      {
                       <option value="Chinese Program">
                         Ongoing Course: Chinese Program
                       </option>
@@ -530,7 +534,7 @@ export default class Register extends React.Component {
                       <option value="SAT/ACT Classes">
                         Ongoing Course: SAT/ACT Classes
                       </option>
-                      */}
+                      }
                       <option value="English, Vocabulary & Literature">
                         Summer English Enrichment: English, Vocabulary &
                         Literature
@@ -658,7 +662,7 @@ export default class Register extends React.Component {
                   </select>
                 </Grid.Column>
               </Grid.Row>
-              {/* <Grid.Row columns={2}>
+              { <Grid.Row columns={2}>
                 <Grid.Column>
                   <ReCAPTCHA
                     ref={recaptchaRef}
@@ -666,7 +670,7 @@ export default class Register extends React.Component {
                   />
                 </Grid.Column>
                 <Grid.Column></Grid.Column>
-              </Grid.Row> */}
+              </Grid.Row> }
             </Grid>
             <Header>QuakerBridge Learning Center Policy</Header>
             <div>
@@ -727,5 +731,6 @@ export default class Register extends React.Component {
         </div>
       </div>
     );
+    */
   }
 }
