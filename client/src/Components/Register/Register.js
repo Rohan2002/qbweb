@@ -140,7 +140,7 @@ export default class Register extends React.Component {
       );
     }
     return(
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWYSKHO8GIrHji2RJZp1Us2WM7h4oBEwaB_kPKbextlHj-FA/viewform?embedded=true" width="640" height="3052" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <div align="center"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWYSKHO8GIrHji2RJZp1Us2WM7h4oBEwaB_kPKbextlHj-FA/viewform?embedded=true" width="640" height="3052" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
     );
 /*
     return (
