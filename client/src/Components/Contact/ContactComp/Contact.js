@@ -44,12 +44,15 @@ export default class ContactMain extends React.Component {
       );
     }
     return (
-      <p>
-        Please contact us at the following:<br></br>
-        Office: (609)588-4442<br></br>
-        Cell: (609)933-8806<br></br>
-        Mail: qlc4044@quaker-bridge.com
-      </p>
+      <div align="center">
+        <p>
+          Please contact us at the following:<br></br>
+          Office: (609)588-4442<br></br>
+          Cell: (609)933-8806<br></br>
+          Mail: qlc4044@quaker-bridge.com
+        </p>
+      </div>
+      
     /*
       <section id="contact1">
         <div className={"contactmain container"}>
