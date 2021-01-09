@@ -14,8 +14,8 @@ export default class HomePage1 extends React.Component {
           <div className={"message-body"} style={{ marginTop: 3 + "em" }}>
             <Message positive>
               <p style={{ fontSize: 1.7 + "em" }}>
-                2021 QBCLS Summer Honor Credit Course Option II and enrichment programs start rolling from 01/15.<br> 
-                To register, please click <a href="/#/register">here</a>.<br>
+                2021 QBCLS Summer Honor Credit Course Option II and enrichment programs start rolling from 01/15.<br></br> 
+                To register, please click <a href="/#/register">here</a>.<br></br>
                 For questions and concerns, please click <a href="/#/contact">here</a>.
               </p>
             </Message>
