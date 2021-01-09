@@ -8,12 +8,12 @@ export default class HomePage1 extends React.Component {
       <section id="home1">
         <div className={"homepage container"}>
           <Header className={"hook"}>
-            We are Commited to Education, Enlightment, and Excellence
+            We are committed to design and offer excellent courses to help your child achieve academic success.
           </Header>
           <Header className={"name"}>Quakerbridge Learning Center</Header>
           <div className={"message-body"} style={{ marginTop: 3 + "em" }}>
             <Message positive>
-              <p style={{ fontSize: 1.7 + "em" }}>
+              <p style={{ fontSize: 1.6 + "em" }}>
                 2021 QBCLS Summer Honor Credit Course Option II and enrichment programs start rolling from 01/15.<br></br> 
                 To register, please click <a href="/#/register">here</a>.<br></br>
                 For questions and concerns, please click <a href="/#/contact">here</a>.

@@ -44,6 +44,13 @@ export default class ContactMain extends React.Component {
       );
     }
     return (
+      <p>
+        Please contact us at the following:<br></br>
+        Office: (609)588-4442<br></br>
+        Cell: (609)933-8806<br></br>
+        Mail: qlc4044@quaker-bridge.com
+      </p>
+    /*
       <section id="contact1">
         <div className={"contactmain container"}>
           <div>
@@ -113,10 +120,10 @@ export default class ContactMain extends React.Component {
                       }
                       required
                     ></textarea>
-                     {/* <ReCAPTCHA
+                     { <ReCAPTCHA
                     ref={recaptchaRef}
                     sitekey="6Lcbr84UAAAAAInkqGwnmpSXnlFp2DB49DtXNUYi"
-                  /> */}
+                  /> }
                     <Button className={"send-button"}>Send</Button>
                   </Form.Field>
                 </Grid.Column>
@@ -125,6 +132,7 @@ export default class ContactMain extends React.Component {
           </div>
         </div>
       </section>
+      */
     );
   }
 }
