@@ -142,7 +142,7 @@ export default class Register extends React.Component {
     return(
       <div align="center">
         <p style={{ fontSize: 1.6 + "em" }}>For a printable version of the form, please click <a href="./QBCLSProgramRegisterForm.docm">here</a></p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeWYSKHO8GIrHji2RJZp1Us2WM7h4oBEwaB_kPKbextlHj-FA/viewform?embedded=true" width="640" height="3052" frameborder="0" marginheight="15" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfaAoNk7KPkh4OOQXrTPirj-KevD2vEdVs_pDp8W5s4H11TBg/viewform?embedded=true" width="640" height="3171" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     );
 /*
