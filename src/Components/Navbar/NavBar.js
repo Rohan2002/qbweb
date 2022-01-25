@@ -4,7 +4,6 @@ import "./NavBar.css";
 import Logo from "./nav-image/qb.png";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 export default class NavBar extends React.Component {
   state = { activeItem: " " };
 
@@ -25,8 +24,8 @@ export default class NavBar extends React.Component {
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/#/about">About</Nav.Link>
-              <Nav.Link href="./WinterCourses2021.pdf">Spring Program</Nav.Link>
-              <Nav.Link href="./QBLC2021Fall.pdf">Fall Program</Nav.Link>
+              <Nav.Link href="/WinterCourses2021.pdf">Spring Program</Nav.Link>
+              <Nav.Link href="/QBLC2021Fall.pdf">Fall Program</Nav.Link>
               <Nav.Link href="/#/college-program">College Program</Nav.Link>
               <Nav.Link href="/#/faq">FAQ</Nav.Link>
               <Nav.Link href='/#/gallery'>Gallery</Nav.Link>

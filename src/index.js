@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, HashRouter as Router, Switch, Redirect } from "react-router-dom";
+import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Summer from "./Components/Summer/Summer";
 import About from "./Components/About/About";
@@ -9,7 +9,6 @@ import College from "./Components/College/CollegeMain";
 import FAQ from "./Components/FAQ/FAQMain";
 import Contact from "./Components/Contact/ContactMain";
 import Video from "./Components/Video/Video";
-import Data from "./Components/Data/StudentData";
 const Routers = (
   <Router>
     <Switch>
@@ -21,8 +20,6 @@ const Routers = (
       <Route exact path="/faq" component={FAQ} />{" "}
       <Route exact path="/register" component={Register} />{" "}
       <Route exact path="/gallery" component={Video} />{" "}
-      <Route exact path="/student" component={Data}></Route>
-      <Route render={() => <Redirect to={{pathname: "/"}} />} />
     </Switch>
   </Router>
 );
