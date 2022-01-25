@@ -22,15 +22,15 @@ export default class NavBar extends React.Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto" />
             <Nav>
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/#/about">About</Nav.Link>
-              <Nav.Link href="/WinterCourses2021.pdf">Spring Program</Nav.Link>
-              <Nav.Link href="/QBLC2021Fall.pdf">Fall Program</Nav.Link>
-              <Nav.Link href="/#/college-program">College Program</Nav.Link>
-              <Nav.Link href="/#/faq">FAQ</Nav.Link>
-              <Nav.Link href='/#/gallery'>Gallery</Nav.Link>
-              <Nav.Link href="/#/contact">Contact Us</Nav.Link>
-              <Nav.Link href="/#/register">Register</Nav.Link>
+              <Nav.Link href="/qbweb/">Home</Nav.Link>
+              <Nav.Link href="/qbweb/#/about">About</Nav.Link>
+              <Nav.Link href="/qbweb/WinterCourses2021.pdf">Spring Program</Nav.Link>
+              <Nav.Link href="/qbweb/QBLC2021Fall.pdf">Fall Program</Nav.Link>
+              <Nav.Link href="/qbweb/#/college-program">College Program</Nav.Link>
+              <Nav.Link href="/qbweb/#/faq">FAQ</Nav.Link>
+              <Nav.Link href='/qbweb/#/gallery'>Gallery</Nav.Link>
+              <Nav.Link href="/qbweb/#/contact">Contact Us</Nav.Link>
+              <Nav.Link href="/qbweb/#/register">Register</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
