@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/qbweb/static/css/main.9bbb7dd5.chunk.css",
-    "main.js": "/qbweb/static/js/main.a7737214.chunk.js",
-    "main.js.map": "/qbweb/static/js/main.a7737214.chunk.js.map",
+    "main.js": "/qbweb/static/js/main.ae370a50.chunk.js",
+    "main.js.map": "/qbweb/static/js/main.ae370a50.chunk.js.map",
     "runtime-main.js": "/qbweb/static/js/runtime-main.faed7499.js",
     "runtime-main.js.map": "/qbweb/static/js/runtime-main.faed7499.js.map",
-    "static/js/2.2538ec67.chunk.js": "/qbweb/static/js/2.2538ec67.chunk.js",
-    "static/js/2.2538ec67.chunk.js.map": "/qbweb/static/js/2.2538ec67.chunk.js.map",
+    "static/js/2.06813dd3.chunk.js": "/qbweb/static/js/2.06813dd3.chunk.js",
+    "static/js/2.06813dd3.chunk.js.map": "/qbweb/static/js/2.06813dd3.chunk.js.map",
     "index.html": "/qbweb/index.html",
-    "precache-manifest.65277ac7891fbed788bec9d8dd226c85.js": "/qbweb/precache-manifest.65277ac7891fbed788bec9d8dd226c85.js",
+    "precache-manifest.7728b712d1907cbe97ddb145d25fc931.js": "/qbweb/precache-manifest.7728b712d1907cbe97ddb145d25fc931.js",
     "service-worker.js": "/qbweb/service-worker.js",
     "static/css/main.9bbb7dd5.chunk.css.map": "/qbweb/static/css/main.9bbb7dd5.chunk.css.map",
-    "static/js/2.2538ec67.chunk.js.LICENSE.txt": "/qbweb/static/js/2.2538ec67.chunk.js.LICENSE.txt",
+    "static/js/2.06813dd3.chunk.js.LICENSE.txt": "/qbweb/static/js/2.06813dd3.chunk.js.LICENSE.txt",
     "static/media/Home1.css": "/qbweb/static/media/banner.4be86baf.png",
     "static/media/class.jpg": "/qbweb/static/media/class.0cd9134e.jpg",
     "static/media/collegepep.jfif": "/qbweb/static/media/collegepep.e513536d.jfif",
@@ -29,8 +29,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.faed7499.js",
-    "static/js/2.2538ec67.chunk.js",
+    "static/js/2.06813dd3.chunk.js",
     "static/css/main.9bbb7dd5.chunk.css",
-    "static/js/main.a7737214.chunk.js"
+    "static/js/main.ae370a50.chunk.js"
   ]
 }
