@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://quaker-bridge.org/sitemap.xml

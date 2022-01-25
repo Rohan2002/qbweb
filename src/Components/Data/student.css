@@ -1,0 +1,17 @@
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 3em;
+
+  }
+  .ui.header.header-reg{
+      color:black;
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 2em;
+      font-size: 3em;
+      font-family: 'Titillium Web';
+  }
+  .main-reg{
+      height: auto;
+  }

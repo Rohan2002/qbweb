@@ -1,0 +1,87 @@
+.contactmain
+{
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.contactPlaceholder
+{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.ui.header.contact-header
+{
+    color: #EF6286;
+    font-family: 'Titillium Web';
+    font-size: 2.1em;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+.map-div
+{
+    margin-top: 3em;
+}
+.map-iframe
+{
+    border: 0;
+    height:320px;
+    width: 100%;
+}
+
+.contact-left
+{
+    margin-top: -3em;
+}
+/*Form*/
+.contactform-div
+{
+    margin-top: 3em;
+}
+.name-input
+{
+    width: 100%;
+    padding: 12px 12px;
+    border: 1px solid #BDBCBC;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+    color: #808080;
+    outline: none;
+    font-weight: 400;
+    font-family: 'Titillium Web';
+}
+.text-input
+{
+    width: 100%;
+    padding: 12px 12px;
+    border: 1px solid #BDBCBC;
+    font-size: 15px;
+    margin-bottom: 1.5em;
+    color: #808080;
+    outline: none;
+    font-weight: 400;
+    font-family: 'Titillium Web';
+    resize: none;
+    height: 192px;
+}
+.ui.button.send-button {
+    margin-top: 1em;
+    white-space: nowrap;
+    z-index: 1;
+    font-family: 'Titillium Web';
+    font-weight: 800;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: auto;
+    padding: 10px 30px;
+    border: 2px solid #05a6b3;
+    background: white;
+    color:#05a6b3;
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+  .ui.button.send-button:hover {
+    transform: scale(1.1) perspective(1px);
+  }
