@@ -121,7 +121,7 @@ export default class FAQ extends React.Component {
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="3">
                     <Header className={"faq-question-header"}>
-                      What are the dates for the 2020 six weeks program{" "}
+                      What are the dates for the 2022 six weeks program{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
                       </span>
