@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.438400a9.chunk.css",
-    "main.js": "/static/js/main.1bee5585.chunk.js",
-    "main.js.map": "/static/js/main.1bee5585.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.92cf16e2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.92cf16e2.js.map",
-    "static/js/2.06813dd3.chunk.js": "/static/js/2.06813dd3.chunk.js",
-    "static/js/2.06813dd3.chunk.js.map": "/static/js/2.06813dd3.chunk.js.map",
+    "main.css": "/static/css/main.65a1db80.chunk.css",
+    "main.js": "/static/js/main.89aaa92e.chunk.js",
+    "main.js.map": "/static/js/main.89aaa92e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c533b83c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c533b83c.js.map",
+    "static/js/2.2cb75011.chunk.js": "/static/js/2.2cb75011.chunk.js",
+    "static/js/2.2cb75011.chunk.js.map": "/static/js/2.2cb75011.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.32f0607bd1a169bdee39d55112102aff.js": "/precache-manifest.32f0607bd1a169bdee39d55112102aff.js",
+    "precache-manifest.010d6e96d591d4f7ff321f50c940e584.js": "/precache-manifest.010d6e96d591d4f7ff321f50c940e584.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.438400a9.chunk.css.map": "/static/css/main.438400a9.chunk.css.map",
-    "static/js/2.06813dd3.chunk.js.LICENSE.txt": "/static/js/2.06813dd3.chunk.js.LICENSE.txt",
+    "static/css/main.65a1db80.chunk.css.map": "/static/css/main.65a1db80.chunk.css.map",
+    "static/js/2.2cb75011.chunk.js.LICENSE.txt": "/static/js/2.2cb75011.chunk.js.LICENSE.txt",
     "static/media/Home1.css": "/static/media/banner.4be86baf.png",
     "static/media/class.jpg": "/static/media/class.0cd9134e.jpg",
     "static/media/collegepep.jfif": "/static/media/collegepep.e513536d.jfif",
@@ -22,15 +22,15 @@
     "static/media/qb.png": "/static/media/qb.103ff3dc.png",
     "static/media/qbhacks.png": "/static/media/qbhacks.ef880ddc.png",
     "static/media/stanford.png": "/static/media/stanford.288ddb8f.png",
-    "static/media/students.jpg": "/static/media/students.eb6efe4c.jpg",
     "static/media/summer1.css": "/static/media/summer.2d830e04.png",
+    "static/media/teachers.jpg": "/static/media/teachers.9bd3b9ae.jpg",
     "static/media/tof-new.png": "/static/media/tof-new.0fd5daa9.png",
     "static/media/yale.png": "/static/media/yale.9f7ac162.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.92cf16e2.js",
-    "static/js/2.06813dd3.chunk.js",
-    "static/css/main.438400a9.chunk.css",
-    "static/js/main.1bee5585.chunk.js"
+    "static/js/runtime-main.c533b83c.js",
+    "static/js/2.2cb75011.chunk.js",
+    "static/css/main.65a1db80.chunk.css",
+    "static/js/main.89aaa92e.chunk.js"
   ]
 }
