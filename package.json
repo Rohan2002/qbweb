@@ -1,7 +1,7 @@
 {
   "name": "qbweb",
   "version": "0.1.0",
-  "homepage": "https://rohan2002.github.io/qbweb/",
+  "homepage": "https://www.quaker-bridge.org/",
   "private": true,
   "dependencies": {
     "axios": "^0.27.2",
