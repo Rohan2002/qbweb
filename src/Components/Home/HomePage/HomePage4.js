@@ -21,7 +21,7 @@ export default class HomePage4 extends React.Component {
                     After School Chinese Program
                   </Header>
                   <Header className={"news-des"}>
-                    Start: Spring 2022 <br />
+                    Start: Spring 2023 <br />
                     Length: 15 weeks<br/>
                     Time: Every Tuesday and Thursday Afternoon
                   </Header>
@@ -46,7 +46,7 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: Spring 2022 <br />
+                      Start: Spring 2023 <br />
                       Length: 15 weeks<br/>
                       Time: Every Saturday Afternoon
                     </Header>
@@ -65,7 +65,7 @@ export default class HomePage4 extends React.Component {
                   </div>
                   <div className={"news-space"}>
                     <Header className={"news-des"}>
-                      Start: Spring 2022 <br />
+                      Start: Spring 2023 <br />
                       Length: 15 Weeks<br/>
                       Time: Every Wednesday and Friday Afternoon
                     </Header>
