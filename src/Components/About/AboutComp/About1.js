@@ -103,36 +103,18 @@ export default class About1 extends React.Component {
 
           <section id={"acc-partners"}>
 
-
-            <a
-              href={
-                "https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"
-              }
-              target="_blank"
-              rel="noopener"
-            >
-              <Image className={"main-logo-acc"} src={Middle}></Image>
-            </a>
-
             <Grid className={"acc-grid"} stackable={true}>
-              <Grid.Row columns={3}>
+              <Grid.Row columns={2}>
                 <Grid.Column>
                   <a
-                    href={"https://www.ets.org/toefl/ibt/about"}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <Image src={Praxis}></Image>
-                  </a>
-                </Grid.Column>
-                <Grid.Column>
-                  <a
-                    href={"https://www.ets.org/toefl/ibt/about"}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <Image className={"main-logo-acc2"} src={Toefel}></Image>
-                  </a>
+                href={
+                  "https://www.msa-cess.org/RelId/606489/ISvars/default/Accreditation.htm"
+                }
+                target="_blank"
+                rel="noopener"
+              >
+                <Image className={"main-logo-acc"} src={Middle}></Image>
+              </a>
                 </Grid.Column>
                 <Grid.Column>
                   <a
