@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.a78c5bc3.chunk.css",
+    "main.css": "/static/css/main.95dad8e6.chunk.css",
     "main.js": "/static/js/main.c8766c47.chunk.js",
     "main.js.map": "/static/js/main.c8766c47.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c533b83c.js",
@@ -8,11 +8,11 @@
     "static/js/2.0214003d.chunk.js": "/static/js/2.0214003d.chunk.js",
     "static/js/2.0214003d.chunk.js.map": "/static/js/2.0214003d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ed754ad25263519e5aca3eba1b118473.js": "/precache-manifest.ed754ad25263519e5aca3eba1b118473.js",
+    "precache-manifest.50b644acefd94e8450c602e81932c84a.js": "/precache-manifest.50b644acefd94e8450c602e81932c84a.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.a78c5bc3.chunk.css.map": "/static/css/main.a78c5bc3.chunk.css.map",
+    "static/css/main.95dad8e6.chunk.css.map": "/static/css/main.95dad8e6.chunk.css.map",
     "static/js/2.0214003d.chunk.js.LICENSE.txt": "/static/js/2.0214003d.chunk.js.LICENSE.txt",
-    "static/media/Home1.css": "/static/media/banner.094e6763.png",
+    "static/media/Home1.css": "/static/media/banner.1f80f524.png",
     "static/media/class.jpg": "/static/media/class.0cd9134e.jpg",
     "static/media/collegepep.jfif": "/static/media/collegepep.e513536d.jfif",
     "static/media/middle-new.png": "/static/media/middle-new.3c7bb490.png",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.c533b83c.js",
     "static/js/2.0214003d.chunk.js",
-    "static/css/main.a78c5bc3.chunk.css",
+    "static/css/main.95dad8e6.chunk.css",
     "static/js/main.c8766c47.chunk.js"
   ]
 }
