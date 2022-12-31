@@ -4,6 +4,7 @@ import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import Summer from "./Components/Summer/Summer";
 import About from "./Components/About/About";
+import SummerProgram from "./Components/SummerProgram/SummerProgram";
 import Register from "./Components/Register/MainReg";
 import College from "./Components/College/CollegeMain";
 import FAQ from "./Components/FAQ/FAQMain";
@@ -15,6 +16,7 @@ const Routers = (
       <Route exact path="/" component={Home} />{" "}
       <Route exact path="/summer" component={Summer} />{" "}
       <Route exact path="/about" component={About} />{" "}
+      <Route exact path="/SummerProgram" component={SummerProgram} />{" "}
       <Route exact path="/college-program" component={College} />{" "}
       <Route exact path="/contact" component={Contact} />{" "}
       <Route exact path="/faq" component={FAQ} />{" "}

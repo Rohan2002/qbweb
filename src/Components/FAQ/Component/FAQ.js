@@ -259,8 +259,8 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="9">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        Yes, two new Option II classes: Introduction to Computer
-                        Science (Java) and American Studies I Honors.
+                        Yes, three new classes: Introduction to Computer
+                        Science (Java), PreCalculus (honors and regular), and AP Calculus AB Preview.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
