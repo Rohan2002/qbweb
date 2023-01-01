@@ -1,21 +1,17 @@
 import React from "react";
-import "./SummerProgram.css";
+import Footer from "../Footer/Footer";
+import NavBar from "../Navbar/NavBar";
+import SummerP from "../SummerProgram/SummerPComp/SummerP";
 export default class SummerProgram extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
-      <div align="center">
-        <p style={{ fontSize: 1.6 + "em" }}>
-          For the course descriptions, please click{" "}
-          <a href="./QBCLS23CourseDiscription.pdf">here</a>
-        </p>
-        <p style={{ fontSize: 1.6 + "em" }}>
-          For the schedule and mission statement, please click{" "}
-          <a href="./QBCLS23MissionScheduleTuition.pdf">here</a>
-        </p>
-        <p style={{ fontSize: 1.6 + "em" }}>
-          For the program policy, please click{" "}
-          <a href="./QBCLS23ProgramPolicyInfo.pdf">here</a>
-        </p>
+      <div className="contain_all">
+        <NavBar />
+        <SummerP/>
+        <Footer/>
       </div>
     );
   }
