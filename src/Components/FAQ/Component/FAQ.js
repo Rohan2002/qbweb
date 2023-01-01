@@ -27,7 +27,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="0">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        Our first year was 2004, so we have had 15 years
+                        Our first year was 2004, so we have had 18 years
                         experience with the program. Unlike many summer
                         programs, QLC is accredited by Middle States
                         Association, which allows credit to be transferred for
@@ -121,7 +121,7 @@ export default class FAQ extends React.Component {
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="3">
                     <Header className={"faq-question-header"}>
-                      What are the dates for the 2022 six weeks program{" "}
+                      What are the dates for the 2023 six weeks program{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
                       </span>
@@ -130,7 +130,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        June 29 through August 7, Monday through Friday.
+                        June 26 through August 4, Monday through Friday.
                         Additional time before and after school can be arranged
                         for parents who need early or late pick-up. Also, a one
                         week late start or a one week early dismissal can be

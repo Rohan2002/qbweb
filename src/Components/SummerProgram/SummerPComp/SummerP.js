@@ -22,7 +22,6 @@ export default class SummerP extends React.Component {
         </div>
         <div align="center">
           <Image className={"billboard"} src={BB}></Image>
-          <Image className={"main-logo-acc"} src={BB}></Image>
         </div>
       </section>
     );
