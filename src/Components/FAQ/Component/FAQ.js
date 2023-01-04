@@ -260,7 +260,7 @@ export default class FAQ extends React.Component {
                     <Card.Body>
                       <Header className={"answer-header"}>
                         Yes, three new classes: Introduction to Computer
-                        Science (Java), PreCalculus (honors and regular), and AP Calculus AB Preview.
+                        Science (Java), PreCalculus (honors and regular), AP Calculus AB Preview, and second languages (French, Chinese, and Spanish).
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
