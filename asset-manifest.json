@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.42b474f0.chunk.css",
-    "main.js": "/static/js/main.67bbd6af.chunk.js",
-    "main.js.map": "/static/js/main.67bbd6af.chunk.js.map",
+    "main.js": "/static/js/main.abb86764.chunk.js",
+    "main.js.map": "/static/js/main.abb86764.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c533b83c.js",
     "runtime-main.js.map": "/static/js/runtime-main.c533b83c.js.map",
-    "static/js/2.f33d2188.chunk.js": "/static/js/2.f33d2188.chunk.js",
-    "static/js/2.f33d2188.chunk.js.map": "/static/js/2.f33d2188.chunk.js.map",
+    "static/js/2.b5db0693.chunk.js": "/static/js/2.b5db0693.chunk.js",
+    "static/js/2.b5db0693.chunk.js.map": "/static/js/2.b5db0693.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1c73e02f02ad0d4fe09a9f2fc9aef87f.js": "/precache-manifest.1c73e02f02ad0d4fe09a9f2fc9aef87f.js",
+    "precache-manifest.6ad246f9ec7c3534e3e690ac5ae4c33d.js": "/precache-manifest.6ad246f9ec7c3534e3e690ac5ae4c33d.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.42b474f0.chunk.css.map": "/static/css/main.42b474f0.chunk.css.map",
-    "static/js/2.f33d2188.chunk.js.LICENSE.txt": "/static/js/2.f33d2188.chunk.js.LICENSE.txt",
+    "static/js/2.b5db0693.chunk.js.LICENSE.txt": "/static/js/2.b5db0693.chunk.js.LICENSE.txt",
     "static/media/Billboard.jpeg": "/static/media/Billboard.b7063ace.jpeg",
     "static/media/IMG_7299.png": "/static/media/IMG_7299.4e8b916b.png",
+    "static/media/IMG_7332.png": "/static/media/IMG_7332.575a0620.png",
     "static/media/Home1.css": "/static/media/banner.18867fbe.png",
     "static/media/class.jpg": "/static/media/class.0cd9134e.jpg",
     "static/media/collegepep.jfif": "/static/media/collegepep.e513536d.jfif",
@@ -31,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c533b83c.js",
-    "static/js/2.f33d2188.chunk.js",
+    "static/js/2.b5db0693.chunk.js",
     "static/css/main.42b474f0.chunk.css",
-    "static/js/main.67bbd6af.chunk.js"
+    "static/js/main.abb86764.chunk.js"
   ]
 }
