@@ -70,3 +70,15 @@
 .ui.button.register:hover {
   transform: scale(1.1) perspective(1px);
 }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

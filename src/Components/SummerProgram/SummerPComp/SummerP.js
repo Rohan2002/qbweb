@@ -2,6 +2,8 @@ import React from "react";
 import { Grid, Header, Image, Icon } from "semantic-ui-react";
 import "./SummerProgram.css";
 import BB from "../SummerImage/Billboard.jpeg";
+import CB from "../SummerImage/IMG_7299.png";
+import teachers from "../SummerImage/IMG_7332.png";
 export default class SummerP extends React.Component {
   render() {
     return (
@@ -20,8 +22,16 @@ export default class SummerP extends React.Component {
             <a href="./QBCLS23ProgramPolicyInfo.pdf">here</a>
           </p>
         </div>
-        <div align="center">
-          <Image className={"billboard"} src={BB}></Image>
+        <div class="row" align="center">
+          <div class="column">
+            <Image className={"billboard"} src={BB} style="width:100%"></Image>
+          </div>
+          <div class="column">
+            <Image className={"collab"} src={CB} style="width:100%"></Image>
+          </div>
+          <div class="column" >
+            <Image className={"teachers"} src={teachers} style="width:100%"></Image>
+          </div>
         </div>
       </section>
     );

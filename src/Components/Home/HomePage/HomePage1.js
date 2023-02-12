@@ -14,7 +14,7 @@ export default class HomePage1 extends React.Component {
           <div className={"message-body"} style={{ marginTop: 3 + "em" }}>
             <Message positive>
               <p style={{ fontSize: 1.6 + "em" }}>
-                We offer Option II Intro. to Computer Science with Java which has been newly approved for WWP school district.<br></br>
+                We offer Option II Intro. to Computer Science with Java which has been newly approved for WWP school district. For more information, please click <a href="/java2023.pdf">here</a><br></br>
                 We offer medium and advance level second language courses (Chinese/French/Spanish).<br></br>
                 To register, please click <a href="/#/register">here</a>.<br></br>
                 For questions and concerns, please click <a href="/#/contact">here</a>.
