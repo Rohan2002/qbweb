@@ -29,6 +29,13 @@ export default class About1 extends React.Component {
               preparing them for the rigors of higher education.
             </Header>
           </div>
+          <div className="vision-header-div">
+            <Header className={"about-headers"}>Our Documentary Video</Header>
+          </div>
+          <div align="center">
+            <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/xyIHB5AlB3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+          </div>
           <div className={"vision"}>
             <div className={"vision-header-div"}>
               <Header className={"about-headers"}>Vision Statement</Header>
