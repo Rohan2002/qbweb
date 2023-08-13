@@ -24,7 +24,7 @@ export default class NavBar extends React.Component {
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/#/about">About</Nav.Link>
-              <Nav.Link href="/#/SummerProgram">Summer Program 2023</Nav.Link>
+              <Nav.Link href="/WinterCourses2021.pdf">Fall Program 2023</Nav.Link>
               <Nav.Link href="/#/college-program">College Program</Nav.Link>
               <Nav.Link href="/#/faq">FAQ</Nav.Link>
               <Nav.Link href='/#/gallery'>Gallery</Nav.Link>

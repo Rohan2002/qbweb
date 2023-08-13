@@ -24,13 +24,13 @@ export default class SummerP extends React.Component {
         </div>
         <div class="row" align="center">
           <div class="column">
-            <Image className={"billboard"} src={BB} style="width:100%"></Image>
+            <Image className={"billboard"} src={BB}></Image>
           </div>
           <div class="column">
-            <Image className={"collab"} src={CB} style="width:100%"></Image>
+            <Image className={"collab"} src={CB}></Image>
           </div>
-          <div class="column" >
-            <Image className={"teachers"} src={teachers} style="width:100%"></Image>
+          <div class="column">
+            <Image className={"teachers"} src={teachers}></Image>
           </div>
         </div>
       </section>
