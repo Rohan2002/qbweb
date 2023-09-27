@@ -121,7 +121,7 @@ export default class FAQ extends React.Component {
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="3">
                     <Header className={"faq-question-header"}>
-                      What are the dates for the 2023 six weeks program{" "}
+                      What are the dates for the 2024 six weeks program{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
                       </span>
@@ -130,11 +130,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        June 26 through August 4, Monday through Friday.
-                        Additional time before and after school can be arranged
-                        for parents who need early or late pick-up. Also, a one
-                        week late start or a one week early dismissal can be
-                        arranged as many families have summer travel plans.
+                        We will announce further details on this program soon in December.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
