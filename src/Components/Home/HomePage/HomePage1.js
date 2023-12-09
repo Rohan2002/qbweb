@@ -14,7 +14,7 @@ export default class HomePage1 extends React.Component {
           <div className={"message-body"} style={{ marginTop: 3 + "em" }}>
             <Message positive>
               <p style={{ fontSize: 1.6 + "em" }}>
-                Details about the 2024 summer program.<br></br>
+                Details about the 2024 summer program will be released in January.<br></br>
                 For information about the fall program, please click <a href="/WinterCourses2021.pdf">here</a><br></br>
                 To register, please click <a href="/#/register">here</a>.<br></br>
                 For questions and concerns, please click <a href="/#/contact">here</a>.
