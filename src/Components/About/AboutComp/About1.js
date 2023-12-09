@@ -29,81 +29,87 @@ export default class About1 extends React.Component {
               preparing them for the rigors of higher education.
             </Header>
           </div>
-          <div className="vision-header-div">
+          {/* <div className="vision-header-div">
             <Header className={"about-headers"}>Our Documentary Video</Header>
           </div>
           <div align="center">
-            <iframe width="1120" height="630" src="https://www.youtube-nocookie.com/embed/xyIHB5AlB3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            <iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/xyIHB5AlB3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
-          </div>
+          </div> */}
           <div className={"vision"}>
             <div className={"vision-header-div"}>
               <Header className={"about-headers"}>Vision Statement</Header>
             </div>
             <div className={"vision-grid"}>
-              <Grid columns={2} stackable={true}>
-                <Grid.Column>
-                  <Image src={Class}></Image>
-                </Grid.Column>
-                <Grid.Column>
-                  <div>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Variety: We offer a variety of classes encompassing
-                      various levels of difficulty
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      State-of-the-Art Computer Labs: We house the latest
-                      computers and software required for Praxis and TOEFL
-                      testing.
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Nurturing Environment: A small class size gives every
-                      child more attention from teachers and peers and the
-                      opportunity to fully engage in class.
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Exceptional Faculty and Staff: Our experienced and
-                      accomplished instructors graduated from some of the finest
-                      universities.
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Convenience: Our courses are offered every day and we can
-                      arrange transportation
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Supplementary Services: We offer private tutoring and
-                      college counseling services.
-                    </Header>
-                  </div>
-                </Grid.Column>
+              <Grid stackable={true}>
+                <Grid.Row columns={3}>
+                  <Grid.Column>
+                    <Image src={Class}></Image>
+                    <iframe width="100%" height="200" src="https://www.youtube-nocookie.com/embed/xyIHB5AlB3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                  </Grid.Column>
+                  <Grid.Column>
+                    <div>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Variety: We offer a variety of classes encompassing
+                        various levels of difficulty
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        State-of-the-Art Computer Labs: We house the latest
+                        computers and software required for Praxis and TOEFL
+                        testing.
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Nurturing Environment: A small class size gives every
+                        child more attention from teachers and peers and the
+                        opportunity to fully engage in class.
+                      </Header>
+                    </div>
+                    </Grid.Column>
+                    <Grid.Column>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Exceptional Faculty and Staff: Our experienced and
+                        accomplished instructors graduated from some of the finest
+                        universities.
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Convenience: Our courses are offered every day and we can
+                        arrange transportation
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Supplementary Services: We offer private tutoring and
+                        college counseling services.
+                      </Header>
+                    </div>
+                  </Grid.Column>
+                </Grid.Row>
               </Grid>
             </div>
           </div>

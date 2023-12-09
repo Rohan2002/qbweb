@@ -7,3 +7,10 @@
 {
     padding-left: 10em !important;
 }
+.imagediv
+{
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}

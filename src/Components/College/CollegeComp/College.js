@@ -27,7 +27,7 @@ export default class College extends React.Component {
               We have helped students get into the following reputated colleges
             </Header>
           </div>
-          <div className={"aboutimagediv"}>
+          <div className={"imagediv"}>
               <Grid stackable={true}>
                   <Grid.Row columns={4}>
                     <Grid.Column>
@@ -50,110 +50,116 @@ export default class College extends React.Component {
               <Header className={"about-headers"}>Program Details</Header>
             </div>
             <div className={"vision-grid"}>
-              <Grid columns={2} stackable={true}>
-                <Grid.Column>
-                  <div className={"class-image"}>
-                  <Image src={Class}></Image>
-                  </div>
-                </Grid.Column>
-                <Grid.Column className={"college-coloumn"}>
-                  <div>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Certified Consultants     
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      College Funding Strategies
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      College Selection Assistance
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Application Process Assistance
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      ACT/SAT Preparation Assistance
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      FAFSA Guidance
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      GPA Enhancement Assistance
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Career Planning Assistance
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Curriculum Planning Assistance 
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Financial Aid Appeal Assistance
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Aptitude Analysis
-                    </Header>
-                  </div>
-                  <div className={"vision-goal-div"}>
-                    <Header className={"vision-goals"}>
-                      <span>
-                        <Icon color={"teal"} name={"pin"}></Icon>
-                      </span>
-                      Career Assessment
-                    </Header>
-                  </div>
-                </Grid.Column>
+              <Grid stackable={true}>
+                <Grid.Row columns={3}>
+                  {/* <Grid.Column>
+                    <div className={"class-image"}>
+                    <Image src={Class}></Image>
+                    </div>
+                  </Grid.Column> */}
+                  <Grid.Column className={"college-coloumn"}>
+                    <div>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Certified Consultants     
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        College Funding Strategies
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        College Selection Assistance
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Application Process Assistance
+                      </Header>
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column className={"college-coloumn"}>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        ACT/SAT Preparation Assistance
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        FAFSA Guidance
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        GPA Enhancement Assistance
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Career Planning Assistance
+                      </Header>
+                    </div>
+                  </Grid.Column>
+                  <Grid.Column className={"college-coloumn"}>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Curriculum Planning Assistance 
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Financial Aid Appeal Assistance
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Aptitude Analysis
+                      </Header>
+                    </div>
+                    <div className={"vision-goal-div"}>
+                      <Header className={"vision-goals"}>
+                        <span>
+                          <Icon color={"teal"} name={"pin"}></Icon>
+                        </span>
+                        Career Assessment
+                      </Header>
+                    </div>
+                  </Grid.Column>
+                </Grid.Row>
               </Grid>
             </div>
           </div>
