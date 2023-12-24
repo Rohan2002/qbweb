@@ -14,49 +14,9 @@ export default class HomePage4 extends React.Component {
                     Upcoming News & Announcements
                   </Header>
                 </div>
-              </Grid.Row>
-              <Grid.Row>
-                <div className={"news-space"}>
-                  <Header className={"headline"}>
-                    After School Chinese Program
-                  </Header>
-                  <Header className={"news-des"}>
-                    Start: Spring 2023 <br />
-                    Length: 15 weeks<br/>
-                    Time: Every Tuesday and Thursday Afternoon
-                  </Header>
-                </div>
-                <div className={"news-space"}>
-                  <Header className={"news-des"}>
-                    Master the skills of Reading, Writing, and Speaking Chinese
-                    by joining our Chinese Program at QBLC. We help students do
-                    their homework, while establishing a fun and enjoyable
-                    learning environment.
-                  </Header>
-                </div>
-                <div>
-                </div>
-              </Grid.Row>
-              <Grid.Row>
-                <div className={"news-break"}>
-                  <div className={"news-space"}>
-                    <Header className={"headline"}>
-                      Introduction to Fullstack Web Development
-                    </Header>
-                  </div>
-                  <div className={"news-space"}>
-                    <Header className={"news-des"}>
-                      Start: Spring 2023 <br />
-                      Length: 15 weeks<br/>
-                      Time: Every Saturday Afternoon
-                    </Header>
-                    <Header className={"news-des"}>
-                      Learn HTML/CSS, Javascript frameworks(React.js, Vue.js,
-                      Vanilla), MongoDB, and Node.js by credible and experienced
-                      software developers{" "}
-                    </Header>
-                  </div>
-                </div>
+                <Header className={"news-des"}>
+                Attention AP students! We are offering eight review classes for all AP courses, starting from March. These classes will help you prepare for the AP exams in May, by covering the key concepts and skills, and providing practice tests and feedback. Don’t miss this opportunity to boost your score and earn college credit. To register, please visit our website or call us today.
+                </Header>
               </Grid.Row>
               <Grid.Row>
                 <div className={"news-break"}>
@@ -64,11 +24,7 @@ export default class HomePage4 extends React.Component {
                     <Header className={"headline"}>SAT and ACT classes</Header>
                   </div>
                   <div className={"news-space"}>
-                    <Header className={"news-des"}>
-                      Start: Spring 2023 <br />
-                      Length: 15 Weeks<br/>
-                      Time: Every Wednesday and Friday Afternoon
-                    </Header>
+                    
                     <Header className={"news-des"}>
                       There will be a Diagnostic Test, Full Length Practice
                       Tests, and Comprehensive Explanations with each test.

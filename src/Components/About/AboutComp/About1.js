@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Header, Image, Icon } from "semantic-ui-react";
 import AboutImage from "../AboutImage/teachers.jpg";
+import AboutImage2 from "../AboutImage/teachers2.png";
 import Class from "../AboutImage/class.jpg";
 
 import Toefel from "../AboutImage/tof-new.png";
@@ -15,6 +16,9 @@ export default class About1 extends React.Component {
         <div className={"about1main container"}>
           <div>
             <Header className={"about-headers"}>About Us</Header>
+          </div>
+          <div className={"aboutimagediv"}>
+            <Image className={"aboutimage2"} src={AboutImage2}></Image>
           </div>
           <div className={"aboutimagediv"}>
             <Image className={"aboutimage"} src={AboutImage}></Image>

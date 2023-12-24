@@ -11,15 +11,15 @@ export default class SummerP extends React.Component {
         <div align="center">
           <p style={{ fontSize: 3.2 + "em" }}>
             Course descriptions: click{" "}
-            <a href="./QBCLS23CourseDiscription.pdf">here</a>
+            <a href="./qbcls_2024_brochure_cd.pdf">here</a>
           </p>
           <p style={{ fontSize: 3.2 + "em" }}>
             Tuition, schedule, and mission statement: click{" "}
-            <a href="./QBCLS23MissionScheduleTuition.pdf">here</a>
+            <a href="./qbcls_2024_brochure_price.pdf">here</a>
           </p>
           <p style={{ fontSize: 3.2 + "em" }}>
             Program policy: click{" "}
-            <a href="./QBCLS23ProgramPolicyInfo.pdf">here</a>
+            <a href="./qbcls_2024_brochure_info.pdf">here</a>
           </p>
         </div>
         <div class="row" align="center">

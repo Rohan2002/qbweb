@@ -27,7 +27,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="0">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        Our first year was 2004, so we have had 18 years
+                        Our first year was 2004, so we have had 20 years
                         experience with the program. Unlike many summer
                         programs, QLC is accredited by Middle States
                         Association, which allows credit to be transferred for
@@ -106,8 +106,8 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="2">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        The Premium Discount is available through March 31, and
-                        the Early Bird Discount is available through April 30.
+                        The Premium Discount is available through Februrary 28, and
+                        the Early Bird Discount is available through March 31.
                         Refunds are also available for a change of plans: before
                         June 5, all but the $250 administration fee will be
                         refunded; before July 5, fifty percent will be refunded;
@@ -130,7 +130,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        We will announce further details on this program soon in December.
+                        The six weeks program will happen between June 24 to August 2. 
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
@@ -256,7 +256,7 @@ export default class FAQ extends React.Component {
                     <Card.Body>
                       <Header className={"answer-header"}>
                         Yes, three new classes: Introduction to Computer
-                        Science (Java), PreCalculus (honors and regular), AP Calculus AB Preview, and second languages (French, Chinese, and Spanish).
+                        Science (Java and Python), PreCalculus (honors and regular), AP Calculus AB and BC Preview, and small groups (1 on 4 enrichment for 3 weeks).
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
