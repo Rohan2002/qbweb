@@ -10,16 +10,17 @@ export default class SummerP extends React.Component {
       <section id="SummerP">
         <div align="center">
           <p style={{ fontSize: 3.2 + "em" }}>
-            Course descriptions: click{" "}
-            <a href="./qbcls_2024_brochure_cd.pdf">here</a>
+          <b>Course descriptions: click{" "}
+            <a href="./qbcls_2024_brochure_cd_option2.pdf">here</a> for option 2 <br /> click{" "}
+            <a href="./qbcls_2024_brochure_cd_3weeks.pdf">here</a> for 3 week programs and 6 week SAT/ACT</b>
           </p>
           <p style={{ fontSize: 3.2 + "em" }}>
             Tuition, schedule, and mission statement: click{" "}
             <a href="./qbcls_2024_brochure_price.pdf">here</a>
           </p>
           <p style={{ fontSize: 3.2 + "em" }}>
-            Program policy: click{" "}
-            <a href="./qbcls_2024_brochure_info.pdf">here</a>
+            <b>Program policy: click{" "}
+            <a href="./qbcls_2024_brochure_info.pdf">here</a></b>
           </p>
         </div>
         <div class="row" align="center">

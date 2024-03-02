@@ -17,7 +17,7 @@ export default class HomePage1 extends React.Component {
                 For information about the summer program, please click <a href="/#/SummerProgram">here</a><br></br>
                 To register, please click <a href="/#/register">here</a>.<br></br>
                 For questions and concerns, please click <a href="/#/contact">here</a>.<br></br>
-                Are you a high school teacher who loves to challenge students and teach? Join our summer program and share your passion and skills. Please email your resume to QLC4044@quaker-bridge.com
+                <b>Are you a high school teacher who loves to challenge students and teach? Join our summer program and share your passion and skills. Please email your resume to QLC4044@quaker-bridge.com</b>
               </p>
             </Message>
           </div>
