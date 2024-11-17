@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Header, Image, Icon } from "semantic-ui-react";
-import AboutImage from "../AboutImage/teachers.jpg";
+import AboutImage from "../AboutImage/teachersnew.png";
 import AboutImage2 from "../AboutImage/teachers2.png";
 import Class from "../AboutImage/class.jpg";
 
