@@ -121,7 +121,7 @@ export default class FAQ extends React.Component {
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="3">
                     <Header className={"faq-question-header"}>
-                      What are the dates for the 2024 six weeks program{" "}
+                      What are the dates for the 2025 six weeks program{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
                       </span>
@@ -130,7 +130,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        The six weeks program will happen between June 24 to August 2. 
+                        The six weeks program will happen between July 1 to August 6. 
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
@@ -255,8 +255,8 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="9">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        Yes, three new classes: Introduction to Computer
-                        Science (Java and Python), PreCalculus (honors and regular), AP Calculus AB and BC Preview, and small groups (1 on 4 enrichment for 3 weeks).
+                        Yes, we have the option to select 2 combo classes (Python Zero to Hero, Java Programming Preview, Middle School Read to Succeed, Creative Writing, Pre-Algebra Genius, Algebra I Essentials, Algebra II Explained, High School Geometry Preview, AP Calculus AB Catalyst, AP Calculus BC Exploration, Bioscience Discovery, Physics Phenomena, Second Language Enrichment).
+                        These classes will run from July 1 to August 6, Monday through Thursday.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
