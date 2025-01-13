@@ -256,7 +256,7 @@ export default class FAQ extends React.Component {
                     <Card.Body>
                       <Header className={"answer-header"}>
                         Yes, we have the option to select 2 combo classes (Python Zero to Hero, Java Programming Preview, Middle School Read to Succeed, Creative Writing, Pre-Algebra Genius, Algebra I Essentials, Algebra II Explained, High School Geometry Preview, AP Calculus AB Catalyst, AP Calculus BC Exploration, Bioscience Discovery, Physics Phenomena, Second Language Enrichment).
-                        These classes will run from July 1 to August 6, Monday through Thursday.
+                        These classes will run from July 1 to August 8, Monday through Thursday.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>

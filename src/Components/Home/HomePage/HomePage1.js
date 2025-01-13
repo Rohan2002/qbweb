@@ -14,6 +14,7 @@ export default class HomePage1 extends React.Component {
           <div className={"message-body"} style={{ marginTop: 3 + "em" }}>
             <Message positive>
               <p style={{ fontSize: 1.6 + "em" }}>
+                <b>Secure your early bird discount and seat—apply now!</b><br></br>
                 For information about the summer program, please click <a href="/#/SummerProgram">here</a><br></br>
                 To register, please click <a href="/#/register">here</a>.<br></br>
                 For questions and concerns, please click <a href="/#/contact">here</a>.<br></br>

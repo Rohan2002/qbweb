@@ -18,7 +18,7 @@ export default class SummerP extends React.Component {
             <a href="./qbcls_2025_brochure_cd_option2.pdf">here</a> for option 2 <br /> click{" "}
             <a href="./qbcls_2025_brochure_cd_2combo.pdf">here</a> for 2 combo programs and 6 week SAT/ACT</b>
           </p>
-          <p style={{ fontSize: 3.2 + "em" }}>
+          <p style={{ fontSize: 3.2 + "em" , fontWeight: "bold"}}>
             Tuition and schedule: click{" "}
             <a href="./qbcls_2025_brochure_price.pdf">here</a>
           </p>
