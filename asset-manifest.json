@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ae769042.chunk.css",
-    "main.js": "/static/js/main.ba68faca.chunk.js",
-    "main.js.map": "/static/js/main.ba68faca.chunk.js.map",
+    "main.js": "/static/js/main.314f66c7.chunk.js",
+    "main.js.map": "/static/js/main.314f66c7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c533b83c.js",
     "runtime-main.js.map": "/static/js/runtime-main.c533b83c.js.map",
     "static/js/2.a94ac68f.chunk.js": "/static/js/2.a94ac68f.chunk.js",
     "static/js/2.a94ac68f.chunk.js.map": "/static/js/2.a94ac68f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.24f98a354e1374b0970a78dd974afbf6.js": "/precache-manifest.24f98a354e1374b0970a78dd974afbf6.js",
+    "precache-manifest.eeea4add9c15c2d4e209721a1caf1284.js": "/precache-manifest.eeea4add9c15c2d4e209721a1caf1284.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.ae769042.chunk.css.map": "/static/css/main.ae769042.chunk.css.map",
     "static/js/2.a94ac68f.chunk.js.LICENSE.txt": "/static/js/2.a94ac68f.chunk.js.LICENSE.txt",
@@ -26,7 +26,7 @@
     "static/media/qbhacks.png": "/static/media/qbhacks.58ab687d.png",
     "static/media/stanford.png": "/static/media/stanford.288ddb8f.png",
     "static/media/summer1.css": "/static/media/summer.2d830e04.png",
-    "static/media/teachers2.png": "/static/media/teachers2.09b76d22.png",
+    "static/media/teachers.jpg": "/static/media/teachers.e16ffe51.jpg",
     "static/media/teachersnew.png": "/static/media/teachersnew.b22318fc.png",
     "static/media/tof-new.png": "/static/media/tof-new.0fd5daa9.png",
     "static/media/yale.png": "/static/media/yale.9f7ac162.png"
@@ -35,6 +35,6 @@
     "static/js/runtime-main.c533b83c.js",
     "static/js/2.a94ac68f.chunk.js",
     "static/css/main.ae769042.chunk.css",
-    "static/js/main.ba68faca.chunk.js"
+    "static/js/main.314f66c7.chunk.js"
   ]
 }
