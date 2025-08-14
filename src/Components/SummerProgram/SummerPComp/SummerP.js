@@ -2,8 +2,8 @@ import React from "react";
 import { Grid, Header, Image, Icon } from "semantic-ui-react";
 import "./SummerProgram.css";
 import BB from "../SummerImage/Billboard.jpeg";
-import CB from "../SummerImage/IMG_7299.png";
-import teachers from "../SummerImage/IMG_7332.png";
+import CB from "../SummerImage/IMG_3544.jpg";
+import teachers from "../SummerImage/IMG_3693.jpg";
 export default class SummerP extends React.Component {
   render() {
     return (
