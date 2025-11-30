@@ -114,6 +114,20 @@ export default class Video1 extends React.Component {
                   ></iframe>
                 </Grid.Column>
               </Grid.Row>
+              <Grid.Row>
+                <Grid.Column>
+                  <div className={"year-div"}>
+                    <Header className={"year-header"}>2025</Header>
+                  </div>
+
+                  <iframe
+                    src="https://www.youtube.com/embed/K34yHrXxH8A?si=vWZG3u5adsN_qnEe"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </Grid.Column>
+              </Grid.Row>
             </Grid>
           </div>
         </div>

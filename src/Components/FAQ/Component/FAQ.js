@@ -121,7 +121,7 @@ export default class FAQ extends React.Component {
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey="3">
                     <Header className={"faq-question-header"}>
-                      What are the dates for the 2025 six weeks program{" "}
+                      What are the dates for the 2026 six weeks program{" "}
                       <span className={"icon-holder"}>
                         <Icon name={"arrow down"} />
                       </span>
@@ -130,7 +130,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        The six weeks program will happen between July 1 to August 6. 
+                        We will announce and confirm the dates for the six weeks summer program on January 2026.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
