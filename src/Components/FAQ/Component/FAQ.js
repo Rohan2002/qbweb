@@ -130,7 +130,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        The dates for the 2026 program are June 29th to August 9th. Some classes may start earlier online or have a preview on weekends, please contact the office for more detailed information.
+                        The dates for the 2026 program are June 29th to August 7th. Some classes may start earlier online or have a preview on weekends, please contact the office for more detailed information.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
