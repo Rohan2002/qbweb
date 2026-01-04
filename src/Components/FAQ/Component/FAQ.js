@@ -130,7 +130,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="3">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        We will announce and confirm the dates for the six weeks summer program on January 2026.
+                        The dates for the 2026 program are June 29th to August 9th. Some classes may start earlier online or have a preview on weekends, please contact the office for more detailed information.
                       </Header>
                     </Card.Body>
                   </Accordion.Collapse>
@@ -190,7 +190,7 @@ export default class FAQ extends React.Component {
                   <Accordion.Collapse eventKey="6">
                     <Card.Body>
                       <Header className={"answer-header"}>
-                        Written reports are sent to parents every two weeks to
+                        Reports are sent to parents every two weeks to
                         be signed and returned. Students have daily homework and
                         daily graded exercises. Test prep classes have daily
                         exam practice. Depending on the course, students have a
