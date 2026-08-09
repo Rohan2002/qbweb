@@ -9,18 +9,18 @@ export default class SummerP extends React.Component {
     return (
       <section id="SummerP">
         <div align="center">
-          <p style={{ fontSize: 3.2 + "em" }}>
+          {/* <p style={{ fontSize: 3.2 + "em" }}>
             <b>Program information: click{" "}
             <a href="./2026ProgramInformation.pdf">here</a></b>
-          </p>
+          </p> */}
           <p style={{ fontSize: 3.2 + "em" }}>
           <b>Course list: click{" "}
-            <a href="./2026CourseList.pdf">here</a></b>
+            <a href="./fallProgram2026.pdf">here</a></b>
           </p>
-          <p style={{ fontSize: 3.2 + "em" }}>
+          {/* <p style={{ fontSize: 3.2 + "em" }}>
           <b>Course prices and schedule: click{" "}
             <a href="./2026CoursePrice.pdf">here</a></b>
-          </p>
+          </p> */}
         </div>
         <div class="row" align="center">
           <div class="column">
