@@ -4,6 +4,15 @@ import "./SummerProgram.css";
 import BB from "../SummerImage/Billboard.jpeg";
 import CB from "../SummerImage/IMG_3544.jpg";
 import teachers from "../SummerImage/IMG_3693.jpg";
+import photo1 from "../SummerImage/IMG_0517y.jpg";
+import photo2 from "../SummerImage/IMG_0585y.jpg";
+import photo3 from "../SummerImage/IMG_0679y.jpg";
+import photo4 from "../SummerImage/IMG_1529y.jpg";
+import photo5 from "../SummerImage/IMG_1736y.jpg";
+import photo6 from "../SummerImage/IMG_1790y.jpg";
+import photo7 from "../SummerImage/IMG_2089y.jpg";
+import photo8 from "../SummerImage/IMG_2144y.jpg";
+
 export default class SummerP extends React.Component {
   render() {
     return (
@@ -25,12 +34,19 @@ export default class SummerP extends React.Component {
         <div class="row" align="center">
           <div class="column">
             <Image className={"billboard"} src={BB}></Image>
+            <Image className={"gridPhoto"} src={photo8}></Image>
+            <Image className={"gridPhoto"} src={photo3}></Image>
           </div>
           <div class="column">
-            <Image className={"collab"} src={CB}></Image>
+            <Image className={"gridPhoto"} src={photo1}></Image>
+            <Image className={"gridPhoto"} src={photo2}></Image>
+            <Image className={"gridPhoto"} src={photo4}></Image>
           </div>
           <div class="column">
-            <Image className={"teachers"} src={teachers}></Image>
+            <Image className={"gridPhoto"} src={photo5}></Image>
+            <Image className={"gridPhoto"} src={photo6}></Image>
+            <Image className={"gridPhoto"} src={photo7}></Image>
+            
           </div>
         </div>
       </section>
